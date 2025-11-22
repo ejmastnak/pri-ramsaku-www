@@ -1,0 +1,10 @@
+export default {
+  home: {
+    en: "Home",
+    sl: "Glavna stran",
+  },
+  about: {
+    en: "About us",
+    sl: "O nas",
+  },
+}

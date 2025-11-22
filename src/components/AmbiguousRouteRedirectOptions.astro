@@ -1,0 +1,21 @@
+---
+interface Props {
+  routes: Array<{route: string; name: string}>
+}
+
+// List of routes+names, e.g. [{ route: "/en", name: "Home" }, { route: "/sl", name: "Domov" }]
+const { routes } = Astro.props as Props;
+---
+
+<div>
+  <p>Choose a language:</p>
+  <ul>
+    {routes.map(route => (
+    <li>
+      <a href={route.route} class="block text-blue-500 hover:underline hover:text-blue-600">
+        {route.name}
+      </a>
+    </li>
+    ))}
+  </ul>
+</div>

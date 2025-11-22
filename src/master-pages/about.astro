@@ -1,0 +1,15 @@
+---
+import translations from '@/i18n/translations/about.js';
+import I18nLink from '@/components/I18nLink.astro'
+import { extractLocaleFromRoute  } from '@/i18n/translation.js';
+
+const locale = extractLocaleFromRoute(Astro.url.pathname);
+---
+
+<h1 class="text-5xl">{translations.h1[locale]}</h1>
+
+<div class="mt-8">
+  <I18nLink classes="text-blue-500 hover:text-blue-600 hover:underline" routeGroupName="home">
+    {translations.link[locale]}
+  </I18nLink>
+</div>

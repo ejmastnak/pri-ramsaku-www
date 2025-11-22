@@ -1,0 +1,66 @@
+---
+import LocaleSwitcher from "@/components/LocaleSwitcher.astro"
+import I18nNavLink from '@/components/I18nNavLink.astro'
+import translations from '@/i18n/translations/nav.js';
+import Bars3 from 'astro-heroicons/outline/Bars3.astro';
+import XMark from 'astro-heroicons/outline/XMark.astro';
+import { extractLocaleFromRoute } from '@/i18n/translation.js';
+
+interface Props {
+  routeGroupKey: string
+}
+const { routeGroupKey } = Astro.props as Props;
+const locale = extractLocaleFromRoute(Astro.url.pathname);
+---
+
+<script>
+const menu = document.getElementById("mobile-menu-el-menu");
+const bars = document.getElementById("mobile-menu-bars-icon");
+const xmark = document.getElementById("mobile-menu-x-icon");
+
+// Watch for changes
+const observer = new MutationObserver(mutations => {
+  for (const m of mutations) {
+    if (m.type === "attributes" && m.attributeName === "open") {
+      const open = menu.hasAttribute("open");
+      bars.classList.toggle("hidden", open);
+      xmark.classList.toggle("hidden", !open);
+    }
+  }
+});
+observer.observe(menu, { attributes: true });
+</script>
+
+<nav class="sticky relative top-0 bg-white border-b z-20 py-5 px-6">
+  <div class="max-w-5xl mx-auto">
+
+    <div class="flex gap-x-5 items-center ml-auto w-fit">
+
+      <!-- Desktop -->
+      <ul class="hidden sm:flex flex gap-x-8 mr-5">
+        <li><I18nNavLink routeGroupKey="home">{translations.home[locale]}</I18nNavLink></li>
+        <li><I18nNavLink routeGroupKey="about">{translations.about[locale]}</I18nNavLink></li>
+      </ul>
+
+      <LocaleSwitcher routeGroupKey={routeGroupKey} />
+
+      <!-- Mobile menu -->
+      <el-dropdown class="inline-block sm:hidden">
+        <button class="inline-flex items-center justify-center gap-x-1.5 rounded-md bg-white px-2 py-1 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 dark:bg-white/10 dark:text-white dark:shadow-none dark:ring-white/5 dark:hover:bg-white/20">
+          <Bars3 id="mobile-menu-bars-icon" class="text-gray-600 h-[1.75rem] w-[1.75rem] xs:h-[2rem] xs:w-[2rem]" />
+          <XMark id="mobile-menu-x-icon" class="hidden text-gray-600 h-[1.75rem] w-[1.75rem] xs:h-[2rem] xs:w-[2rem]" />
+        </button>
+
+        <el-menu id="mobile-menu-el-menu" anchor="bottom end" popover class="m-0 origin-top-right rounded-md bg-white p-0 shadow-lg outline outline-1 outline-black/5 transition [--anchor-gap:theme(spacing.2)] [transition-behavior:allow-discrete] data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in dark:bg-gray-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10 w-fit min-w-[160px]">
+          <ul class="flex flex-col px-8 pt-6 pb-8 text-left mx-auto gap-y-4">
+            <li class="border-b"><I18nNavLink routeGroupKey="home">{translations.home[locale]}</I18nNavLink></li>
+            <li class="border-b"><I18nNavLink routeGroupKey="about">{translations.about[locale]}</I18nNavLink></li>
+          </ul>
+        </el-menu>
+      </el-dropdown>
+
+    </div>
+
+  </div>
+
+</nav>

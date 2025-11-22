@@ -1,0 +1,42 @@
+---
+import AmbiguousRouteLayout from '@/layouts/AmbiguousRouteLayout.astro';
+import Home from '@/master-pages/home/index.astro';
+import AmbiguousRouteRedirectOptions from '@/components/AmbiguousRouteRedirectOptions.astro'
+import { getExplicitRoute } from '@/i18n/translation.js';
+
+const locale = import.meta.env.PUBLIC_DEFAULT_LOCALE;
+const title = "Domov";
+const description = "Glavna stran";
+const routeGroupKey = "home";
+
+const supportedLocales = import.meta.env.PUBLIC_SUPPORTED_LOCALES.split(",")
+const supportedLocaleNames = import.meta.env.PUBLIC_SUPPORTED_LOCALE_NAMES.split(",")
+
+// E.g. [{ route: "/en", name: "Home" }, { route: "/sl", name: "Domov" }]
+// Relies on supportedLocales and supportedLocaleNames being parallel arrays
+const routes = supportedLocales.map((locale, idx) => ({
+  route: getExplicitRoute(routeGroupKey, locale),
+  name: supportedLocaleNames[idx],
+}))
+---
+
+<AmbiguousRouteLayout locale={locale} title={title} description={description} >
+
+  <!-- For search engines -->
+  <Home />
+
+  <!-- This is for JS visitors who will be immediately redirected. -->
+  <!-- It hides the meant-for-search-engine page content behind a -->
+  <!-- uniform white page to avoid giving users a flash of content -->
+  <!-- before redirect -->
+  <div class="absolute bg-white inset-0" />
+
+  <!-- This is for non-JS users; it lets them manually choose a -->
+  <!-- preferred language. -->
+  <noscript>
+    <div class="absolute z-10 p-2 top-0">
+      <AmbiguousRouteRedirectOptions routes={routes} />
+    </div>
+  </noscript>
+
+</AmbiguousRouteLayout>

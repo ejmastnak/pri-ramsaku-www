@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Latin Modern Sans";
+  src: url('@/assets/fonts/lmsans10-regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "Latin Modern Sans";
+  src: url('@/assets/fonts/lmsans10-bold.otf') format('opentype');
+	font-weight: bold;
+}
+
+@font-face {
+  font-family: "Latin Modern Sans";
+  src: url('@/assets/fonts/lmsans10-oblique.otf') format('opentype');
+	font-style: italic;
+}
+
+@font-face {
+  font-family: "Latin Modern Sans";
+  src: url('@/assets/fonts/lmsans10-boldoblique.otf') format('opentype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+/* End Latin Modern Sans */
+
+/* Begin Latin Modern Roman */
+
+@font-face {
+  font-family: "Latin Modern Roman";
+  src: url('@/assets/fonts/lmroman10-regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "Latin Modern Roman";
+  src: url('@/assets/fonts/lmroman10-bold.otf') format('opentype');
+	font-weight: bold;
+}
+
+@font-face {
+  font-family: "Latin Modern Roman";
+  src: url('@/assets/fonts/lmroman10-italic.otf') format('opentype');
+	font-style: italic;
+}
+
+@font-face {
+  font-family: "Latin Modern Roman";
+  src: url('@/assets/fonts/lmroman10-bolditalic.otf') format('opentype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+/* End Latin Modern Roman */

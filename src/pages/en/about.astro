@@ -1,0 +1,14 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import About from '@/master-pages/about.astro';
+
+const locale = "en";
+const title = "About";
+const description = "This is the About page.";
+const routeGroupKey = "about"
+---
+
+<!-- Delegate actual page layout to master -->
+<BaseLayout locale={locale} title={title} description={description} routeGroupKey={routeGroupKey} >
+  <About />
+</BaseLayout>

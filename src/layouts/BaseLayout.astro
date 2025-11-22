@@ -1,0 +1,49 @@
+---
+import "@/assets/css/tailwind.css";
+import "@/assets/css/fonts.css";
+
+import Nav from '@/shared/Nav.astro'
+
+interface Props { locale: string, title: string, description: string, routeGroupKey: string, }
+const { locale, title, description, routeGroupKey, } = Astro.props as Props;
+---
+<html lang={locale} class="no-js">
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+
+    <script src="/src/scripts/elements.js"></script>
+
+    <script>
+    document.documentElement.classList.replace('no-js', 'js');
+    </script>
+
+    {import.meta.env.PROD && (
+    <style is:global>
+    .no-js .js-only { display: none; }
+    </style>
+    )}
+
+  </head>
+
+  <body>
+
+    <Nav routeGroupKey={routeGroupKey} />
+
+    <main class="max-w-7xl mx-auto relative">
+      <div class="max-w-5xl px-5 sm:px-8 py-8 sm:py-12 mx-auto">
+        <slot />
+      </div>
+    </main>
+  </body>
+
+</html>
