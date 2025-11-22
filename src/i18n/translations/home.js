@@ -12,11 +12,11 @@ export default {
     sl: "",
   },
   heroText: {
-    en: "Organic, traditional apple juice, vinegar, and herbal products from tall-trunk meadow orchards on the hills of Tolsti vrh pri Mislinji, Slovenia",
-    sl: "Ekološka družinska pridelava sadja in zelišč iz visokodebelnjih travniških sadovnjakov na Tolstem Vrhu pri Mislinji",
+    en: "Heirloom-variety apple juice and fruit products from traditional meadow orchards. Family-run on the foothills of the Pohorje mountains in Mislinja, Slovenia.",
+    sl: "Sokovi in sorodni sadni izdelki iz starih nekomercialnih sort iz lastnih travniških sadovnjakov. Družinkso in ekološko pridelano na obronkih Pohorja.",
   },
   heroMore: {
     en: "About us",
-    sl: "Več o kmetiji",
+    sl: "Več o nas",
   },
 }

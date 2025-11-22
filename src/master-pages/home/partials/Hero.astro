@@ -7,27 +7,26 @@ const locale = extractLocaleFromRoute(Astro.url.pathname);
 ---
 
 <!-- Solid black background color until image loads -->
-<div class="bg-blue-100 w-full h-full">
-  <div class="flex flex-col bg-cover bg-center bg-[url('@/assets/img/carjevic.jpg')] xxs:h-[24rem] xs:h-[24rem] sm:h-[30rem] md:h-[36rem] lg:h-[42rem] 2xl:h-[48rem]">
+<div class="bg-black w-full h-full">
+  <div class="flex flex-col bg-cover bg-center bg-[url('@/assets/img/hero-base.jpg')] sm:bg-[url('@/assets/img/hero-lg.jpg')] h-[28rem] sm:h-[32rem]">
 
-    <div class="w-fit xxs:mt-5 p-4 xs:px-8 self-center xxs:self-auto xxs:ml-5 xxs:rounded-lg text-white font-['Latin_Modern_Roman'] bg-gray-900/70">
-      <p class="text-2xl sm:text-3xl ml-2 font-bold">Kmetija</p>
-      <p class="text-6xl xs:text-7xl sm:text-8xl -mt-2 sm:-mt-3 font-bold">Gaia</p>
-      <p class="font-['Latin_Modern_Sans'] text-xl ml-2 font-bold text-white">{translations.heroSubheading[locale]}</p>
+    <!-- Outer div allows the max-w-6xl to push inner div inward on large screens without having bg-black apply across entire screen. -->
+    <div class="lg:w-full max-w-6xl lg:mx-auto">
+      <div class="w-fit bg-black/50 text-white font-['Latin_Modern_Roman'] ml-3 mt-3 sm:m-5 px-4 sm:px-6 py-2 sm:py-3 rounded-md">
+        <p class="text-xl sm:text-3xl ml-1 font-bold">Domačija</p>
+        <p class="text-5xl xs:text-7xl -mt-1">Pri Ramšaku</p>
 
-      <!-- -mx-4 counteracts p-4 of parent container -->
-      <div class="mt-3 -mx-4 p-1">
-        <p class="text-lg sm:text-xl max-w-xs md:max-w-sm text-gray-50 px-2 py-1">
-          {translations.heroText[locale]}
-        </p>
-
-        <I18nLink class="ml-2 italic" routeGroupName="about">
-          {translations.heroMore[locale]}
-          <span aria-hidden="true"> &rarr;</span>
-        </I18nLink>
+        <div class="mt-3">
+          <p class="sm:text-xl max-w-xs md:max-w-sm text-gray-50 px-2 py-1">
+            {translations.heroText[locale]}
+          </p>
+          <I18nLink classes="mt-1 inline-block italic hover:underline" routeGroupName="about">
+            {translations.heroMore[locale]}
+            <span aria-hidden="true"> &rarr;</span>
+          </I18nLink>
+        </div>
 
       </div>
-
     </div>
 
   </div>
