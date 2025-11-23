@@ -1,19 +1,17 @@
 ---
-interface Props {
-  routes: Array<{route: string; name: string}>
-}
+import { explicitRoutesForAmbiguousRoute } from '@/lib/routes.js';
+import { LOCALE_NAMES } from "@/i18n/config";
 
-// List of routes+names, e.g. [{ route: "/en", name: "Home" }, { route: "/sl", name: "Domov" }]
-const { routes } = Astro.props as Props;
+const options = explicitRoutesForAmbiguousRoute(Astro.url.pathname)
 ---
 
 <div>
   <p>Choose a language:</p>
   <ul>
-    {routes.map(route => (
+    {Object.entries(options).map(([locale, route]) => (
     <li>
-      <a href={route.route} class="block text-blue-500 hover:underline hover:text-blue-600">
-        {route.name}
+      <a href={route} class="block text-blue-500 hover:underline hover:text-blue-600">
+        { LOCALE_NAMES[locale] }
       </a>
     </li>
     ))}

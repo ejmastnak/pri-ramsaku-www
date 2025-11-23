@@ -1,16 +1,13 @@
 ---
-import { extractLocaleFromRoute, getExplicitRoute } from '@/i18n/translation.js';
+import { extractLocaleFromRoute, getExplicitRoute, routeToGroupName } from '@/lib/routes.js';
+import { LOCALES, LOCALE_NAMES, } from "@/i18n/config"
+
 import GlobeAlt from 'astro-heroicons/outline/GlobeAlt.astro';
 import ChevronDown from 'astro-heroicons/outline/ChevronDown.astro';
 
-interface Props { routeGroupKey: string }
-const { routeGroupKey } = Astro.props as Props;
-
 // Construct { "en": "en/about", "sl": "sl/o-nas", }
-const supportedLocales = import.meta.env.PUBLIC_SUPPORTED_LOCALES.split(",")
-const supportedLocaleNames = import.meta.env.PUBLIC_SUPPORTED_LOCALE_NAMES.split(",")
 const routes = Object.fromEntries(
-  supportedLocales.map(locale => [locale, getExplicitRoute(routeGroupKey, locale)])
+  LOCALES.map(locale => [locale, getExplicitRoute(routeToGroupName(Astro.url.pathname), locale)])
 );
 
 const currentLocale = extractLocaleFromRoute(Astro.url.pathname);
@@ -29,7 +26,7 @@ const currentLocale = extractLocaleFromRoute(Astro.url.pathname);
 
 <div id="locale-switcher-js" class="js-only">
   <el-dropdown class="inline-block">
-    <button class="inline-flex items-center justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 dark:bg-white/10 dark:text-white dark:shadow-none dark:ring-white/5 dark:hover:bg-white/20">
+    <button class="inline-flex items-center justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
       <div class="inline-flex items-center gap-x-1 rounded-l-md text-white">
         <GlobeAlt class="-ml-0.5 size-5 text-gray-600" />
         <p class="text-sm font-semibold text-gray-700 w-4">{currentLocale}</p>
@@ -38,10 +35,10 @@ const currentLocale = extractLocaleFromRoute(Astro.url.pathname);
       <ChevronDown class="size-5 translate-y-px" aria-hidden="true" />
     </button>
 
-    <el-menu anchor="bottom end" popover class="m-0 w-40 origin-top-right rounded-md bg-white p-0 shadow-lg outline outline-1 outline-black/5 transition [--anchor-gap:theme(spacing.2)] [transition-behavior:allow-discrete] data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in dark:bg-gray-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
+    <el-menu anchor="bottom end" popover class="m-0 w-40 origin-top-right rounded-md bg-white p-0 shadow-lg outline outline-1 outline-black/5 transition [--anchor-gap:theme(spacing.2)] [transition-behavior:allow-discrete] data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in">
       <div class="py-1">
         <ul class="flex flex-col divide-y divide-gray-200" data-locale-switcher>
-          {Object.entries(routes).map(([locale, route], idx) => (
+          {Object.entries(routes).map(([locale, route]) => (
           <li>
             <button
               id={`locale-switcher-button-${locale}`}
@@ -52,7 +49,7 @@ const currentLocale = extractLocaleFromRoute(Astro.url.pathname);
               data-current={locale === currentLocale}
               aria-current={locale === currentLocale ? "true" : undefined}
             >
-              { supportedLocaleNames[idx] }
+              { LOCALE_NAMES[locale] }
             </button>
           </li>
           ))}
@@ -74,4 +71,3 @@ document.querySelector("ul[data-locale-switcher]")?.addEventListener("click", (e
   }
 });
 </script>
-

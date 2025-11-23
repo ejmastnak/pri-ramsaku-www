@@ -1,14 +1,14 @@
 ---
-import { extractLocaleFromRoute, getExplicitRoute } from "@/i18n/translation.js";
+import { extractLocaleFromRoute, getExplicitRoute, normalizeRoute } from "@/lib/routes.js";
 
 interface Props {
-  routeGroupKey: string,
+  routeGroupName: string,
 };
-const { routeGroupKey, } = Astro.props as Props;
+const { routeGroupName, } = Astro.props as Props;
 
 const locale = extractLocaleFromRoute(Astro.url.pathname);
-const route = getExplicitRoute(routeGroupKey, locale);
-const currentRoute = Astro.url.pathname;
+const route = getExplicitRoute(routeGroupName, locale);
+const currentRoute = normalizeRoute(Astro.url.pathname);
 
 let classes = "hover:underline hover:text-blue-600"
 if (route === currentRoute) classes += " font-medium";

@@ -1,11 +1,13 @@
 ---
 import "@/assets/css/tailwind.css";
 import "@/assets/css/fonts.css";
-
 import Nav from '@/shared/Nav.astro'
+import Redirect from '@/shared/Redirect.astro'
+import ClipWave from '@/components/ClipWave.astro'
+import { DEFAULT_LOCALE, } from "@/i18n/config"
 
-interface Props { locale: string, title: string, description: string, routeGroupKey: string, }
-const { locale, title, description, routeGroupKey, } = Astro.props as Props;
+interface Props { locale?: string, title: string, description: string, ambiguousLocale?: boolean }
+const { locale = DEFAULT_LOCALE, title, description, ambiguousLocale = false } = Astro.props as Props;
 ---
 <html lang={locale} class="no-js">
   <head>
@@ -21,7 +23,9 @@ const { locale, title, description, routeGroupKey, } = Astro.props as Props;
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="manifest" href="/favicon/site.webmanifest">
 
-    <script src="/src/scripts/elements.js"></script>
+    { ambiguousLocale && <Redirect /> }
+
+    <script src="/src/lib/elements.js"></script>
 
     <script>
     document.documentElement.classList.replace('no-js', 'js');
@@ -36,10 +40,11 @@ const { locale, title, description, routeGroupKey, } = Astro.props as Props;
   </head>
 
   <body>
-    <Nav routeGroupKey={routeGroupKey} />
+    { !ambiguousLocale && <Nav />}
     <main class="mx-auto">
       <slot />
     </main>
+    <ClipWave />
   </body>
 
 </html>

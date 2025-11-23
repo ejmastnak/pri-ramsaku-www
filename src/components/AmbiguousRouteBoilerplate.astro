@@ -1,0 +1,17 @@
+---
+import AmbiguousRouteRedirectOptions from '@/components/AmbiguousRouteRedirectOptions.astro'
+---
+
+<!-- This is for JS visitors who will be immediately redirected. -->
+<!-- It hides the meant-for-search-engine page content behind a -->
+<!-- uniform white page to avoid giving users a flash of content -->
+<!-- before redirect -->
+<div class="absolute bg-white inset-0" />
+
+<!-- This is for non-JS users; it lets them manually choose a -->
+<!-- preferred language. -->
+<noscript>
+  <div class="absolute z-10 p-2 top-0">
+    <AmbiguousRouteRedirectOptions />
+  </div>
+</noscript>

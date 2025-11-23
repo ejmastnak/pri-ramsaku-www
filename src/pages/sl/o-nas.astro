@@ -5,10 +5,9 @@ import About from '@/master-pages/about.astro';
 const locale = "sl";
 const title = "O nas";
 const description = "Stran O nas";
-const routeGroupKey = "about"
 ---
 
 <!-- Delegate actual page layout to master -->
-<BaseLayout locale={locale} title={title} description={description} routeGroupKey={routeGroupKey} >
+<BaseLayout locale={locale} title={title} description={description} >
   <About />
 </BaseLayout>

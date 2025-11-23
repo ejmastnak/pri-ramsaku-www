@@ -5,13 +5,11 @@ import {
   getRelativeLocaleUrl,
   notFound,
 } from "astro:i18n";
-import { routeGroups, routes } from "@/routes";
+import { routes } from "@/routes";
+import { normalizeRoute } from "@/lib/routes.js";
 
 export const onRequest = defineMiddleware((ctx, next) => {
-  let pathname = ctx.url.pathname;
-
-  // Trim trailing slash, if present, except for home route
-  if (pathname != "/") pathname = pathname.replace(/\/$/, "");
+  const pathname = normalizeRoute(ctx.url.pathname);
 
   if (pathname in routes) {
     const route = routes[pathname];

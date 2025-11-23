@@ -5,10 +5,9 @@ import Home from '@/master-pages/home/index.astro';
 const locale = "en";
 const title = "Home";
 const description = "This is the Home page.";
-const routeGroupKey = "home";
 ---
 
 <!-- Delegate actual page layout to master -->
-<BaseLayout locale={locale} title={title} description={description} routeGroupKey={routeGroupKey} >
+<BaseLayout locale={locale} title={title} description={description} >
   <Home />
 </BaseLayout>
