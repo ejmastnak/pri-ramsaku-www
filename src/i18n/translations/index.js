@@ -1,4 +1,14 @@
 export default {
+  head: {
+    title: {
+      en: "Home",
+      sl: "Domačija Ramšak",
+    },
+    description: {
+      en: "Home page",
+      sl: "Glavna stran",
+    },
+  },
   h1: {
     en: "Home",
     sl: "Glavna stran",

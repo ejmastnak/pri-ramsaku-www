@@ -4,10 +4,13 @@ import "@/assets/css/fonts.css";
 import Nav from '@/shared/Nav.astro'
 import Redirect from '@/shared/Redirect.astro'
 import ClipWave from '@/components/ClipWave.astro'
-import { DEFAULT_LOCALE, } from "@/i18n/config"
 
-interface Props { locale?: string, title: string, description: string, ambiguousLocale?: boolean }
-const { locale = DEFAULT_LOCALE, title, description, ambiguousLocale = false } = Astro.props as Props;
+interface Props {
+  locale: string,
+  head: { title: string, description: string },
+  ambiguousLocale?: boolean
+}
+const { locale, head, ambiguousLocale = false } = Astro.props as Props;
 ---
 <html lang={locale} class="no-js">
   <head>
@@ -15,8 +18,8 @@ const { locale = DEFAULT_LOCALE, title, description, ambiguousLocale = false } =
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content={Astro.generator} />
-    <meta name="description" content={description} />
-    <title>{title}</title>
+    <meta name="description" content={head.description[locale]} />
+    <title>{head.title[locale]}</title>
 
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">

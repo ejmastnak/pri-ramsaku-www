@@ -1,13 +1,9 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import About from '@/master-pages/about.astro';
-
-const locale = "sl";
-const title = "O nas";
-const description = "Stran O nas";
+import translations from '@/i18n/translations/about.js';
 ---
 
-<!-- Delegate actual page layout to master -->
-<BaseLayout locale={locale} title={title} description={description} >
+<BaseLayout locale="sl" head={translations.head} >
   <About />
 </BaseLayout>

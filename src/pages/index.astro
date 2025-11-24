@@ -2,12 +2,11 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Home from '@/master-pages/home/index.astro';
 import AmbiguousRouteBoilerplate from '@/components/AmbiguousRouteBoilerplate.astro'
-
-const title = "Domov";
-const description = "Glavna stran";
+import { DEFAULT_LOCALE, } from "@/i18n/config"
+import translations from '@/i18n/translations/index.js';
 ---
 
-<BaseLayout title={title} description={description} ambiguousLocale={true} >
+<BaseLayout locale={DEFAULT_LOCALE} head={translations.head} ambiguousLocale={true} >
   <Home />
   <AmbiguousRouteBoilerplate />
 </BaseLayout>

@@ -2,8 +2,8 @@
 import Hero from './partials/Hero.astro'
 import I18nLink from '@/components/I18nLink.astro'
 import PageWrapper from '@/shared/PageWrapper.astro'
-import translations from '@/i18n/translations/home.js';
 import { extractLocaleFromRoute  } from '@/lib/routes.js';
+import translations from '@/i18n/translations/index.js';
 
 const locale = extractLocaleFromRoute(Astro.url.pathname);
 ---

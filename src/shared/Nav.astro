@@ -1,9 +1,9 @@
 ---
 import LocaleSwitcher from "@/components/LocaleSwitcher.astro"
 import I18nNavLink from '@/components/I18nNavLink.astro'
-import translations from '@/i18n/translations/nav.js';
 import Bars3 from 'astro-heroicons/outline/Bars3.astro';
 import XMark from 'astro-heroicons/outline/XMark.astro';
+import translations from '@/i18n/translations/shared/nav.js';
 import { extractLocaleFromRoute } from '@/lib/routes.js';
 
 const locale = extractLocaleFromRoute(Astro.url.pathname);
