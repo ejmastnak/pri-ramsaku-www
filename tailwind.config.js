@@ -7,6 +7,7 @@ export default {
     extend: {
       fontFamily: {
         'sans': ['Latin Modern Sans', ...defaultTheme.fontFamily.sans],
+        'serif': ['Latin Modern Roman', ...defaultTheme.fontFamily.serif],
       },
     },
   },
