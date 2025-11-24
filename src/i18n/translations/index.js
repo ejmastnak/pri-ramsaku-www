@@ -9,14 +9,6 @@ export default {
       sl: "Glavna stran",
     },
   },
-  h1: {
-    en: "Home",
-    sl: "Glavna stran",
-  },
-  link: {
-    en: "About us",
-    sl: "O nas",
-  },
   heroSubheading: {
     en: "(Gaia family farm)",
     sl: "",
@@ -29,4 +21,7 @@ export default {
     en: "About us",
     sl: "Več o nas",
   },
+  about: {
+    
+  }
 }
