@@ -36,6 +36,7 @@ observer.observe(menu, { attributes: true });
       <ul class="hidden sm:flex flex gap-x-8 mr-5">
         <li><I18nNavLink routeGroupName="home">{translations.home[locale]}</I18nNavLink></li>
         <li><I18nNavLink routeGroupName="about">{translations.about[locale]}</I18nNavLink></li>
+        <li><I18nNavLink routeGroupName="products">{translations.products[locale]}</I18nNavLink></li>
       </ul>
 
       <LocaleSwitcher />
@@ -51,6 +52,7 @@ observer.observe(menu, { attributes: true });
           <ul class="flex flex-col px-8 pt-6 pb-8 text-left mx-auto gap-y-4">
             <li class="border-b"><I18nNavLink routeGroupName="home">{translations.home[locale]}</I18nNavLink></li>
             <li class="border-b"><I18nNavLink routeGroupName="about">{translations.about[locale]}</I18nNavLink></li>
+            <li class="border-b"><I18nNavLink routeGroupName="products">{translations.products[locale]}</I18nNavLink></li>
           </ul>
         </el-menu>
       </el-dropdown>

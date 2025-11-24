@@ -7,4 +7,8 @@ export default {
     en: "About us",
     sl: "O nas",
   },
+  products: {
+    en: "Products",
+    sl: "Izdelki",
+  },
 }

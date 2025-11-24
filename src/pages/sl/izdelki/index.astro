@@ -1,0 +1,9 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Products from '@/master-pages/products/index.astro';
+import translations from '@/i18n/translations/products/index.js';
+---
+
+<BaseLayout locale="sl" head={translations.head} >
+  <Products />
+</BaseLayout>

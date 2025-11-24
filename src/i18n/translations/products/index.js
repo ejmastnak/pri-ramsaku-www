@@ -10,23 +10,28 @@ export default {
     },
   },
   h1: {
-    en: "Home",
-    sl: "Glavna stran",
+    en: "Products",
+    sl: "Izdelki",
   },
-  link: {
-    en: "About us",
-    sl: "O nas",
+  our: {
+    en: "Our",
+    sl: "Naši",
   },
-  heroSubheading: {
-    en: "(Gaia family farm)",
-    sl: "",
+  products: {
+    en: "Products",
+    sl: "Izdelki",
   },
-  heroText: {
-    en: "Heirloom-variety apple juice and fruit products from traditional meadow orchards. Family-run on the foothills of the Pohorje mountains in Mislinja, Slovenia.",
-    sl: "Sokovi in sorodni sadni izdelki iz starih nekomercialnih sort iz lastnih travniških sadovnjakov. Družinkso in ekološko pridelano na obronkih Pohorja.",
+  order: {
+    en: "Order products",
+    sl: "Nakup izdelkov",
   },
-  heroMore: {
-    en: "About us",
-    sl: "Več o nas",
+  summary: {
+    en: `We specialize in apple juice, apple cider vinegar, and herbal products made on our farm at small scale with natural, home-grown ingredients.
+`,
+    sl: "Pridelujemo jabolčni sok in jabolčni kis iz starih sort jabolk, ki dozorijo v našem visokodebelnem travniškem sadovnjaku, in zeliščne izdelke iz zelišč z našega travnika in iz gozda.",
+  },
+  priceList: {
+    en: "Prices",
+    sl: "Cenik izdelkov",
   },
 }
