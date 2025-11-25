@@ -1,0 +1,9 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import MeadowOrchard from '@/master-pages/meadow-orchard.astro';
+import translations from '@/i18n/translations/meadow-orchard.js';
+---
+
+<BaseLayout locale="en" head={translations.head} >
+  <MeadowOrchard />
+</BaseLayout>

@@ -20,29 +20,30 @@ const routeGroups = {
     "/sl/izdelki": { type: "explicit", },
   },
 
-  // jabsok: {
-  //   "/jabsok": { type: "ambiguous", canonical: {"en": "/en/products/apple-juice", "sl": "/sl/izdelki/jabolcni-sok"} },
-  //   "/products/apple-juice": { type: "implicit", canonical: "/en/products/apple-juice" },
-  //   "/en/products/apple-juice": { type: "explicit", },
-  //   "/izdelki/jabolcni-sok": { type: "implicit", canonical: "/sl/izdelki/jabolcni-sok" },
-  //   "/sl/izdelki/jabolcni-sok": { type: "explicit", },
-  // },
 
-  // jabkis: {
-  //   "/jabkis": { type: "ambiguous", canonical: {"en": "/en/products/apple-juice", "sl": "/sl/izdelki/jabolcni-kis"} },
-  //   "/products/apple-cider-vinegar": { type: "implicit", canonical: "/en/products/apple-cider-vinegar" },
-  //   "/en/products/apple-cider-vinegar": { type: "explicit", },
-  //   "/izdelki/jabolcni-kis": { type: "implicit", canonical: "/sl/izdelki/jabolcni-kis" },
-  //   "/sl/izdelki/jabolcni-kis": { type: "explicit", },
-  // },
+  jabsok: {
+    "/jabsok": { type: "ambiguous", canonical: {"en": "/en/products/apple-juice", "sl": "/sl/izdelki/jabolcni-sok"} },
+    "/products/apple-juice": { type: "implicit", canonical: "/en/products/apple-juice" },
+    "/en/products/apple-juice": { type: "explicit", },
+    "/izdelki/jabolcni-sok": { type: "implicit", canonical: "/sl/izdelki/jabolcni-sok" },
+    "/sl/izdelki/jabolcni-sok": { type: "explicit", },
+  },
 
-  // sntolj: {
-  //   "/sntolj": { type: "ambiguous", canonical: {"en": "/en/products/apple-juice", "sl": "/sl/izdelki/sentjanzevo-olje"} },
-  //   "/products/st-johns-wort-oil": { type: "implicit", canonical: "/en/products/st-johns-wort-oil" },
-  //   "/en/products/st-johns-wort-oil": { type: "explicit", },
-  //   "/izdelki/sentjanzevo-olje": { type: "implicit", canonical: "/sl/izdelki/sentjanzevo-olje" },
-  //   "/sl/izdelki/sentjanzevo-olje": { type: "explicit", },
-  // },
+  jabkis: {
+    "/jabkis": { type: "ambiguous", canonical: {"en": "/en/products/apple-juice", "sl": "/sl/izdelki/jabolcni-kis"} },
+    "/products/apple-cider-vinegar": { type: "implicit", canonical: "/en/products/apple-cider-vinegar" },
+    "/en/products/apple-cider-vinegar": { type: "explicit", },
+    "/izdelki/jabolcni-kis": { type: "implicit", canonical: "/sl/izdelki/jabolcni-kis" },
+    "/sl/izdelki/jabolcni-kis": { type: "explicit", },
+  },
+
+  sntolj: {
+    "/sntolj": { type: "ambiguous", canonical: {"en": "/en/products/apple-juice", "sl": "/sl/izdelki/sentjanzevo-olje"} },
+    "/products/st-johns-wort-oil": { type: "implicit", canonical: "/en/products/st-johns-wort-oil" },
+    "/en/products/st-johns-wort-oil": { type: "explicit", },
+    "/izdelki/sentjanzevo-olje": { type: "implicit", canonical: "/sl/izdelki/sentjanzevo-olje" },
+    "/sl/izdelki/sentjanzevo-olje": { type: "explicit", },
+  },
 
   varieties: {
     "/heirloom-varieties": { type: "implicit", canonical: "/en/heirloom-varieties" },
@@ -63,6 +64,13 @@ const routeGroups = {
     "/en/heirloom-varieties/pears": { type: "explicit", },
     "/stare-sorte/hruske": { type: "implicit", canonical: "/sl/stare-sorte/hruske" },
     "/sl/stare-sorte/hruske": { type: "explicit", },
+  },
+
+  meadowOrchard: {
+    "/meadow-orchard": { type: "implicit", canonical: "/en/meadow-orchard" },
+    "/en/meadow-orchard": { type: "explicit", },
+    "/travniski-sadovnjak": { type: "implicit", canonical: "/sl/travniski-sadovnjak" },
+    "/sl/travniski-sadovnjak": { type: "explicit", },
   },
 
 }
