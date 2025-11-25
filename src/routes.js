@@ -13,6 +13,13 @@ const routeGroups = {
     "/sl/o-nas": { type: 'explicit', },
   },
 
+  contact: {
+    "/contact": { type: "implicit", canonical: "/en/contact"  },
+    "/en/contact": { type: "explicit", },
+    "/kontakt": { type: 'implicit', canonical: "/sl/kontakt", },
+    "/sl/kontakt": { type: 'explicit', },
+  },
+
   products: {
     "/products": { type: "implicit", canonical: "/en/products" },
     "/en/products": { type: "explicit", },
@@ -20,8 +27,7 @@ const routeGroups = {
     "/sl/izdelki": { type: "explicit", },
   },
 
-
-  jabsok: {
+jabsok: {
     "/jabsok": { type: "ambiguous", canonical: {"en": "/en/products/apple-juice", "sl": "/sl/izdelki/jabolcni-sok"} },
     "/products/apple-juice": { type: "implicit", canonical: "/en/products/apple-juice" },
     "/en/products/apple-juice": { type: "explicit", },

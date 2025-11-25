@@ -11,4 +11,8 @@ export default {
     en: "Products",
     sl: "Izdelki",
   },
+  contact: {
+    en: "Contact",
+    sl: "Kontakt",
+  },
 }
