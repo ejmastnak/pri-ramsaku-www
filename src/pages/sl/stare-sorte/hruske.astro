@@ -1,0 +1,9 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Pears from '@/master-pages/varieties/pears.astro';
+import translations from '@/i18n/translations/varieties/index.js';
+---
+
+<BaseLayout locale="sl" head={translations.head} >
+  <Pears />
+</BaseLayout>

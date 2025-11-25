@@ -1,12 +1,11 @@
 ---
-import { Image } from 'astro:assets';
 import I18nLink from '@/components/I18nLink.astro'
 import PageWrapper from '@/shared/PageWrapper.astro'
 import BentoCard from '@/components/BentoCard.astro'
 import BentoWrapper from '@/components/BentoWrapper.astro'
 
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
-import translations from '@/i18n/translations/products/index.js';
+import translations from '@/i18n/translations/varieties/index.js';
 const locale = extractLocaleFromRoute(Astro.url.pathname);
 
 import boskopFruitImage from '@/assets/img/varieties/apple-fruit/boskop.jpg'
@@ -23,12 +22,17 @@ import hardijevaFruitImage from '@/assets/img/varieties/pear-fruit/hardijeva.jpg
     </p>
 
     <BentoWrapper classes="my-10 gap-x-8 gap-y-12 grid-cols-1 lg:grid-cols-2">
-      <BentoCard title="Apples" imgSrc={boskopFruitImage.src} imgAlt="Foo image">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla efficitur, maximus egestas sem pellentesque.
-      </BentoCard>
-      <BentoCard title="Pears" imgSrc={hardijevaFruitImage.src} imgAlt="Foo image">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla efficitur, maximus egestas sem pellentesque.
-      </BentoCard>
+      <I18nLink routeGroupName="appleVarieties">
+        <BentoCard title="Apples" imgSrc={boskopFruitImage.src} imgAlt="Foo image">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla efficitur, maximus egestas sem pellentesque.
+        </BentoCard>
+      </I18nLink>
+
+      <I18nLink routeGroupName="pearVarieties">
+        <BentoCard title="Pears" imgSrc={hardijevaFruitImage.src} imgAlt="Foo image">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla efficitur, maximus egestas sem pellentesque.
+        </BentoCard>
+      </I18nLink>
     </BentoWrapper>
 
   </div>

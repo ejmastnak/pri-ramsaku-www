@@ -51,7 +51,19 @@ const routeGroups = {
     "/sl/stare-sorte": { type: "explicit", },
   },
 
+  appleVarieties: {
+    "/heirloom-varieties/apples": { type: "implicit", canonical: "/en/heirloom-varieties/apples" },
+    "/en/heirloom-varieties/apples": { type: "explicit", },
+    "/stare-sorte/jabolka": { type: "implicit", canonical: "/sl/stare-sorte/jabolka" },
+    "/sl/stare-sorte/jabolka": { type: "explicit", },
+  },
 
+  pearVarieties: {
+    "/heirloom-varieties/pears": { type: "implicit", canonical: "/en/heirloom-varieties/pears" },
+    "/en/heirloom-varieties/pears": { type: "explicit", },
+    "/stare-sorte/hruske": { type: "implicit", canonical: "/sl/stare-sorte/hruske" },
+    "/sl/stare-sorte/hruske": { type: "explicit", },
+  },
 
 }
 
