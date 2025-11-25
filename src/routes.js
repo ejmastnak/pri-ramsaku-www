@@ -21,35 +21,36 @@ const routeGroups = {
   },
 
   // jabsok: {
+  //   "/jabsok": { type: "ambiguous", canonical: {"en": "/en/products/apple-juice", "sl": "/sl/izdelki/jabolcni-sok"} },
   //   "/products/apple-juice": { type: "implicit", canonical: "/en/products/apple-juice" },
   //   "/en/products/apple-juice": { type: "explicit", },
   //   "/izdelki/jabolcni-sok": { type: "implicit", canonical: "/sl/izdelki/jabolcni-sok" },
   //   "/sl/izdelki/jabolcni-sok": { type: "explicit", },
   // },
 
+  // jabkis: {
+  //   "/jabkis": { type: "ambiguous", canonical: {"en": "/en/products/apple-juice", "sl": "/sl/izdelki/jabolcni-kis"} },
+  //   "/products/apple-cider-vinegar": { type: "implicit", canonical: "/en/products/apple-cider-vinegar" },
+  //   "/en/products/apple-cider-vinegar": { type: "explicit", },
+  //   "/izdelki/jabolcni-kis": { type: "implicit", canonical: "/sl/izdelki/jabolcni-kis" },
+  //   "/sl/izdelki/jabolcni-kis": { type: "explicit", },
+  // },
 
-  // // --------------------------------------------------------- //
-  // // Products/JabSok
-  // // --------------------------------------------------------- //
-  // { path: '/jabsok', name: 'jabsok', component: JabSok, },
+  // sntolj: {
+  //   "/sntolj": { type: "ambiguous", canonical: {"en": "/en/products/apple-juice", "sl": "/sl/izdelki/sentjanzevo-olje"} },
+  //   "/products/st-johns-wort-oil": { type: "implicit", canonical: "/en/products/st-johns-wort-oil" },
+  //   "/en/products/st-johns-wort-oil": { type: "explicit", },
+  //   "/izdelki/sentjanzevo-olje": { type: "implicit", canonical: "/sl/izdelki/sentjanzevo-olje" },
+  //   "/sl/izdelki/sentjanzevo-olje": { type: "explicit", },
+  // },
 
-  // // --------------------------------------------------------- //
-  // // Products/JabKis
-  // // --------------------------------------------------------- //
-  // { path: '/jabkis', name: 'jabkis', component: JabKis, },
-  // { path: '/products/apple-cider-vinegar', name: 'jabkis.EN', component: JabKis, },
-  // { path: '/en/products/apple-cider-vinegar', name: 'jabkis.en', component: JabKis, },
-  // { path: '/izdelki/jabolcni-kis', name: 'jabkis.SL', component: JabKis, },
-  // { path: '/sl/izdelki/jabolcni-kis', name: 'jabkis.sl', component: JabKis, },
+  varieties: {
+    "/heirloom-varieties": { type: "implicit", canonical: "/en/heirloom-varieties" },
+    "/en/heirloom-varieties": { type: "explicit", },
+    "/stare-sorte": { type: "implicit", canonical: "/sl/stare-sorte" },
+    "/sl/stare-sorte": { type: "explicit", },
+  },
 
-  // // --------------------------------------------------------- //
-  // // Products/SntOlj
-  // // --------------------------------------------------------- //
-  // { path: '/sntolj', name: 'sntolj', component: SntOlj, },
-  // { path: '/products/st-johns-wort-oil', name: 'sntolj.EN', component: SntOlj, },
-  // { path: '/en/products/st-johns-wort-oil', name: 'sntolj.en', component: SntOlj, },
-  // { path: '/izdelki/sentjanzevo-olje', name: 'sntolj.SL', component: SntOlj, },
-  // { path: '/sl/izdelki/sentjanzevo-olje', name: 'sntolj.sl', component: SntOlj, },
 
 
 }

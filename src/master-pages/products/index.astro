@@ -1,9 +1,47 @@
 ---
+import { Image } from 'astro:assets';
 import I18nLink from '@/components/I18nLink.astro'
+import PageWrapper from '@/shared/PageWrapper.astro'
+import BentoCard from '@/components/BentoCard.astro'
+import BentoWrapper from '@/components/BentoWrapper.astro'
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
 import translations from '@/i18n/translations/products/index.js';
 
 const locale = extractLocaleFromRoute(Astro.url.pathname);
+
+import jabsokImg from '@/assets/img/jabsok.jpg';
+import jabkisImg from '@/assets/img/jabkis.jpg';
+import sntoljImg from '@/assets/img/sntolj.jpg'
+import applesCrateImg from '@/assets/img/apples-crate.jpg';
+
 ---
 
-<h1 class="text-5xl">{translations.h1[locale]}</h1>
+<PageWrapper>
+  <div class="max-w-4xl mx-auto text-center">
+    <h1 class="text-4xl text-center">{translations.h1[locale]}</h1>
+
+    <p class="mt-2 mx-auto text-center max-w-sm text-sm text-gray-600 italic">
+      We sell the following products.
+      Click a product for more information about production and ingredients.
+    </p>
+
+    <BentoWrapper classes="my-10 gap-x-8 gap-y-12 grid-cols-1 lg:grid-cols-2">
+      <BentoCard title="Jabolčni sok" imgSrc={jabsokImg.src} imgAlt="Foo image">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla efficitur, maximus egestas sem pellentesque.
+      </BentoCard>
+
+      <BentoCard title="Jabolčni tropinski kis" imgSrc={jabkisImg.src} imgAlt="Foo image">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla efficitur, maximus egestas sem pellentesque.
+      </BentoCard>
+
+      <BentoCard title="Šentjanževo olje" imgSrc={sntoljImg.src} imgAlt="Foo image">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla efficitur, maximus egestas sem pellentesque.
+      </BentoCard>
+
+      <BentoCard title="Drugi izdelki po dogovoru" imgSrc={applesCrateImg.src} imgAlt="Foo image">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla efficitur, maximus egestas sem pellentesque.
+      </BentoCard>
+    </BentoWrapper>
+
+  </div>
+</PageWrapper>
