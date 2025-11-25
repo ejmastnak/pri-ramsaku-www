@@ -7,10 +7,17 @@ const routeGroups = {
   },
 
   about: {
-    "/about": { type: "implicit", canonical: "/en/about"  },
+    "/about": { type: "implicit", canonical: "/en/about" },
     "/en/about": { type: "explicit", },
     "/o-nas": { type: 'implicit', canonical: "/sl/o-nas", },
     "/sl/o-nas": { type: 'explicit', },
+  },
+
+  logistics: {
+    "/how-to-buy": { type: "implicit", canonical: "/en/how-to-buy" },
+    "/en/how-to-buy": { type: "explicit", },
+    "/nakup": { type: 'implicit', canonical: "/sl/nakup", },
+    "/sl/nakup": { type: 'explicit', },
   },
 
   contact: {
@@ -27,7 +34,7 @@ const routeGroups = {
     "/sl/izdelki": { type: "explicit", },
   },
 
-jabsok: {
+  jabsok: {
     "/jabsok": { type: "ambiguous", canonical: {"en": "/en/products/apple-juice", "sl": "/sl/izdelki/jabolcni-sok"} },
     "/products/apple-juice": { type: "implicit", canonical: "/en/products/apple-juice" },
     "/en/products/apple-juice": { type: "explicit", },
@@ -49,6 +56,13 @@ jabsok: {
     "/en/products/st-johns-wort-oil": { type: "explicit", },
     "/izdelki/sentjanzevo-olje": { type: "implicit", canonical: "/sl/izdelki/sentjanzevo-olje" },
     "/sl/izdelki/sentjanzevo-olje": { type: "explicit", },
+  },
+
+  otherProducts: {
+    "/products/by-agreement": { type: "implicit", canonical: "/en/products/by-agreement" },
+    "/en/products/by-agreement": { type: "explicit", },
+    "/izdelki/po-dogovoru": { type: "implicit", canonical: "/sl/izdelki/po-dogovoru" },
+    "/sl/izdelki/po-dogovoru": { type: "explicit", },
   },
 
   varieties: {

@@ -1,0 +1,18 @@
+---
+import PageWrapper from '@/shared/PageWrapper.astro'
+import { extractLocaleFromRoute, } from '@/lib/routes.js';
+import translations from '@/i18n/translations/products/sntolj.js';
+
+const locale = extractLocaleFromRoute(Astro.url.pathname);
+---
+
+<PageWrapper>
+  <div class="max-w-4xl mx-auto text-center">
+    <h1 class="text-4xl text-center">St. John's Wort Oil</h1>
+
+    <p class="mt-2 mx-auto text-center max-w-sm text-sm text-gray-600 italic">
+      Some descriptions of our St. John's Wort oil.
+    </p>
+
+  </div>
+</PageWrapper>

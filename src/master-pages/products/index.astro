@@ -7,13 +7,12 @@ import BentoWrapper from '@/components/BentoWrapper.astro'
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
 import translations from '@/i18n/translations/products/index.js';
 
-const locale = extractLocaleFromRoute(Astro.url.pathname);
-
 import jabsokImg from '@/assets/img/jabsok.jpg';
 import jabkisImg from '@/assets/img/jabkis.jpg';
 import sntoljImg from '@/assets/img/sntolj.jpg'
 import applesCrateImg from '@/assets/img/apples-crate.jpg';
 
+const locale = extractLocaleFromRoute(Astro.url.pathname);
 ---
 
 <PageWrapper>
@@ -26,21 +25,31 @@ import applesCrateImg from '@/assets/img/apples-crate.jpg';
     </p>
 
     <BentoWrapper classes="my-10 gap-x-8 gap-y-12 grid-cols-1 lg:grid-cols-2">
-      <BentoCard title="Jabolčni sok" imgSrc={jabsokImg.src} imgAlt="Foo image">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla efficitur, maximus egestas sem pellentesque.
-      </BentoCard>
 
-      <BentoCard title="Jabolčni tropinski kis" imgSrc={jabkisImg.src} imgAlt="Foo image">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla efficitur, maximus egestas sem pellentesque.
-      </BentoCard>
+      <I18nLink routeGroupName="jabsok">
+        <BentoCard title="Jabolčni sok" imgSrc={jabsokImg.src} imgAlt="Foo image">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla efficitur, maximus egestas sem pellentesque.
+        </BentoCard>
+      </I18nLink>
 
-      <BentoCard title="Šentjanževo olje" imgSrc={sntoljImg.src} imgAlt="Foo image">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla efficitur, maximus egestas sem pellentesque.
-      </BentoCard>
+      <I18nLink routeGroupName="jabkis">
+        <BentoCard title="Jabolčni tropinski kis" imgSrc={jabkisImg.src} imgAlt="Foo image">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla efficitur, maximus egestas sem pellentesque.
+        </BentoCard>
+      </I18nLink>
 
-      <BentoCard title="Drugi izdelki po dogovoru" imgSrc={applesCrateImg.src} imgAlt="Foo image">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla efficitur, maximus egestas sem pellentesque.
-      </BentoCard>
+      <I18nLink routeGroupName="sntolj">
+        <BentoCard title="Šentjanževo olje" imgSrc={sntoljImg.src} imgAlt="Foo image">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla efficitur, maximus egestas sem pellentesque.
+        </BentoCard>
+      </I18nLink>
+
+      <I18nLink routeGroupName="otherProducts">
+        <BentoCard title="Drugi izdelki po dogovoru" imgSrc={applesCrateImg.src} imgAlt="Foo image">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla efficitur, maximus egestas sem pellentesque.
+        </BentoCard>
+      </I18nLink>
+
     </BentoWrapper>
 
   </div>

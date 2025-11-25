@@ -1,0 +1,9 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Logistics from '@/master-pages/logistics/index.astro';
+import translations from '@/i18n/translations/logistics/index.js';
+---
+
+<BaseLayout locale="sl" head={translations.head} >
+  <Logistics />
+</BaseLayout>
