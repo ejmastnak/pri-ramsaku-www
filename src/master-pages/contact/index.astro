@@ -2,7 +2,7 @@
 import { Image } from 'astro:assets';
 import PageWrapper from '@/shared/PageWrapper.astro'
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
-import translations from '@/i18n/translations/contact.js';
+import translations from '@/i18n/translations/index/contact.js';
 import appleBlossomsImg from '@/assets/img/slive-blossoms.jpg'
 
 const locale = extractLocaleFromRoute(Astro.url.pathname);

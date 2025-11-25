@@ -1,7 +1,7 @@
 ---
 import I18nLink from '@/components/I18nLink.astro'
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
-import translations from '@/i18n/translations/about.js';
+import translations from '@/i18n/translations/about/index.js';
 
 const locale = extractLocaleFromRoute(Astro.url.pathname);
 ---

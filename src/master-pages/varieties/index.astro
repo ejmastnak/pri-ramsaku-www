@@ -6,11 +6,11 @@ import BentoWrapper from '@/components/BentoWrapper.astro'
 
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
 import translations from '@/i18n/translations/varieties/index.js';
-const locale = extractLocaleFromRoute(Astro.url.pathname);
 
 import boskopFruitImage from '@/assets/img/varieties/apple-fruit/boskop.jpg'
 import hardijevaFruitImage from '@/assets/img/varieties/pear-fruit/hardijeva.jpg'
 
+const locale = extractLocaleFromRoute(Astro.url.pathname);
 ---
 
 <PageWrapper>

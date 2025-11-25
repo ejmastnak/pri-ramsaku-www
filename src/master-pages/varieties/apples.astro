@@ -1,10 +1,9 @@
 ---
 import PageWrapper from '@/shared/PageWrapper.astro'
-
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
 import translations from '@/i18n/translations/varieties/apples.js';
-const locale = extractLocaleFromRoute(Astro.url.pathname);
 
+const locale = extractLocaleFromRoute(Astro.url.pathname);
 ---
 
 <PageWrapper>

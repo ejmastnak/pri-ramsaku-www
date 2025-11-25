@@ -2,7 +2,7 @@
 import PageWrapper from '@/shared/PageWrapper.astro'
 
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
-import translations from '@/i18n/translations/meadow-orchard.js';
+import translations from '@/i18n/translations/meadow-orchard/index.js';
 const locale = extractLocaleFromRoute(Astro.url.pathname);
 
 ---
