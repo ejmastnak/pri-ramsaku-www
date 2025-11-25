@@ -7,7 +7,7 @@ const locale = extractLocaleFromRoute(Astro.url.pathname);
 ---
 
 <!-- Solid black background color until image loads -->
-<div class="bg-black w-full h-full clip-wave">
+<div class="bg-black w-full h-full clip-wave-bottom-condensed sm:clip-wave-bottom">
   <div class="flex flex-col bg-cover bg-center bg-[url('@/assets/img/hero-base.jpg')] sm:bg-[url('@/assets/img/hero-lg.jpg')] h-[28rem] sm:h[32-rem] lg:h-[36rem] xl:h-[40rem]">
 
     <!-- Outer div allows the max-w-6xl to push inner div inward on large screens without having bg-black apply across entire screen. -->
