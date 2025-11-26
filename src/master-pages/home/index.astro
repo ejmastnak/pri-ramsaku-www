@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 import Hero from './partials/Hero.astro'
 import I18nLink from '@/components/I18nLink.astro'
+import I18nLinkButton from '@/components/I18nLinkButton.astro'
 import Wrapper from '@/shared/Wrapper.astro'
 import { extractLocaleFromRoute  } from '@/lib/routes.js';
 import translations from '@/i18n/translations/index.js';
@@ -29,7 +30,7 @@ import jabkisImg from '@/assets/img/jabkis.jpg';
         We strive to make tastier, less processed, and nutrionally richer products than typical commercial equivalents.
       </p>  
 
-      <div class="my-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
+      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
         <div class="hidden lg:block h-48 sm:h-52 md:h-56 rounded">
           <Image class="rounded h-full w-full object-cover" src={winterDomacijaImg} alt="Foo" height={400} />
         </div>
@@ -41,17 +42,20 @@ import jabkisImg from '@/assets/img/jabkis.jpg';
         </div>
       </div>
 
-      <p class="max-w-xl mx-auto text-center italic">
+      <p class="my-12 max-w-xl mx-auto text-center italic">
         We run the farm for the satisfaction we get from cultivating heirloom varieties, continuing our homestead's centuries'-long history, and sharing traditional, home-made farm products with our family, friends, and customers.
       </p>
     </div>
 
     <!-- Products -->
-    <div class="my-10 max-w-2xl mx-auto text-center italic">
+    <div class="my-10 max-w-2xl mx-auto text-center">
       <h2 class="text-xl text-center font-bold">Products</h2>
-      <p class="mt-2">
-        We sell the following PRODUCTS.
+      <p class="mt-2 max-w-md mx-auto">
+        We sell the apple juice, apple cider vinegar, jams, and dried fruits; and also other products by special arrangement.
       </p>
+
+      <I18nLinkButton routeGroupName="products" classes="mt-3">View our products</I18nLinkButton>
+
       <div class="my-5 grid sm:grid-cols-2 gap-8 place-items-center">
         <div class="h-48 sm:h-60 rounded">
           <Image class="rounded h-full w-full object-cover" src={jabsokImg} alt="Foo" height={400} />
