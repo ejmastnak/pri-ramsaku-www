@@ -1,7 +1,13 @@
 ---
 import PageWrapper from '@/shared/PageWrapper.astro'
+import Breadcrumbs from '@/components/Breadcrumbs.astro'
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
 import translations from '@/i18n/translations/products/jabkis.js';
+
+const breadcrumbs = [
+  { routeGroupName: "products", title: "Products", },
+  { routeGroupName: "jabkis", title: "Apple Cider Vinegar", },
+]
 
 const locale = extractLocaleFromRoute(Astro.url.pathname);
 ---
@@ -13,6 +19,8 @@ const locale = extractLocaleFromRoute(Astro.url.pathname);
     <p class="mt-2 mx-auto text-center max-w-sm text-sm text-gray-600 italic">
       Some descriptions of our apple cider vinegar.
     </p>
+
+    <Breadcrumbs breadcrumbs={breadcrumbs} />
 
   </div>
 </PageWrapper>

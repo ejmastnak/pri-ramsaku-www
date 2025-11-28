@@ -1,18 +1,40 @@
 ---
 import PageWrapper from '@/shared/PageWrapper.astro'
+import Breadcrumbs from '@/components/Breadcrumbs.astro'
+import ShoppingCart from 'astro-heroicons/outline/ShoppingCart.astro';
+import PrimaryI18nLink from '@/components/PrimaryI18nLink.astro'
+import SimpleImagePanel from '@/components/SimpleImagePanel.astro'
+import Bio from '@/shared/Bio.astro'
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
 import translations from '@/i18n/translations/products/jabsok.js';
 
+import jabsokImg from '@/assets/img/jabsok.jpg'
+import applesCrateImg from '@/assets/img/apples-crate.jpg'
+
 const locale = extractLocaleFromRoute(Astro.url.pathname);
+
+const breadcrumbs = [
+  { routeGroupName: "products", title: "Products", },
+  { routeGroupName: "jabkis", title: "Apple Cider Vinegar", },
+]
+
 ---
 
 <PageWrapper>
   <div class="max-w-4xl mx-auto text-center">
     <h1 class="text-4xl text-center">Apple Juice</h1>
-
     <p class="mt-2 mx-auto text-center max-w-sm text-sm text-gray-600 italic">
       Some descriptions of our apple juice.
     </p>
+
+    <SimpleImagePanel 
+      class="mt-10"
+      img={jabsokImg}
+      imgAlt="jabsokImg"
+    >
+      <p>FOO</p>
+      <Bio class="mt-4" />
+    </SimpleImagePanel>
 
   </div>
 </PageWrapper>

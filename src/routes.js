@@ -13,7 +13,7 @@ const routeGroups = {
     "/sl/o-nas": { type: 'explicit', },
   },
 
-  logistics: {
+  howToBuy: {
     "/how-to-buy": { type: "implicit", canonical: "/en/how-to-buy" },
     "/en/how-to-buy": { type: "explicit", },
     "/nakup": { type: 'implicit', canonical: "/sl/nakup", },
