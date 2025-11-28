@@ -1,0 +1,22 @@
+---
+import { Image } from 'astro:assets';
+interface Props {
+  img: { src: string, },
+  imgAlt: string,
+  reverse: boolean
+}
+const { img, imgAlt, reverse = true } = Astro.props as Props;
+---
+
+<div class={`md:flex gap-x-8 ${reverse ? 'flex-row-reverse' : null}`}>
+
+  <Image
+    src={img}
+    alt={imgAlt}
+    class="shrink-0 w-full h-56 mx-auto md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover rounded-md"
+  />
+
+  <div class="mt-5 md:mt-2 text-gray-800">
+    <slot />
+  </div>
+</div>
