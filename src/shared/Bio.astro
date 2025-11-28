@@ -1,0 +1,19 @@
+---
+import I18nLink from '@/components/I18nLink.astro'
+import { extractLocaleFromRoute, } from '@/lib/routes.js';
+import translations from '@/i18n/translations/shared/bio.js';
+
+const locale = extractLocaleFromRoute(Astro.url.pathname);
+---
+
+<div class="p-2 px-3 text-base border border-green-700 bg-green-50 rounded-md">
+
+  <p class="font-bold text-green-800">{translations.heading[locale]}</p>
+  <p>{translations.text[locale]}</p>
+
+  <!-- <I18nLink class="mt-2 !px-2.5 !py-1.5" routeGroupName="bio"> -->
+  <!--   <p>Read more</p> -->
+  <!--   <span aria-hidden="true"> &rarr;</span> -->
+  <!-- </I18nLink> -->
+
+</div>
