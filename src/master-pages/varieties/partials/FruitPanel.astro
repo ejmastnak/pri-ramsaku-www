@@ -1,0 +1,55 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+  title: string;
+  fruitImg: {src: string};
+  fruitImgAlt: string;
+  fruitCaption: string;
+  treeImg: {src: string};
+  treeImgAlt: string;
+  treeCaption: string;
+}
+
+const {
+  title,
+  fruitImg,
+  fruitImgAlt,
+  fruitCaption,
+  treeImg,
+  treeImgAlt,
+  treeCaption,
+} = Astro.props as Props;
+---
+
+<div>
+  <h2 class="text-3xl font-bold">{title}</h2>
+
+  <div class="mt-4 flex flex-col sm:flex-row sm:justify-start items-center sm:items-start gap-5">
+
+    <figure>
+      <Image
+        width={600}
+        src={fruitImg}
+        alt={fruitImgAlt}
+        class="block mx-auto w-96 h-80 object-cover rounded-md"
+      />
+    </figure>
+
+    <figure>
+      <Image
+        width={600}
+        src={treeImg}
+        alt={treeImgAlt}
+        class="block mx-auto !w-96 h-80 object-cover rounded-md"
+      />
+    </figure>
+
+  </div>
+
+  <p class="mt-6 max-w-3xl">
+    <slot />
+  </p>
+
+
+</div> 

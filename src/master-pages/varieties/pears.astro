@@ -1,18 +1,76 @@
 ---
 import PageWrapper from '@/shared/PageWrapper.astro'
+import Breadcrumbs from '@/components/Breadcrumbs.astro'
+import FruitPanel from './partials/FruitPanel.astro'
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
 import translations from '@/i18n/translations/varieties/pears.js';
 
+import drobnicaFruitImage from '@/assets/img/varieties/pear-fruit/drobnica.jpg'
+import drobnicaTreeImage from '@/assets/img/varieties/pear-trees/drobnica.jpg'
+import hardijevaFruitImage from '@/assets/img/varieties/pear-fruit/hardijeva.jpg'
+import junijskaLepoticaFruitImage from '@/assets/img/varieties/pear-fruit/junijska-lepotica.jpg'
+import klapovaFruitImage from '@/assets/img/varieties/pear-fruit/klapova.jpg'
+import pastorjevkaFruitImage from '@/assets/img/varieties/pear-fruit/pastorjevka.jpg'
+import pearBlossoms1Image from '@/assets/img/varieties/pear-trees/pear-blossoms-1.jpg'
+import pearBlossoms2Image from '@/assets/img/varieties/pear-trees/pear-blossoms-2.jpg'
+import pearBlossoms3Image from '@/assets/img/varieties/pear-trees/pear-blossoms-3.jpg'
+import pearBlossoms4Image from '@/assets/img/varieties/pear-trees/pear-blossoms-4.jpg'
+
 const locale = extractLocaleFromRoute(Astro.url.pathname);
+
+const breadcrumbs = [
+  { routeGroupName: "varieties", title: "Heirloom Varieties", },
+  { routeGroupName: "pearVarieties", title: "Pears", },
+]
+
+const pears = {
+  drobnica: {
+    fruitImg: drobnicaFruitImage,
+    treeImg: drobnicaTreeImage,
+  },
+  hardijeva: {
+    fruitImg: hardijevaFruitImage,
+    treeImg: pearBlossoms1Image,
+  },
+  junijskaLepotica: {
+    fruitImg: junijskaLepoticaFruitImage,
+    treeImg: pearBlossoms2Image,
+  },
+  klapova: {
+    fruitImg: klapovaFruitImage,
+    treeImg: pearBlossoms3Image,
+  },
+  pastorjevka: {
+    fruitImg: pastorjevkaFruitImage,
+    treeImg: pearBlossoms4Image,
+  },
+}
+
 ---
 
 <PageWrapper>
-  <div class="max-w-4xl mx-auto text-center">
-    <h1 class="text-4xl text-center">Pears</h1>
+  <h1 class="text-5xl">{translations.h1[locale]}</h1>
 
-    <p class="mt-2 mx-auto text-center max-w-sm text-sm text-gray-600 italic">
-      Some descriptions of pears.
-    </p>
+  <Breadcrumbs breadcrumbs={breadcrumbs} />
 
-  </div>
+  <p class="mt-10 max-w-2xl">{translations.intro[locale]}</p>
+
+  <ul class="mt-8 space-y-8 sm:space-y-10">
+    {Object.entries(pears).map(([key, value]) => (
+    <li>
+      <FruitPanel 
+        title={translations[key].name[locale]}
+        fruitImg={value.fruitImg}
+        fruitImgAlt={translations[key].fruitImgAlt[locale]}
+        treeImg={value.treeImg}
+        treeImgAlt={translations[key].treeImgAlt[locale]}
+        fruitCaption={translations[key].fruitCaption[locale]}
+        treeCaption={translations[key].treeCaption[locale]}
+      >
+        {translations[key].description[locale]}
+      </FruitPanel>
+    </li>
+    ))}
+  </ul>
+
 </PageWrapper>

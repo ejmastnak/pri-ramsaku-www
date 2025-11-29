@@ -1,4 +1,7 @@
 ---
+
+import I18nLinkButton from '@/components/I18nLinkButton.astro'
+
 interface Props {
   title: string;
   imgSrc: string;
@@ -8,12 +11,14 @@ interface Props {
 const { title, imgSrc, imgAlt, classes } = Astro.props as Props;
 ---
 
-<div class={`relative ${classes ?? ""}`}>
-  <div class="relative flex h-full flex-col overflow-hidden rounded-lg">
+<div class="relative">
+  <div class={`relative flex h-full flex-col overflow-hidden rounded-lg ${classes ?? ""}`}>
     <img src={imgSrc} alt={imgAlt} class="h-80 object-cover" />
     <div class="px-4 pb-6 pt-2">
       <p class="mt-2 text-lg font-bold tracking-tight text-gray-950">{title}</p>
-      <p class="mt-2 max-w-lg text-sm/6 text-gray-600"><slot /></p>
+      <div class="mt-2 max-w-lg text-sm/6 text-gray-600">
+        <slot />
+      </div>
     </div>
   </div>
   <div class="pointer-events-none absolute inset-0 rounded-lg shadow outline outline-1 outline-black/5"></div>

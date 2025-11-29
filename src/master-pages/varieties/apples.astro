@@ -1,18 +1,118 @@
 ---
 import PageWrapper from '@/shared/PageWrapper.astro'
+import Breadcrumbs from '@/components/Breadcrumbs.astro'
+import FruitPanel from './partials/FruitPanel.astro'
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
 import translations from '@/i18n/translations/varieties/apples.js';
 
+import bobovecFruitImage from '@/assets/img/varieties/apple-fruit/bobovec.jpg'
+import bobovecTreeImage from '@/assets/img/varieties/apple-trees/bobovec.jpg'
+import boskopFruitImage from '@/assets/img/varieties/apple-fruit/boskop.jpg'
+import boskopTreeImage from '@/assets/img/varieties/apple-trees/boskop.jpg'
+import carjevicFruitImage from '@/assets/img/varieties/apple-fruit/carjevic.jpg'
+import carjevicTreeImage from '@/assets/img/varieties/apple-trees/carjevic.jpg'
+import grafenstajncFruitImage from '@/assets/img/varieties/apple-fruit/grafenstajnc.jpg'
+import grafenstajncTreeImage from '@/assets/img/varieties/apple-trees/grafenstajnc.jpg'
+import jonatanFruitImage from '@/assets/img/varieties/apple-fruit/jonatan.jpg'
+import jonatanTreeImage from '@/assets/img/varieties/apple-trees/jonatan.jpg'
+import kanadkaFruitImage from '@/assets/img/varieties/apple-fruit/kanadka.jpg'
+import kanadkaTreeImage from '@/assets/img/varieties/apple-trees/kanadka.jpg'
+import koksovaRenetaFruitImage from '@/assets/img/varieties/apple-fruit/koksova-reneta.jpg'
+import koksovaRenetaTreeImage from '@/assets/img/varieties/apple-trees/koksova-reneta.jpg'
+import krivopeceljFruitImage from '@/assets/img/varieties/apple-fruit/krivopecelj.jpg'
+import krivopeceljTreeImage from '@/assets/img/varieties/apple-trees/krivopecelj.jpg'
+import londonskiPepingFruitImage from '@/assets/img/varieties/apple-fruit/londonski-peping.jpg'
+import londonskiPepingTreeImage from '@/assets/img/varieties/apple-trees/londonski-peping.jpg'
+import mosanceljFruitImage from '@/assets/img/varieties/apple-fruit/mosancelj.jpg'
+import mosanceljTreeImage from '@/assets/img/varieties/apple-trees/mosancelj.jpg'
+import sentjakobkaFruitImage from '@/assets/img/varieties/apple-fruit/sentjakobka.jpg'
+import sentjakobkaTreeImage from '@/assets/img/varieties/apple-trees/sentjakobka.jpg'
+import zlataParmenaFruitImage from '@/assets/img/varieties/apple-fruit/zlata-parmena.jpg'
+import zlataParmenaTreeImage from '@/assets/img/varieties/apple-trees/zlata-parmena.jpg'
+
 const locale = extractLocaleFromRoute(Astro.url.pathname);
+
+const breadcrumbs = [
+  { routeGroupName: "varieties", title: "Heirloom Varieties", },
+  { routeGroupName: "appleVarieties", title: "Apples", },
+]
+
+const apples = {
+  bobovec: {
+    fruitImg: bobovecFruitImage,
+    treeImg: bobovecTreeImage,
+  },
+  boskopskiKosmac: {
+    fruitImg: boskopFruitImage,
+    treeImg: boskopTreeImage,
+  },
+  carjevic: {
+    fruitImg: carjevicFruitImage,
+    treeImg: carjevicTreeImage,
+  },
+  grafenstajnc: {
+    fruitImg: grafenstajncFruitImage,
+    treeImg: grafenstajncTreeImage,
+  },
+  jonatan: {
+    fruitImg: jonatanFruitImage,
+    treeImg: jonatanTreeImage,
+  },
+  kanadka: {
+    fruitImg: kanadkaFruitImage,
+    treeImg: kanadkaTreeImage,
+  },
+  koksovaReneta: {
+    fruitImg: koksovaRenetaFruitImage,
+    treeImg: koksovaRenetaTreeImage,
+  },
+  krivopecelj: {
+    fruitImg: krivopeceljFruitImage,
+    treeImg: krivopeceljTreeImage,
+  },
+  londonskiPeping: {
+    fruitImg: londonskiPepingFruitImage,
+    treeImg: londonskiPepingTreeImage,
+  },
+  mosancelj: {
+    fruitImg: mosanceljFruitImage,
+    treeImg: mosanceljTreeImage,
+  },
+  sentjakobka: {
+    fruitImg: sentjakobkaFruitImage,
+    treeImg: sentjakobkaTreeImage,
+  },
+  zlataParmena: {
+    fruitImg: zlataParmenaFruitImage,
+    treeImg: zlataParmenaTreeImage,
+  }, 
+}
+
 ---
 
 <PageWrapper>
-  <div class="max-w-4xl mx-auto text-center">
-    <h1 class="text-4xl text-center">Apples</h1>
+  <h1 class="text-5xl">{translations.h1[locale]}</h1>
 
-    <p class="mt-2 mx-auto text-center max-w-sm text-sm text-gray-600 italic">
-      Some descriptions of apples.
-    </p>
+  <Breadcrumbs breadcrumbs={breadcrumbs} />
 
-  </div>
+  <p class="mt-10 max-w-2xl">{translations.intro[locale]}</p>
+
+  <ul class="mt-8 space-y-8 sm:space-y-10">
+    {Object.entries(apples).map(([key, value]) => (
+    <li>
+      <FruitPanel 
+        title={translations[key].name[locale]}
+        fruitImg={value.fruitImg}
+        fruitImgAlt={translations[key].fruitImgAlt[locale]}
+        treeImg={value.treeImg}
+        treeImgAlt={translations[key].treeImgAlt[locale]}
+        fruitCaption={translations[key].fruitCaption[locale]}
+        treeCaption={translations[key].treeCaption[locale]}
+      >
+        {translations[key].description[locale]}
+      </FruitPanel>
+    </li>
+    ))}
+  </ul>
+
 </PageWrapper>
