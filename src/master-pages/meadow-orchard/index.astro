@@ -1,19 +1,106 @@
 ---
+import { Image } from 'astro:assets';
 import PageWrapper from '@/shared/PageWrapper.astro'
-
+import SimpleImagePanel from '@/components/SimpleImagePanel.astro'
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
 import translations from '@/i18n/translations/meadow-orchard/index.js';
+
 const locale = extractLocaleFromRoute(Astro.url.pathname);
+
+import jablaneImg from '@/assets/img/jablane.jpg'
+import dandelionsImg from '@/assets/img/dandelions.jpg'
+import sliveFlowersImg from '@/assets/img/slive-flowers.jpg'
 
 ---
 
 <PageWrapper>
-  <div class="max-w-4xl mx-auto text-center">
-    <h1 class="text-4xl text-center">Meadow Orchard</h1>
+  <div class="max-w-3xl mx-auto">
+    <h1 class="text-5xl">{translations.h1[locale]}</h1>
 
-    <p class="mt-2 mx-auto text-center max-w-sm text-sm text-gray-600 italic">
-      Some descriptions of meadow orchards.
+    <p class="mt-10 max-w-3xl">
+      {translations.intro[0][locale]}
+      <span class="italic">{translations.intro[1][locale]}</span> 
+      {translations.intro[2][locale]}
+      <span class="italic">{translations.intro[3][locale]}</span>
+      <span class="">{translations.intro[4][locale]}</span>
     </p>
+
+    <div class="md:flex gap-x-8 mt-5 md:mt-16">
+      <Image
+        src={dandelionsImg}
+        alt={translations.dandelionsImgAlt[locale]}
+        class="shrink-0 w-full max-w-md h-56 mx-auto md:w-80 md:h-80 object-cover rounded-md"
+      />
+      <div class="mt-5 md:mt-2 text-gray-800">
+        <p>{translations.definition[locale]}</p>
+        <p class="mt-3">{translations.features[locale]}</p>
+      </div>
+    </div>
+
+    <p class="mt-5 md:mt-12 max-w-3xl">
+      {translations.mosiac[locale]}
+    </p>
+
+    <div class="md:flex md:flex-row-reverse gap-x-8 mt-5 md:mt-16">
+      <Image
+        src={jablaneImg}
+        alt={translations.appleBlossomsImgAlt[locale]}
+        class="shrink-0 w-full max-w-md h-56 mx-auto md:w-80 md:h-80 object-cover rounded-md"
+      />
+      <div class="mt-5 md:mt-2 text-gray-800">
+        <p class="mt-3">
+          <span class="font-bold">{translations.comparisonTitle[locale]}</span>
+          {translations.comparison[locale]}
+        </p>
+      </div>
+    </div>
+
+    <p class="mt-8 font-bold">{translations.notesHeading[locale]}</p>
+
+    <ul class="mt-5 ml-5 list-disc max-w-3xl space-y-3">
+      <li>
+        {translations.notes.species.intro[locale]}
+        <a href="https://en.wikipedia.org/wiki/Apple" class="text-blue-600 hover:text-blue-700 hover:underline">{translations.notes.species.apple[locale]}</a>
+        <a href="https://en.wikipedia.org/wiki/Malus_sylvestris" class="text-blue-600 hover:text-blue-700 hover:underline">{translations.notes.species.crabapple[locale]}</a>
+        <a href="https://en.wikipedia.org/wiki/Pyrus_communis" class="text-blue-600 hover:text-blue-700 hover:underline">{translations.notes.species.pear[locale]}</a>
+        <a href="https://en.wikipedia.org/wiki/Prunus_domestica" class="text-blue-600 hover:text-blue-700 hover:underline">{translations.notes.species.plum[locale]}</a>
+        <a href="https://en.wikipedia.org/wiki/Prunus_avium" class="text-blue-600 hover:text-blue-700 hover:underline">{translations.notes.species.sweetCherry[locale]}</a>
+        <a href="https://en.wikipedia.org/wiki/Prunus_cerasus" class="text-blue-600 hover:text-blue-700 hover:underline">{translations.notes.species.sourCherry[locale]}</a>
+        {translations.notes.species.and[locale]}
+        <a href="https://en.wikipedia.org/wiki/Juglans_regia" class="text-blue-600 hover:text-blue-700 hover:underline">{translations.notes.species.walnut[locale]}</a>
+      </li>
+
+      <!-- https://anediblelandscape.wordpress.com/the-traditional-orchard-story/ -->
+      <li>{translations.notes.integrated[locale]}</li>
+
+      <li>
+        <p>
+          {translations.notes.biodiversity.p1[locale]}
+        </p>
+        <p class="mt-2">
+          {translations.notes.biodiversity.studies.intro[locale]}
+          <a href="https://doi.org/10.1016/j.biocon.2024.110815" class="hover:text-blue-700 hover:underline">
+            {translations.notes.biodiversity.studies.guariento.authors[locale]}
+            <span class="italic">{translations.notes.biodiversity.studies.guariento.title[locale]}</span>
+            {translations.notes.biodiversity.studies.guariento.journal[locale]}
+          </a>
+          <a href="https://doi.org/10.1016/j.actao.2016.12.010" class="hover:text-blue-700 hover:underline">
+            {translations.notes.biodiversity.studies.kajtoch.authors[locale]}
+            <span class="italic">{translations.notes.biodiversity.studies.kajtoch.title[locale]}</span>
+            {translations.notes.biodiversity.studies.kajtoch.journal[locale]}
+          </a>
+          {translations.notes.biodiversity.studies.andReferencesTherein[locale]}
+        </p>
+      </li>
+
+    </ul>
+
+    <Image
+      src={sliveFlowersImg}
+      alt={translations.sliveFlowersImgAlt[locale]}
+      class="mt-10 w-full sm:w-5/6 mx-auto rounded-md"
+    />
+
 
   </div>
 </PageWrapper>
