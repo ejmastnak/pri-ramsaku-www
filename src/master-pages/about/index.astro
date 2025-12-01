@@ -1,15 +1,100 @@
 ---
+import { Image } from 'astro:assets';
+import Hero from './partials/Hero.astro'
 import I18nLink from '@/components/I18nLink.astro'
-import { extractLocaleFromRoute, } from '@/lib/routes.js';
+import I18nLinkButton from '@/components/I18nLinkButton.astro'
+import Wrapper from '@/shared/Wrapper.astro'
+import { extractLocaleFromRoute  } from '@/lib/routes.js';
 import translations from '@/i18n/translations/about/index.js';
 
 const locale = extractLocaleFromRoute(Astro.url.pathname);
+
+import winterDomacijaImg from '@/assets/img/winter-domacija.jpg';
+import krivopeceljTreeImg from '@/assets/img/krivopecelj-tree.jpg';
+import applesCrateImg from '@/assets/img/apples-crate.jpg';
+import presaBarrelImg from '@/assets/img/presa-barrel.jpg';
+import jabsokImg from '@/assets/img/jabsok.jpg';
+import jabkisImg from '@/assets/img/jabkis.jpg';
+
 ---
 
-<h1 class="text-5xl">{translations.h1[locale]}</h1>
+<Wrapper classes="pb-16">
 
-<div class="mt-8">
-  <I18nLink classes="text-blue-500 hover:text-blue-600 hover:underline" routeGroupName="home">
-    {translations.link[locale]}
-  </I18nLink>
-</div>
+  <Hero />
+
+  <div class="my-10 max-w-2xl mx-auto">
+
+    <!-- Pri Ramšaku name -->
+    <div>
+          <h2 class="text-xl text-center font-bold">Domačija Pri Ramšaku</h2>
+
+        <p class="mt-2 max-w-xl mx-auto text-center">
+          The name <span class="italic">Domačija Pri Ramšaku</span> translates to "The Ramšak Homestead" and is the local/traditional name carried by our farm since the 1800s.
+
+          In the Slovenian countryside a farm typically has a "local" name that stays with the farm regardless of the legal name of the family living there.
+
+          The first people to develop the farm were likely named Ramšak—a common last name in Slovene Koroška—and the name stayed with the farm.
+        </p>
+    </div>
+
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
+      <div class="hidden lg:block h-48 sm:h-52 md:h-56 rounded">
+        <Image class="rounded h-full w-full object-cover" src={winterDomacijaImg} alt="Foo" height={400} />
+      </div>
+      <div class="h-48 sm:h-52 md:h-56 rounded">
+        <Image class="rounded h-full w-full object-cover" src={krivopeceljTreeImg} alt="Foo" height={400} />
+      </div>
+      <div class="hidden sm:block h-48 sm:h-52 md:h-56 rounded">
+        <Image class="rounded h-full w-full object-cover" src={applesCrateImg} alt="Foo" height={400} />
+      </div>
+    </div>
+
+    <!-- History -->
+    <div class="mt-8">
+      <h2 class="text-xl text-center font-bold">The farm's history</h2>
+
+      <div class="mt-3 flex flex-col gap-y-2 max-w-xl mx-auto">
+        <p>
+          Our farm was founded in the 1800s by the Ramšak family, who gave the farm its name—<span class="italic">Pri Ramšaku</span>.
+          Throughout the 1800s and 1900s, the Ramšak family maintained a thriving and well-respected homestead, raising livestock, growing grains and produce, and operating a grain mill and sawmill on the unforgiving mountainous terrain.
+          But for lack of a younger generation to take over—as is unfortunately all too common in the rural European countryside—the farmstead drifted into dormancy in the early 2000s. 
+        </p>
+
+        <p>
+          The last representative of the Ramšak lineage living on the farm kept up small-scale farming for as long as he lived on the property. Operating as Center Gaia d.o.o., he produced and sold apple juice, cider vinegar, and herbal products throughout Slovenia, but slowly scaled down production and eventually sold the property in late 2022 to the Mastnak family, who took on and continued operation of the farm.
+        </p>
+
+        <p>
+          The voice you're reading on this page is that of Mastnak family.
+          We are primarily a father-son team who took over the farm in 2023 and have enthusiastically, if on a small and humble scale compared to the former Ramšak family, continued cultivating the land to present day.
+          Although we are not originally from the Koroška region nor full-time farmers, we have done our best to keep the land in cultivation, plant a new generation of fruit trees, and preserve the farm's operation and tradition.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- Present -->
+    <div class="mt-8">
+      <h2 class="text-xl text-center font-bold">Focus on traditional heirloom varieties</h2>
+
+      <div class="mt-3 flex flex-col gap-y-2 max-w-xl mx-auto">
+        <p>
+        </p>
+
+        <p>
+          Since taking over the farm, we have emphasized using heirloom apple varieties grown in our tall-trunk meadow orchards and small-scale, traditional production methods.
+          This is out of appreciation for tradition, our love of heirloom varieties, and also motivated by the practical reality that we are a small-scale operation and not full-time farmers.
+
+          We prefer to produce less and offer a interesting, high-quality traditional products than try to compete on a basis of scale or price with high-volume commercial farms.
+        </p>
+
+        <p>
+          We have made a point of photographing and documenting the varieties on our farm, which you can read about on a dedicated page about <I18nLink routeGroupName="varieties" classes="text-blue-500 hover:text-blue-600 hover:underline">the heirloom apple and pear varieties</I18nLink> on our farm.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</Wrapper>
+

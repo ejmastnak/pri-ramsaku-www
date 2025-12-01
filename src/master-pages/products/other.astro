@@ -1,18 +1,55 @@
 ---
+import { Image } from 'astro:assets';
 import PageWrapper from '@/shared/PageWrapper.astro'
+import Breadcrumbs from '@/components/Breadcrumbs.astro'
+import ShoppingCart from 'astro-heroicons/outline/ShoppingCart.astro';
+import I18nLink from '@/components/I18nLink.astro'
+import Bio from '@/shared/Bio.astro'
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
-import translations from '@/i18n/translations/products/jabkis.js';
+import translations from '@/i18n/translations/products/other.js';
+
+import winterDomacijaImg from '@/assets/img/winter-domacija.jpg';
+import krivopeceljTreeImg from '@/assets/img/krivopecelj-tree.jpg';
+import applesCrateImg from '@/assets/img/apples-crate.jpg';
 
 const locale = extractLocaleFromRoute(Astro.url.pathname);
+
+const breadcrumbs = [
+  { routeGroupName: "products", title: "Products", },
+  { routeGroupName: "otherProducts", title: "Other products", },
+]
+
 ---
 
 <PageWrapper>
-  <div class="max-w-4xl mx-auto text-center">
-    <h1 class="text-4xl text-center">Products Available By Agreement</h1>
+  <div class="max-w-4xl mx-auto">
 
-    <p class="mt-2 mx-auto text-center max-w-sm text-sm text-gray-600 italic">
-      Some descriptions of our special products.
-    </p>
+    <h1 class="text-4xl text-center">Other products</h1>
+    <Breadcrumbs classes="text-center mx-auto" breadcrumbs={breadcrumbs} />
+
+    <div class="mt-5 md:mt-8">
+      <p class="max-w-xl mx-auto text-center">
+        In addition to our apple juice and apple cider vinegar, we also produce a number of other products on a small scale from the fruits and herbs growing on our farms and meadows.
+        These include dried apples and pears, jams and fruit butters (apple, pear, plum...), and a large assortement of herbal teas. We may be able arrange other products by agreement, and during good seasons we also sell our fresh apples.
+      </p>
+
+      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
+        <div class="hidden lg:block h-48 sm:h-52 md:h-56 rounded">
+          <Image class="rounded h-full w-full object-cover" src={winterDomacijaImg} alt="Foo" height={400} />
+        </div>
+        <div class="h-48 sm:h-52 md:h-56 rounded">
+          <Image class="rounded h-full w-full object-cover" src={krivopeceljTreeImg} alt="Foo" height={400} />
+        </div>
+        <div class="hidden sm:block h-48 sm:h-52 md:h-56 rounded">
+          <Image class="rounded h-full w-full object-cover" src={applesCrateImg} alt="Foo" height={400} />
+        </div>
+      </div>
+
+      <p class="my-12 max-w-lg mx-auto text-center">
+        Since stock varies from season to season and we only make them on a small scale, we typically arrange purchase of our "special products" on a case-by-case basis directly with our customers. <I18nLink routeGroupName="contact" classes="text-blue-500 hover:text-blue-600 hover:underline">Contact us to arrange details.</I18nLink>
+      </p>
+
+    </div>
 
   </div>
 </PageWrapper>

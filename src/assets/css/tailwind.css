@@ -7,6 +7,9 @@ html {
 }
 
 @layer utilities {
+  .clip-none {
+    clip-path: none;
+  }
   .clip-wave-bottom {
     clip-path: url(#clipWaveBottom);
   }

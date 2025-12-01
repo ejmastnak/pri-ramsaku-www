@@ -1,0 +1,51 @@
+---
+import { Image } from 'astro:assets';
+import { extractLocaleFromRoute, } from '@/lib/routes.js';
+import translations from '@/i18n/translations/shared/pricelist.js';
+
+interface Props {
+  products: Array<{
+    code: string,
+    name: { en: string, sl: string }
+    qty: { en: string, sl: string }
+    unit: { en: string, sl: string }
+    img: { src: string }
+    eur_cents: number
+  }>;
+  classes?: string,
+}
+const { products, classes } = Astro.props as Props;
+
+const locale = extractLocaleFromRoute(Astro.url.pathname);
+---
+
+<div class={classes ?? ''}>
+  <p class="text-2xl">{translations.heading[locale]}</p>
+  <p class="text-gray-500 text-sm">{translations.ddv[locale]}</p>
+
+  <div class="mt-1.5 max-w-2xl overflow-auto">
+    <div class="grid grid-cols-12">
+      <p class="col-span-3 sm:col-span-2 px-3 py-2 bg-orange-100"></p>
+      <p class="col-span-5 px-3 py-2 bg-orange-200">{translations.product[locale]}</p>
+      <p class="col-span-4 sm:col-span-5 px-3 py-2 bg-orange-100">{translations.price[locale]}</p>
+    </div>
+    <div class="grid grid-cols-12 py-1 !text-left" >
+      {products.map((product) => (
+      <>
+      <div class="col-span-3 sm:col-span-2 py-1 border-b border-gray-200 grid place-items-center">
+        <Image src={product.img} alt={product.name[locale]} width={400} class="size-20 sm:size-28 rounded-md object-cover " />
+      </div>
+      <div class="col-span-5 px-3 pt-2 border-b border-gray-200">
+        {product.name[locale]}
+        <span class="text-nowrap">{product.qty[locale]}</span>
+      </div>
+      <span class="col-span-4 sm:col-span-5 px-3 pt-2 border-b border-gray-200">{(product.eur_cents/100).toFixed(2)} € / {product.unit[locale]}</span>
+    </>
+      ))}
+    </div>
+  </div>
+</div>
+
+
+
+

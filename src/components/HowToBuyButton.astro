@@ -1,0 +1,18 @@
+---
+import I18nLinkButton from '@/components/I18nLinkButton.astro'
+import ShoppingCartIcon from 'astro-heroicons/outline/ShoppingCart.astro';
+import { extractLocaleFromRoute, } from '@/lib/routes.js';
+import translations from '@/i18n/translations/shared/partials.js';
+
+const locale = extractLocaleFromRoute(Astro.url.pathname);
+
+interface Props {
+  classes: string
+}
+const { classes } = Astro.props as Props;
+---
+
+<I18nLinkButton routeGroupName="howToBuy" classes={`inline-flex ml-auto items-center gap-x-2 h-fit translate-y-1 ${classes ?? ''}`}>
+  <ShoppingCartIcon class="-ml-1 text-white-600 h-6 w-6" />
+  <p>{translations.howToBuyButton[locale]}</p>
+</I18nLinkButton>

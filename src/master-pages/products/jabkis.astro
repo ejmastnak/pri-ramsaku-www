@@ -1,26 +1,101 @@
 ---
+import { Image } from 'astro:assets';
 import PageWrapper from '@/shared/PageWrapper.astro'
 import Breadcrumbs from '@/components/Breadcrumbs.astro'
+import PriceList from '@/components/PriceList.astro'
+import HowToBuyButton from '@/components/HowToBuyButton.astro'
+import Bio from '@/shared/Bio.astro'
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
 import translations from '@/i18n/translations/products/jabkis.js';
+import { jabkis as products } from '@/assets/data/products.js'
+
+import jabkisImg from '@/assets/img/jabkis.jpg'
+import applesCrateImg from '@/assets/img/apples-crate.jpg'
+
+import cisternsImg from '@/assets/img/cisterns.jpg'
+import presaBarrelImg from '@/assets/img/presa-barrel-landscape.jpg'
+
+const locale = extractLocaleFromRoute(Astro.url.pathname);
 
 const breadcrumbs = [
   { routeGroupName: "products", title: "Products", },
   { routeGroupName: "jabkis", title: "Apple Cider Vinegar", },
 ]
 
-const locale = extractLocaleFromRoute(Astro.url.pathname);
 ---
 
 <PageWrapper>
-  <div class="max-w-4xl mx-auto text-center">
-    <h1 class="text-4xl text-center">Apple Cider Vinegar</h1>
+  <div class="max-w-4xl mx-auto">
 
-    <p class="mt-2 mx-auto text-center max-w-sm text-sm text-gray-600 italic">
-      Some descriptions of our apple cider vinegar.
+    <div class="w-full flex items-start pr-2">
+      <h1 class="text-4xl">Apple Cider Vinegar</h1>
+      <HowToBuyButton classes="hidden sm:inline-flex" />  
+    </div>
+    <Breadcrumbs classes="mt-1" breadcrumbs={breadcrumbs} />
+
+    <!-- Panel 1 -->
+    <div class="mt-10 md:flex md:flex-row-reverse gap-x-8">
+      <Image
+        src={jabkisImg}
+        alt="jabkisImg"
+        class="shrink-0 w-full h-56 mx-auto md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover rounded-md"
+      />
+      <div class="mt-5 md:mt-2 text-gray-800">
+        <p>
+          Our production of apple cider vinegar goes hand in hand with the pressing of apple juice each fall—we make our vinegar from the pulp and residual juice left over from the pressing process. Our vinegar is special in that we use apple pulp as a primary raw ingredient (most vinegars use pure juice). Together with the heirloom varieties' vibrant flavor and a slow fermentation all winter long, this gives our vinegar a smoothness, gentleness, and complexity not found in conventional vinegar made only from fermented apple juice. 
+        </p>
+        <Bio classes="mt-4" />
+      </div>
+    </div>
+
+    <!-- Panel 2 -->
+    <div class="mt-5 md:mt-16 md:flex gap-x-8">
+      <Image
+        src={applesCrateImg}
+        alt="applesCrateImg"
+        class="shrink-0 w-full h-56 mx-auto md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover rounded-md"
+      />
+      <div class="mt-5 md:mt-2 text-gray-800">
+        <p>Apples used to make our vinegar include <span class="font-bold">Jonatan, Carjevič, Krivopecelj, Ovčji nos, Šampanjska reneta, Kanadka, Mošancelj, Zlata parmena, Grafenštajnc, Londonski peping, Bobovec</span> and other traditional varieties growing on our farm whose formal names we do not even know!</p>
+
+        <p>We hand-pick our apples in October and November, carefully wash them, and then grind, crush, and press them to extract the juice. We then use the pulp and residual juice to make our vinegar.</p>
+      </div>
+    </div>
+
+    <!-- Panel 3 -->
+    <div class="mt-5 md:mt-16 md:flex md:flex-row-reverse gap-x-8">
+      <Image
+        src={presaBarrelImg}
+        alt="presaBarrelImg"
+        class="shrink-0 w-full h-56 mx-auto md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover rounded-md"
+      />
+      <div class="mt-5 md:mt-2 text-gray-800">
+        <p>
+          We make our vinegar with a multi-stage fermentation process. First, an alcoholic fermentation converts the pulp and juice into apple cider. We then mix the pulp and cider with spring water from our own wells, inoculate the mixture with mother from previous batches, and carry out a longer, lower-temperature acetic fermentation that converts the alcohol in the cider to acetic acid, producing vinegar. In parallel, malolactic fermentation converts the malic acid in the apples to gentler acetic acid, mellowing the vinegar's acidity and sharpness. 
+        </p>
+
+        <p class="mt-2">
+          After gentle fermentation over the course of 3-4 weeks, we then strain the fresh liquid vinegar from the apple solids and set it aside to slowly mature over the course of the winter, during which time compounds and microorganisms in the vinegar continue to interact, developing complexity, flavor, and mellowing the fresh vinegar's sharpness. The result is a gentle vinegar with superb flavor, free of the harshness of fast-fermented industrial vinegars. 
+        </p>
+      </div>
+    </div>
+
+    <!-- Panel 4 -->
+    <div class="mt-5 md:mt-16 md:flex gap-x-8">
+      <Image
+        src={cisternsImg}
+        alt="cisternsImg"
+        class="shrink-0 w-full h-56 mx-auto md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover rounded-md"
+      />
+      <div class="mt-5 md:mt-2 text-gray-800">
+        Our vinegar is unfiltered and unpasteurized to preserve flavor, body, and the activity of beneficial microorganisms. As such, our vinegar may contain a small film of "mother of vinegar," a natural byproduct of fermentation, along with some sediment. These are harmless and full of beneficial enzymes and probiotics. If preferred, simply strain the vinegar to remove these particles before use. 
+      </div>
+    </div>
+
+    <PriceList classes="mt-10" products={products} />
+    <p class="mt-2 max-w-lg">
+      <span class="font-bold">Možnost nakupa po meri:</span> Kis vam lahko natočimo po meri. Pišite ali pokličite, da dorečemo detajle.
     </p>
-
-    <Breadcrumbs breadcrumbs={breadcrumbs} />
 
   </div>
 </PageWrapper>

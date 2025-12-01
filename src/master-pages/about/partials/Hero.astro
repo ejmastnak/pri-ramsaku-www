@@ -7,23 +7,19 @@ const locale = extractLocaleFromRoute(Astro.url.pathname);
 ---
 
 <!-- Solid black background color until image loads -->
-<div class="bg-black w-full h-full clip-wave-bottom-condensed sm:clip-wave-bottom">
-  <div class="flex flex-col bg-cover bg-center bg-[url('@/assets/img/hero-base.jpg')] sm:bg-[url('@/assets/img/hero-lg.jpg')] h-[28rem] sm:h[32-rem] lg:h-[36rem] xl:h-[40rem]">
+<div class="w-full max-w-4xl mx-auto h-full">
+  <div class="flex flex-col bg-cover bg-center bg-[url('@/assets/img/carjevic.jpg')] h-[28rem] sm:h[32-rem] lg:h-[36rem] rounded-b-lg">
 
     <!-- Outer div allows the max-w-6xl to push inner div inward on large screens without having bg-black apply across entire screen. -->
     <div class="lg:w-full max-w-6xl lg:mx-auto">
-      <div class="w-fit bg-black/50 text-white font-serif m-1 sm:m-5 px-4 sm:px-6 py-2 sm:py-3 rounded-md">
+      <div class="w-fit bg-black/80 text-white font-serif m-1 sm:m-5 px-4 sm:px-6 py-2 sm:py-3 rounded-md">
         <p class="text-xl sm:text-3xl ml-1 font-bold">Domačija</p>
         <p class="text-5xl xs:text-7xl -mt-1">Pri Ramšaku</p>
 
         <div class="mt-3">
           <p class="sm:text-lg max-w-xs md:max-w-sm text-gray-50 px-2 py-1">
-            {translations.heroText[locale]}
+            We are a small family-run farm in the foothills of the Pohorje mountains in Mislinja, Slovenia and specialize in juice and fruit products from non-commercial, heirloom-variety apples grown in traditional meadow orchards. 
           </p>
-          <I18nLink classes="mt-1 inline-block italic hover:underline" routeGroupName="about">
-            {translations.heroMore[locale]}
-            <span aria-hidden="true"> &rarr;</span>
-          </I18nLink>
         </div>
 
       </div>

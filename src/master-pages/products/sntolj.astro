@@ -1,18 +1,90 @@
 ---
+import { Image } from 'astro:assets';
 import PageWrapper from '@/shared/PageWrapper.astro'
+import Breadcrumbs from '@/components/Breadcrumbs.astro'
+import PriceList from '@/components/PriceList.astro'
+import HowToBuyButton from '@/components/HowToBuyButton.astro'
+import Bio from '@/shared/Bio.astro'
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
 import translations from '@/i18n/translations/products/sntolj.js';
+import { sntolj as products } from '@/assets/data/products.js'
+
+import sntoljImg from '@/assets/img/sntolj.jpg'
+import sentjanzevkaFlowersImg from '@/assets/img/sentjanzevka-flowers.jpg'
+import sntoljJarsImg from '@/assets/img/sntolj-jars.jpg'
 
 const locale = extractLocaleFromRoute(Astro.url.pathname);
+
+const breadcrumbs = [
+  { routeGroupName: "products", title: "Products", },
+  { routeGroupName: "sntolj", title: "St. John's Wort Oil", },
+]
+
 ---
 
 <PageWrapper>
-  <div class="max-w-4xl mx-auto text-center">
-    <h1 class="text-4xl text-center">St. John's Wort Oil</h1>
+  <div class="max-w-4xl mx-auto">
 
-    <p class="mt-2 mx-auto text-center max-w-sm text-sm text-gray-600 italic">
-      Some descriptions of our St. John's Wort oil.
+    <div class="w-full flex items-start pr-2">
+      <h1 class="text-4xl">St. John's Wort Oil</h1>
+      <HowToBuyButton classes="hidden sm:inline-flex" />  
+    </div>
+    <Breadcrumbs classes="mt-1" breadcrumbs={breadcrumbs} />
+
+
+    <!-- Panel 1 -->
+    <div class="mt-10 md:flex md:flex-row-reverse gap-x-8">
+      <Image
+        src={sntoljImg}
+        alt="sntoljImg"
+        class="shrink-0 w-full h-56 mx-auto md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover rounded-md"
+      />
+      <div class="mt-5 md:mt-2 text-gray-800">
+        <p>
+          Saint John's Wort oil is an herbal product made by infusing the flowers of the Saint John's Wort plant in a carrier oil. It is traditionally used in Slovenia to soothe and heal damaged skin after minor burns and scrapes, to soothe aching joints, to relieve nerve pain, and as a luxurious massage oil. 
+        </p>
+        <Bio classes="mt-4" />
+      </div>
+    </div>
+
+    <!-- Panel 2 -->
+    <div class="mt-5 md:mt-16 md:flex gap-x-8">
+      <Image
+        src={sentjanzevkaFlowersImg}
+        alt="sentjanzevkaFlowersImg"
+        class="shrink-0 w-full h-56 mx-auto md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover rounded-md"
+      />
+      <div class="mt-5 md:mt-2 text-gray-800">
+        <p>We make our oil from St. John's Wort flowers hand-picked from meadows on our mountain pastures. The flowers are steeped in organic extra-virgin olive oil and left to macerate over a period of 4-6 weeks, during which time the active compounds in the St. John's Wort flowers infuse into the carrier oil, and the hypericin in the flowers leaves the oil with a distinctive, deep crimson color.</p>
+        <p class="mt-2">We then strain the oil to remove the plant solids, leaving behind pure St. John's Wort oil, rich with therapeutic compounds and ready for use.</p>
+      </div>
+    </div>
+
+    <div class="mt-5 md:mt-16 md:flex md:flex-row-reverse gap-x-8">
+      <Image
+        src={sntoljJarsImg}
+        alt="sntoljJarsImg"
+        class="shrink-0 w-full h-56 mx-auto md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover rounded-md"
+      />
+      <div class="mt-5 md:mt-2 text-gray-800">
+        <p>St. John's Wort oil has been used for centuries in traditional herbal medicine throughout Central Europe. When massaged into the skin surface, its purported—and in many cases scientifically-backed—benefits include:</p>
+        <ul class="my-5 ml-5 list-disc">
+          <li>Relief of nerve pain</li>
+          <li>Relief of aching joints</li>
+          <li>Healing of burns, scrapes, and bruises</li>
+          <li>Improved circulation at the skin surface</li>
+        </ul>
+        <p>
+          Regardless of any medicinal properties, St. John's Wort oil is a luxurious and soothing massage oil that all can enjoy.
+        </p>
+      </div>
+    </div>
+
+    <p class="mt-5 md:mt-10 max-w-lg">
+      <span class="font-bold">Contraindications:</span> the hypericin in St. John's Wort can cause photosensitivity—increased sensitivity of the skin to sun exposure. After application of St. John's Wort oil, it is prudent to wait 12-24 hours after application before intense sun exposure.
     </p>
+
+    <PriceList classes="mt-10" products={products} />
 
   </div>
 </PageWrapper>

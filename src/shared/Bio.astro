@@ -3,10 +3,15 @@ import I18nLink from '@/components/I18nLink.astro'
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
 import translations from '@/i18n/translations/shared/bio.js';
 
+interface Props {
+  classes?: string
+}
+const { classes } = Astro.props as Props;
+
 const locale = extractLocaleFromRoute(Astro.url.pathname);
 ---
 
-<div class="p-2 px-3 text-base border border-green-700 bg-green-50 rounded-md">
+<div class={`p-2 px-3 border border-green-700 bg-green-50 rounded-md ${classes ?? ""}`}>
 
   <p class="font-bold text-green-800">{translations.heading[locale]}</p>
   <p>{translations.text[locale]}</p>
