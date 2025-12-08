@@ -1,8 +1,7 @@
 ---
 import I18nLink from '@/components/I18nLink.astro'
 import { extractLocaleFromRoute  } from '@/lib/routes.js';
-import translations from '@/i18n/translations/index.js';
-
+import translations from '@/i18n/translations/home/hero.js';
 const locale = extractLocaleFromRoute(Astro.url.pathname);
 ---
 
@@ -18,10 +17,10 @@ const locale = extractLocaleFromRoute(Astro.url.pathname);
 
         <div class="mt-3">
           <p class="sm:text-lg max-w-xs md:max-w-sm text-gray-50 px-2 py-1">
-            {translations.heroText[locale]}
+            {translations.text[locale]}
           </p>
           <I18nLink classes="mt-1 inline-block italic hover:underline" routeGroupName="about">
-            {translations.heroMore[locale]}
+            {translations.more[locale]}
             <span aria-hidden="true"> &rarr;</span>
           </I18nLink>
         </div>

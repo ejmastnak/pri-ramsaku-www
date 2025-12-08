@@ -3,7 +3,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import Home from '@/master-pages/home/index.astro';
 import AmbiguousRouteBoilerplate from '@/components/AmbiguousRouteBoilerplate.astro'
 import { DEFAULT_LOCALE, } from "@/i18n/config"
-import translations from '@/i18n/translations/index.js';
+import translations from '@/i18n/translations/home/index.js';
 ---
 
 <BaseLayout locale={DEFAULT_LOCALE} head={translations.head} ambiguousLocale={true} >
