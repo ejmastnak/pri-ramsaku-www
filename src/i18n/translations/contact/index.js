@@ -30,7 +30,7 @@ export default {
     sl: "Po e-pošti na naslovu",
   },
   p2: {
-    en: ``,
+    en: `We enjoy interacting directly with our customers, and will happily answer questions, advise during ordering, arrange delivery, etc.`,
     sl: `Veseli smo osebnega kontakta.
 Z veseljem odgovorimo na morebitna vprašanja, svetujemo pri naročilih, uskladimo dostavo, itn.
 `,

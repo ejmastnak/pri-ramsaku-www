@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets';
+import I18nLink from '@/components/I18nLink.astro'
 import PageWrapper from '@/shared/PageWrapper.astro'
 import Breadcrumbs from '@/components/Breadcrumbs.astro'
 import PriceList from '@/components/PriceList.astro'
@@ -28,7 +29,7 @@ const breadcrumbs = [
   <div class="max-w-4xl mx-auto">
 
     <div class="w-full flex items-start pr-2">
-      <h1 class="text-4xl">Apple Cider Vinegar</h1>
+      <h1 class="text-4xl">{translations.h1[locale]}</h1>
       <HowToBuyButton classes="hidden sm:inline-flex" />  
     </div>
     <Breadcrumbs classes="mt-1" breadcrumbs={breadcrumbs} />
@@ -41,12 +42,12 @@ const breadcrumbs = [
         class="shrink-0 w-full mx-auto max-w-sm md:max-w-80 lg:max-w-96 max-h-72 object-cover rounded-md"
       />
       <div class="mt-5 md:mt-2 text-gray-800">
-        <p>
-          Our production of apple cider vinegar goes hand in hand with the pressing of apple juice each fall—we make our vinegar from the pulp and residual juice left over from the pressing process. Our vinegar is special in that we use apple pulp as a primary raw ingredient (most vinegars use pure juice). Together with the heirloom varieties' vibrant flavor and a slow fermentation all winter long, this gives our vinegar a smoothness, gentleness, and complexity not found in conventional vinegar made only from fermented apple juice. 
-        </p>
-        <Bio classes="mt-4" />
+        <p>{translations.p1[locale]}</p>
+        <p class="mt-2">{translations.p2[locale]}</p>
       </div>
     </div>
+
+    <Bio classes="mt-5 md:mt-16 max-w-xl" />
 
     <!-- Panel 2 -->
     <div class="mt-5 md:mt-16 md:flex gap-x-8">
@@ -56,9 +57,8 @@ const breadcrumbs = [
         class="shrink-0 w-full mx-auto max-w-sm md:max-w-80 lg:max-w-96 max-h-72 object-cover rounded-md"
       />
       <div class="mt-5 md:mt-2 text-gray-800">
-        <p>Apples used to make our vinegar include <span class="font-bold">Jonatan, Carjevič, Krivopecelj, Ovčji nos, Šampanjska reneta, Kanadka, Mošancelj, Zlata parmena, Grafenštajnc, Londonski peping, Bobovec</span> and other traditional varieties growing on our farm whose formal names we do not even know!</p>
-
-        <p>We hand-pick our apples in October and November, carefully wash them, and then grind, crush, and press them to extract the juice. We then use the pulp and residual juice to make our vinegar.</p>
+        <p set:html={translations.p2html[locale]}></p>
+        <p class="mt-2">{translations.p3[locale]}</p>
       </div>
     </div>
 
@@ -70,15 +70,11 @@ const breadcrumbs = [
         class="shrink-0 w-full h-56 mx-auto md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover rounded-md"
       />
       <div class="mt-5 md:mt-2 text-gray-800">
-        <p>
-          We make our vinegar with a multi-stage fermentation process. First, an alcoholic fermentation converts the pulp and juice into apple cider. We then mix the pulp and cider with spring water from our own wells, inoculate the mixture with mother from previous batches, and carry out a longer, lower-temperature acetic fermentation that converts the alcohol in the cider to acetic acid, producing vinegar. In parallel, malolactic fermentation converts the malic acid in the apples to gentler acetic acid, mellowing the vinegar's acidity and sharpness. 
-        </p>
+        <p>{translations.p4[locale]}</p>
       </div>
     </div>
 
-    <p class="my-5 md:my-10 max-w-xl">
-      After gentle fermentation over the course of 3-4 weeks, we then strain the fresh liquid vinegar from the apple solids and set it aside to slowly mature over the course of the winter, during which time compounds and microorganisms in the vinegar continue to interact, developing complexity, flavor, and mellowing the fresh vinegar's sharpness. The result is a gentle vinegar with superb flavor, free of the harshness of fast-fermented industrial vinegars. 
-    </p>
+    <p class="my-5 md:my-10 max-w-xl">{translations.p5[locale]}</p>
 
     <!-- Panel 4 -->
     <div class="mt-5 md:mt-16 md:flex gap-x-8">
@@ -87,15 +83,15 @@ const breadcrumbs = [
         alt="cisternsImg"
         class="shrink-0 w-full mx-auto max-w-sm md:max-w-80 lg:max-w-96 max-h-72 object-cover rounded-md"
       />
-      <div class="mt-5 md:mt-2 text-gray-800">
-        Our vinegar is unfiltered and unpasteurized to preserve flavor, body, and the activity of beneficial microorganisms. As such, our vinegar may contain a small film of "mother of vinegar," a natural byproduct of fermentation, along with some sediment. These are harmless and full of beneficial enzymes and probiotics. If preferred, simply strain the vinegar to remove these particles before use. 
-      </div>
+      <div class="mt-5 md:mt-2 text-gray-800">{translations.p6[locale]}</div>
     </div>
 
     <PriceList classes="mt-10" products={products} />
     <p class="mt-2 max-w-lg">
-      <span class="font-bold">Možnost nakupa po meri:</span> Kis vam lahko natočimo po meri. Pišite ali pokličite, da dorečemo detajle.
+      <span set:html={translations.buyToOrderHtml[locale]}/>
+      <I18nLink routeGroupName="contact" classes="text-blue-500 hover:text-blue-600 hover:underline">{translations.contact[locale]}</I18nLink>
     </p>
+    
 
   </div>
 </PageWrapper>

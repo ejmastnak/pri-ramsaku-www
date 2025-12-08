@@ -18,19 +18,10 @@ const locale = extractLocaleFromRoute(Astro.url.pathname);
 
   <!-- -mr moves image rightward -->
   <div class="mt-10 lg:flex space-x-16 lg:-mr-12">
-    <div class="max-w-sm">
-
-      <!-- Contact us directly to order -->
-      <div>
-        <p class="font-bold">{translations.orderByContact[locale]}</p>
-        <p class="mt-1">
-          {translations.phone1[locale]} <a class="inline font-bold text-gray-800 hover:text-blue-600" href="tel:+38631230167">+386 31 230 167</a> {translations.phone2[locale]} {translations.email[locale]}<a class="inline font-bold text-gray-800 hover:text-blue-600" href="mailto:info@gaia.si">info@gaia.si</a>.
-          {translations.details[locale]}
-        </p>
-      </div>
+    <div class="max-w-sm flex flex-col gap-y-5">
 
       <!-- E-shop -->
-      <div class="mt-5">
+      <div>
         <p class="font-bold">{translations.orderByWebshop[locale]}</p>
         <p>{translations.webshop[locale]}</p>
         <div class="mt-3">
@@ -39,6 +30,15 @@ const locale = extractLocaleFromRoute(Astro.url.pathname);
             <ArrowTopRightOnSquare class="size-5 text-white shrink-0" />
           </PrimaryLink>
         </div>
+      </div>
+
+      <!-- Contact us directly to order -->
+      <div>
+        <p class="font-bold">{translations.orderByContact[locale]}</p>
+        <p class="mt-1">
+          {translations.phone1[locale]} <a class="inline font-bold text-gray-800 hover:text-blue-600" href="tel:+38631230167">+386 31 230 167</a> {translations.phone2[locale]} {translations.email[locale]} <a class="inline font-bold text-gray-800 hover:text-blue-600" href="mailto:info@gaia.si">info@gaia.si</a>.
+          {translations.details[locale]}
+        </p>
       </div>
 
     </div>

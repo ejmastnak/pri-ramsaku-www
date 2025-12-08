@@ -25,7 +25,7 @@ const breadcrumbs = [
   <div class="max-w-4xl mx-auto">
 
     <div class="w-full flex items-start pr-2">
-      <h1 class="text-4xl">Apple Juice</h1>
+      <h1 class="text-4xl">{translations.h1[locale]}</h1>
       <HowToBuyButton classes="hidden sm:inline-flex" />  
     </div>
     <Breadcrumbs classes="mt-1" breadcrumbs={breadcrumbs} />
@@ -39,9 +39,7 @@ const breadcrumbs = [
         class="shrink-0 w-full mx-auto max-w-sm md:max-w-80 lg:max-w-96 max-h-72 object-cover rounded-md"
       />
       <div class="mt-5 md:mt-2 text-gray-800">
-        <p>
-          We press our apple juice in small batches each fall from a diverse selection of heirloom varieties grown in our tall-trunk meadow orchards. The juice is minimally processed to preserve its flavor and nutritional content, which, together with the richness and character of the heirloom apples, gives our juice a depth of flavor and body not found in commercial products.
-        </p>
+        <p>{translations.p1[locale]}</p>
       </div>
     </div>
 
@@ -55,13 +53,12 @@ const breadcrumbs = [
         class="shrink-0 w-full mx-auto max-w-sm md:max-w-80 lg:max-w-96 max-h-72 object-cover rounded-md"
       />
       <div class="mt-5 md:mt-2 text-gray-800">
-        <p>Apples used to make our juice include <span class="font-bold">Jonatan, Carjevič, Krivopecelj, Ovčji nos, Šampanjska reneta, Kanadka, Mošancelj, Zlata parmena, Grafenštajnc, Londonski peping, Bobovec</span> and other traditional varieties growing on our farm whose formal names we do not even know!</p>
+        <p set:html={translations.p2html[locale]}></p>
       </div>
     </div>
 
     <div class="my-5 md:my-10 max-w-xl">
-        We hand-pick our apples in October and November, carefully wash them, then grind, crush, and press them to extract the juice, working in small batches using traditional wood-barrel presses.
-        Next, the pressed juice is aged overnight at low temperature to mellow and develop flavor, then low-temperature pasteurized in a coil-and-tube heat exchanger and immediately bottled and hermetically sealed, ready for consumption.
+      {translations.p3[locale]}
     </div>
 
     <PriceList products={products} />

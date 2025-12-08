@@ -3,4 +3,8 @@ export default {
     en: "Buy",
     sl: "Nakup",
   },
+  howToBuyButtonSm: {
+    en: "our products",
+    sl: "izdelkov",
+  },
 }

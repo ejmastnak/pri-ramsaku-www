@@ -16,24 +16,20 @@ const locale = extractLocaleFromRoute(Astro.url.pathname);
 
 <PageWrapper>
   <div class="max-w-4xl mx-auto text-center">
-    <h1 class="text-4xl text-center">Heirloom varieties</h1>
+    <h1 class="text-4xl text-center">{translations.h1[locale]}</h1>
 
-    <p class="mt-2 mx-auto text-center max-w-sm text-sm text-gray-600 italic">
-      We are proud to grow a number of interesting heirloom varieties of apples, pears, and other fruit not typically found in stores or commercial orchards. Below are galleries, with images and descriptions, of some of the apple and pear varieties on our farm that we have positively identified. 
-    </p>
+    <p class="mt-2 mx-auto text-center max-w-sm text-sm text-gray-600 italic">{translations.p1[locale]}</p>
 
     <BentoWrapper classes="my-10 gap-x-8 gap-y-12 grid-cols-1 lg:grid-cols-2">
       <I18nLink routeGroupName="appleVarieties">
-        <BentoCard classes="hover:shadow-md hover:outline hover:outline-1 hover:outline-gray-200" title="Apples" img={boskopFruitImage} imgAlt="Foo image">
-          <p>Bohnapfel (Bobovec), Carjevič, London Pippin (Londonski peping), Štajerski mošancelj, Šentjakobka, and many more...</p>
-          <!-- <I18nLinkButton routeGroupName="appleVarieties">View our apple varieties</I18nLinkButton> -->
+        <BentoCard classes="hover:shadow-md hover:outline hover:outline-1 hover:outline-gray-200" title={translations.applesH2[locale]} img={boskopFruitImage} imgAlt="Foo image">
+          {translations.applesP1[locale]}
         </BentoCard>
       </I18nLink>
 
       <I18nLink routeGroupName="pearVarieties">
-        <BentoCard classes="hover:shadow-md hover:outline hover:outline-1 hover:outline-gray-200" title="Pears" img={hardijevaFruitImage} imgAlt="Foo image">
-          Beurre Hardy (Hardijeva), Clapp’s Favourite (Klapova), Poire de Curé (Pastorjevka), Bella di Giugno (Junijska lepotica), and more...
-          <!-- <I18nLinkButton routeGroupName="pearVarieties">View our pear varieties</I18nLinkButton> -->
+        <BentoCard classes="hover:shadow-md hover:outline hover:outline-1 hover:outline-gray-200" title={translations.pearsH2[locale]} img={hardijevaFruitImage} imgAlt="Foo image">
+          {translations.pearsP1[locale]}
         </BentoCard>
       </I18nLink>
     </BentoWrapper>

@@ -14,12 +14,12 @@ export default {
     sl: "Nakup izdelkov",
   },
   orderByContact: {
-    en: "Option 1: Contact us by phone or email",
-    sl: "1. opcija: Naročilo po telefonu ali e-pošti",
+    en: "Option 2: Contact us by phone or email",
+    sl: "2. opcija: Naročilo po telefonu ali e-pošti",
   },
   phone1: {
     en: "Contact us directly by phone at",
-    sl: "Kontaktirate nas lahko na telefonski številki",
+    sl: "Če vam bolj odgovarja lahko naročite izdelke neposredno na telefonski številki",
   },
   phone2: {
     en: "(call or SMS, whichever you prefer) ",
@@ -27,19 +27,19 @@ export default {
   },
   email: {
     en: "or by email at",
-    sl: "ali po e-pošti na naslovu.",
+    sl: "ali po e-pošti na naslovu",
   },
   details: {
     en: "We'll respond to confirm your order and arrange delivery.",
     sl: "Skupaj se dogovorimo za praktične detalje naročila.",
   },
   orderByWebshop: {
-    en: "Option 2: Use our online shop",
-    sl: "2. opcija: Naročilo v spletni trgovini",
+    en: "Option 1: Use our online shop",
+    sl: "1. opcija: Naročilo v spletni trgovini",
   },
   webshop: {
-    en: "If you prefer, you can also order products using our online shop:",
-    sl: "Če vam bolj odgovarja, lahko izdelke naročite v naši spletni trgovini:",
+    en: "You can order products directly from our online shop:",
+    sl: "Izdelke lahko naročite v naši spletni trgovini:",
   },
   webshopLink: {
     en: "Our online shop",
