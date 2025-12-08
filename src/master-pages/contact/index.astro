@@ -2,49 +2,38 @@
 import { Image } from 'astro:assets';
 import PageWrapper from '@/shared/PageWrapper.astro'
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
-import translations from '@/i18n/translations/index/contact.js';
+import translations from '@/i18n/translations/contact/index.js';
 import appleBlossomsImg from '@/assets/img/slive-blossoms.jpg'
 
 const locale = extractLocaleFromRoute(Astro.url.pathname);
 ---
 
 <PageWrapper>
-  <h1 class="text-5xl">Contact</h1>
+  <h1 class="text-5xl">{translations.h1[locale]}</h1>
 
-  <p class="mt-8">
-    You can contact us by:
-  </p>
+  <div class="mt-8 flex flex-col lg:flex-row gap-y-10 gap-x-12 lg:-mr-12">
+    <div class="max-w-md">
 
-  <div class="mt-5 flex flex-col lg:flex-row gap-y-10 gap-x-16 lg:-mr-12">
-    <div class="max-w-sm">
+      <p>{translations.p1[locale]}</p>
+
+
       <ul class="mt-3 flex flex-col gap-y-2 ml-5 list-disc">
         <li>
-          Phone or WhatsApp at <a class="inline font-bold text-gray-800 hover:text-blue-600" href="tel:+38631230167">+386 31 230 167</a>
-          <br>(call or SMS, whichever you prefer)
+          {translations.phone1[locale]} <a class="inline font-bold text-gray-800 hover:text-blue-600" href="tel:+38631230167">+386 31 230 167</a>
+          <br>{translations.phone2[locale]}
         </li>
         <li>
-          Email at <a class="inline font-bold text-gray-800 hover:text-blue-600" href="mailto:info@gaia.si">info@gaia.si</a>
+          {translations.email[locale]} <a class="inline font-bold text-gray-800 hover:text-blue-600" href="mailto:info@gaia.si">info@gaia.si</a>
         </li>
       </ul>
 
-      <p class="mt-5">
-        Smo majhna kmetija in smo veseli osebnega kontakta.
-        Z veseljem sodelujemo pri naročilih, uskladimo dostavo čim se le da in odgovorimo na morebitna vprašanje.
-      </p>
+      <p class="mt-5">{translations.p2[locale]}</p>
 
     </div>
 
-    <div class="h-80 rounded">
-      <Image src={appleBlossomsImg} alt="Apple blossoms" class="rounded h-full w-full max-w-xl mx-auto  object-cover" width={600} />
-    </div>
+    <Image src={appleBlossomsImg} alt="Apple blossoms" class="rounded w-full max-w-lg mx-auto object-cover" width={600} />
 
   </div>
 
-  <!-- <p class="max-w-2xl"> -->
-  <!--     Contact us to order products, arrange delivery, visit our farm, or ask questions. -->
-  <!--   </p> -->
-
 
 </PageWrapper>
-
-
