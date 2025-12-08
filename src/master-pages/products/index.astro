@@ -27,25 +27,25 @@ const locale = extractLocaleFromRoute(Astro.url.pathname);
     <BentoWrapper classes="my-10 gap-x-8 gap-y-12 grid-cols-1 lg:grid-cols-2">
 
       <I18nLink routeGroupName="jabsok">
-        <BentoCard title="Jabolčni sok" imgSrc={jabsokImg.src} imgAlt="Foo image">
+        <BentoCard title="Jabolčni sok" img={jabsokImg} imgAlt="Foo image">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla efficitur, maximus egestas sem pellentesque.
         </BentoCard>
       </I18nLink>
 
       <I18nLink routeGroupName="jabkis">
-        <BentoCard title="Jabolčni tropinski kis" imgSrc={jabkisImg.src} imgAlt="Foo image">
+        <BentoCard title="Jabolčni tropinski kis" img={jabkisImg} imgAlt="Foo image">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla efficitur, maximus egestas sem pellentesque.
         </BentoCard>
       </I18nLink>
 
       <I18nLink routeGroupName="sntolj">
-        <BentoCard title="Šentjanževo olje" imgSrc={sntoljImg.src} imgAlt="Foo image">
+        <BentoCard title="Šentjanževo olje" img={sntoljImg} imgAlt="Foo image">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla efficitur, maximus egestas sem pellentesque.
         </BentoCard>
       </I18nLink>
 
       <I18nLink routeGroupName="otherProducts">
-        <BentoCard title="Drugi izdelki po dogovoru" imgSrc={applesCrateImg.src} imgAlt="Foo image">
+        <BentoCard title="Drugi izdelki po dogovoru" img={applesCrateImg} imgAlt="Foo image">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla efficitur, maximus egestas sem pellentesque.
         </BentoCard>
       </I18nLink>
