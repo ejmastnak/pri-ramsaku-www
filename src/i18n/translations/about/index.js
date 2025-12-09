@@ -2,16 +2,16 @@ export default {
   head: {
     title: {
       en: "About",
-      sl: "O nas",
+      sl: "O kmetiji",
     },
     description: {
       en: "About",
-      sl: "O nas",
+      sl: "O kmetiji",
     },
   },
   h1: {
     en: "About",
-    sl: "O nas",
+    sl: "O kmetiji",
   },
   p1: {
     en: "We are a small family-run farm in the foothills of the Pohorje mountains in Mislinja, Slovenia and specialize in juice and fruit products from non-commercial, heirloom-variety apples grown in traditional meadow orchards.",

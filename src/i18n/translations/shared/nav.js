@@ -5,7 +5,7 @@ export default {
   },
   about: {
     en: "About us",
-    sl: "O nas",
+    sl: "O kmetiji",
   },
   products: {
     en: "Products",
