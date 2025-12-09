@@ -37,4 +37,16 @@ export default {
     en: "Links",
     sl: "Povezave",
   },
+  varietiesLink: {
+    en: "Gallery of heirloom varieites on our farm",
+    sl: "Slike in opisi starih sort jabolk and hrušk na kmetiji",
+  },
+  meadowOrchardLink: {
+    en: "What is a tall-trunk meadow-orchard?",
+    sl: "Kaj je to, visokodebelni travniški sadovnjak?",
+  },
+  aboutLink: {
+    en: "About our farm: history and current operations",
+    sl: "O kmetiji: zgodovina in trenutna usmeritev",
+  },
 }
