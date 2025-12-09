@@ -11,6 +11,10 @@ export default {
     en: "Products",
     sl: "Izdelki",
   },
+  howToBuy: {
+    en: "How to buy",
+    sl: "Nakup izdelkov",
+  },
   contact: {
     en: "Contact",
     sl: "Kontakt",
