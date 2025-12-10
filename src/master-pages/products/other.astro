@@ -7,6 +7,7 @@ import I18nLink from '@/components/I18nLink.astro'
 import Bio from '@/shared/Bio.astro'
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
 import translations from '@/i18n/translations/products/other.js';
+import productsTranslations from '@/i18n/translations/products/index.js';
 import imgAltTranslations from '@/i18n/translations/shared/imgAlts.js';
 
 import winterDomacijaImg from '@/assets/img/winter-domacija.jpg';
@@ -16,8 +17,8 @@ import applesCrateImg from '@/assets/img/apples-crate.jpg';
 const locale = extractLocaleFromRoute(Astro.url.pathname);
 
 const breadcrumbs = [
-  { routeGroupName: "products", title: "Products", },
-  { routeGroupName: "otherProducts", title: "Other products", },
+  { routeGroupName: "products", title: productsTranslations.h1[locale], },
+  { routeGroupName: "otherProducts", title: translations.h1[locale], },
 ]
 
 ---

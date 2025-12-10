@@ -7,6 +7,7 @@ import HowToBuyButton from '@/components/HowToBuyButton.astro'
 import Bio from '@/shared/Bio.astro'
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
 import translations from '@/i18n/translations/products/sntolj.js';
+import productsTranslations from '@/i18n/translations/products/index.js';
 import imgAltTranslations from '@/i18n/translations/shared/imgAlts.js';
 import { sntolj as products } from '@/assets/data/products.js'
 
@@ -17,8 +18,8 @@ import sntoljJarsImg from '@/assets/img/sntolj-jars.jpg'
 const locale = extractLocaleFromRoute(Astro.url.pathname);
 
 const breadcrumbs = [
-  { routeGroupName: "products", title: "Products", },
-  { routeGroupName: "sntolj", title: "St. John's Wort Oil", },
+  { routeGroupName: "products", title: productsTranslations.h1[locale], },
+  { routeGroupName: "sntolj", title: translations.h1[locale], },
 ]
 
 ---
