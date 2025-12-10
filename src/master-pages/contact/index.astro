@@ -3,7 +3,8 @@ import { Image } from 'astro:assets';
 import PageWrapper from '@/shared/PageWrapper.astro'
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
 import translations from '@/i18n/translations/contact/index.js';
-import appleBlossomsImg from '@/assets/img/slive-blossoms.jpg'
+import imgAltTranslations from '@/i18n/translations/shared/imgAlts.js';
+import sliveBlossomsImg from '@/assets/img/slive-blossoms.jpg'
 
 const locale = extractLocaleFromRoute(Astro.url.pathname);
 ---
@@ -31,7 +32,7 @@ const locale = extractLocaleFromRoute(Astro.url.pathname);
 
     </div>
 
-    <Image src={appleBlossomsImg} alt="Apple blossoms" class="rounded w-full max-w-lg mx-auto object-cover" width={600} />
+    <Image src={sliveBlossomsImg} alt={imgAltTranslations.sliveBlossomsImg[locale]} class="rounded w-full max-w-lg mx-auto object-cover" width={600} />
 
   </div>
 

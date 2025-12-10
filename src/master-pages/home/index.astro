@@ -6,7 +6,7 @@ import I18nLinkButton from '@/components/I18nLinkButton.astro'
 import Wrapper from '@/shared/Wrapper.astro'
 import { extractLocaleFromRoute  } from '@/lib/routes.js';
 import translations from '@/i18n/translations/home/index.js';
-
+import imgAltTranslations from '@/i18n/translations/shared/imgAlts.js';
 const locale = extractLocaleFromRoute(Astro.url.pathname);
 
 import winterDomacijaImg from '@/assets/img/winter-domacija.jpg';
@@ -30,13 +30,13 @@ import jabkisImg from '@/assets/img/jabkis.jpg';
 
       <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
         <div class="hidden lg:block h-48 sm:h-52 md:h-56 rounded">
-          <Image class="rounded h-full w-full object-cover" src={winterDomacijaImg} alt="Foo" height={400} />
+          <Image class="rounded h-full w-full object-cover" src={winterDomacijaImg} alt={imgAltTranslations.winterDomacijaImg[locale]} height={400} />
         </div>
         <div class="h-48 sm:h-52 md:h-56 rounded">
-          <Image class="rounded h-full w-full object-cover" src={krivopeceljTreeImg} alt="Foo" height={400} />
+          <Image class="rounded h-full w-full object-cover" src={krivopeceljTreeImg} alt={imgAltTranslations.krivopeceljTreeImg[locale]} height={400} />
         </div>
         <div class="hidden sm:block h-48 sm:h-52 md:h-56 rounded">
-          <Image class="rounded h-full w-full object-cover" src={applesCrateImg} alt="Foo" height={400} />
+          <Image class="rounded h-full w-full object-cover" src={applesCrateImg} alt={imgAltTranslations.applesCrateImg[locale]} height={400} />
         </div>
       </div>
 
@@ -56,10 +56,10 @@ import jabkisImg from '@/assets/img/jabkis.jpg';
 
       <div class="mt-2 grid sm:grid-cols-2 gap-8 place-items-center">
         <div class="h-48 sm:h-60 rounded">
-          <Image class="rounded h-full w-full object-cover" src={jabsokImg} alt="Foo" height={400} />
+          <Image class="rounded h-full w-full object-cover" src={jabsokImg} alt={imgAltTranslations.jabsokImg[locale]} height={400} />
         </div>
         <div class="hidden sm:block h-48 sm:h-60 rounded">
-          <Image class="rounded h-full w-full object-cover" src={jabkisImg} alt="Foo" height={400} />
+          <Image class="rounded h-full w-full object-cover" src={jabkisImg} alt={imgAltTranslations.jabkisImg[locale]} height={400} />
         </div>
       </div>
     </div>

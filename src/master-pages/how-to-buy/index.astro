@@ -6,6 +6,7 @@ import { extractLocaleFromRoute, } from '@/lib/routes.js';
 import I18nLink from '@/components/I18nLink.astro'
 import PrimaryLink from '@/components/PrimaryLink.astro'
 import translations from '@/i18n/translations/how-to-buy/index.js';
+import imgAltTranslations from '@/i18n/translations/shared/imgAlts.js';
 
 import orehTreeImg from '@/assets/img/oreh-tree.jpg'
 
@@ -45,7 +46,7 @@ const locale = extractLocaleFromRoute(Astro.url.pathname);
 
     <Image
       src={orehTreeImg}
-      alt="orehTreeImg"
+      alt={imgAltTranslations.orehTreeImg[locale]}
       class="hidden lg:block mx-auto !w-96 h-80 object-cover rounded-md"
     />
 

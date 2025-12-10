@@ -4,12 +4,13 @@ import PageWrapper from '@/shared/PageWrapper.astro'
 import SimpleImagePanel from '@/components/SimpleImagePanel.astro'
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
 import translations from '@/i18n/translations/meadow-orchard/index.js';
+import imgAltTranslations from '@/i18n/translations/shared/imgAlts.js';
 
 const locale = extractLocaleFromRoute(Astro.url.pathname);
 
 import jablaneImg from '@/assets/img/jablane.jpg'
 import dandelionsImg from '@/assets/img/dandelions.jpg'
-import sliveFlowersImg from '@/assets/img/slive-flowers.jpg'
+import sliveBlossomsImg from '@/assets/img/slive-flowers.jpg'
 
 ---
 
@@ -28,7 +29,7 @@ import sliveFlowersImg from '@/assets/img/slive-flowers.jpg'
     <div class="md:flex gap-x-8 mt-5 md:mt-16">
       <Image
         src={dandelionsImg}
-        alt={translations.dandelionsImgAlt[locale]}
+        alt={imgAltTranslations.dandelionsImg[locale]}
         class="shrink-0 w-full max-w-md h-56 mx-auto md:w-80 md:h-80 object-cover rounded-md"
       />
       <div class="mt-5 md:mt-2 text-gray-800">
@@ -44,7 +45,7 @@ import sliveFlowersImg from '@/assets/img/slive-flowers.jpg'
     <div class="md:flex md:flex-row-reverse gap-x-8 mt-5 md:mt-16">
       <Image
         src={jablaneImg}
-        alt={translations.appleBlossomsImgAlt[locale]}
+        alt={imgAltTranslations.jablaneImg[locale]}
         class="shrink-0 w-full max-w-md h-56 mx-auto md:w-80 md:h-80 object-cover rounded-md"
       />
       <div class="mt-5 md:mt-2 text-gray-800">
@@ -96,8 +97,8 @@ import sliveFlowersImg from '@/assets/img/slive-flowers.jpg'
     </ul>
 
     <Image
-      src={sliveFlowersImg}
-      alt={translations.sliveFlowersImgAlt[locale]}
+      src={sliveBlossomsImg}
+      alt={imgAltTranslations.sliveBlossomsImg[locale]}
       class="mt-10 w-full sm:w-5/6 mx-auto rounded-md"
     />
 

@@ -1,74 +1,74 @@
 export default {
-  sntoljJars: {
-    en: "Image showing 5-liter jars of St. John's Wort oil.",
-    sl: "Slika, ki kaže kozarce pripravljenega šentjanževega olja.",
+  orehTreeImg: {
+    en: "A large walnut tree standing in a green meadow, with a blue sky and white clouds in the background.",
+    sl: "Pogled na mogočen oreh na zelenem travniku, z modrim nebom v ozadju.",
   },
-  travnikiFall: {
-    en: "Image showing the view of farm in fall from the neighoring hill.",
-    sl: "Slika, ki kaže pogled na kmetijo jeseni s sosdenjega hriba.",
+  sliveBlossomsImg: {
+    en: "Plum trees in bloom in early spring.",
+    sl: "Laški češpelj v zgodnjem spomladanskem cvetu.",
   },
-  fallLeaves: {
-    en: "Image showing leaves in autumn colors.",
-    sl: "Slika, ki kaže travnike in gozd v jesenskih barvah.",
+  applesCrateImg: {
+    en: "A traditional wooden crate holding apples of different sizes, varieties, and colors.",
+    sl: "Lesena gajbica polna jabolk različnih sort, barv in velikosti.",
   },
-  appleBlossoms: {
-    en: "Image showing apple trees in blossom in spring.",
-    sl: "Slika, ki kaže jablano v polnem cvetu pomladi.",
+  krivopeceljTreeImg: {
+    en: "An apple tree coming into bloom in spring, with the surrounding meadows visible below",
+    sl: "Jablana sorte Krivopecelj v zgodnjem spomladanskem cvetu, s travniki v ozadju",
   },
-  pearBlossoms: {
-    en: "Image showing pear trees in blossom in spring.",
-    sl: "Slika, ki kaže hruško v polnem cvetu pomladi.",
+  winterDomacijaImg: {
+    en: "A view of the farmhouse in winter from an overlooking hill, showing the countryside covered in snow.",
+    sl: "Domačija pozimi, s sadovnjakom in smrekovem gozdom pokritim s snegom v ozadju.",
   },
-  applesCrate: {
-    en: "Image showing a wooden crate holding apples of different sizes, varieties, and colors.",
-    sl: "Slika, ki kaže leseno gajbico polno jabolk različnik sort, barv in velikosti.",
+  carjevicImg: {
+    en: "Apple trees in full bloom on a hill overlooking the farmhouse",
+    sl: "Jablana sorte Carjevič v polnem spomladanskem cvetu",
   },
-  jabsokProp: {
-    en: "Image showing labeled bottles of apple juice with apples in the background.",
-    sl: "Slika, ki kaže steklenice jabolčnega soka z jabolkami v ozadju.",
+  kanadkaFruitImg: {
+    en: "In-focus picture of apples of the variety Kanadka",
+    sl: "Slika jabolk sorte Kanadka",
   },
-  jabkisProp: {
-    en: "Image showing labeled bottles of apple cider vinegar with apples in the background.",
-    sl: "Slika, ki kaže steklenice jabolčnega kisa z jabolkami v ozadju.",
+  boskopFruitImg: {
+    en: "In-focus picture of apples of the variety Boskopski kosmač",
+    sl: "Slika jabolk sorte Boskopski kosmač",
   },
-  sntolj: {
-    en: "Image showing labeled bottles of St. John's Wort oil, with more bottles in the background.",
-    sl: "Slika, ki kaže stekleničke šentjanževega olja z več stekleničkami v ozadju.",
+  hardijevaFruitImg: {
+    en: "In-focus picture of pears of the variety Beurre Hardy",
+    sl: "Slika hruške sorte Hardijeva",
   },
-  kisCisterns: {
-    en: "Image showing tanks of maturing apple cider vinegar in our fermentation room.",
-    sl: "Slika, ki kaže cisterne jabolčnega kisa v naši kisarni.",
+  dandelionsImg: {
+    en: "A field of dandelions in focus in the foreground with old-growth apple trees in the background.",
+    sl: "Cvetočega regrat na travniku z jablanami v ozadju.",
   },
-  presaBarrel: {
-    en: "Image showing a traditional oak barrel used to press apple juice.",
-    sl: "Slika, ki kaže tradicionalen hrastov sod z prešanje jabolk.",
+  jablaneImg: {
+    en: "Three older apple trees in blossom in spring.",
+    sl: "Tri jablane v polnem spomladanskem cvetu sredi travnika.",
   },
-  sentjanzevkaFlowers: {
-    en: "Image showing freshly picked flowers of the St. John's Wort plant.",
-    sl: "Slika, ki kaže sveže nabrane cvetove šentjanževke.",
+  jabsokImg: {
+    en: "Labeled bottles of apple juice with apples in the background.",
+    sl: "Steklenice jabolčnega soka z jabolko sorte Jonatan v ozadju.",
   },
-  orehTree: {
-    en: "Image showing a large walnut tree standing in our meadows, with a blue sky and white clouds in the background.",
-    sl: "Slika, ki kaže pogled na mogočen oreh na naših travnikih, z modrim nebom v ozadju.",
+  jabkisImg: {
+    en: "Labeled bottles of apple cider vinegar with apples in the background.",
+    sl: "Steklenice jabolčnega kis z jabolko sorte Jonatan v ozadju.",
   },
-  roadDownhill: {
-    en: "Image showing the view along the gravel road leading to our farm.",
-    sl: "Slika, ki kaže pogled na dolino iz makademske ceste, ki pelje na našo kmetijo.",
+  sntoljImg: {
+    en: "Labeled bottles of St. John's Wort oil, with more bottles in the background.",
+    sl: "Stekleničke šentjanževega olja z več stekleničkami v ozadju.",
   },
-  dandelions: {
-    en: "Image showing a field of dandelions in focus in the foreground with old-growth apple trees in the background.",
-    sl: "Slika cvetočega regrata z jablanami v ozadju.",
+  sntoljJarsImg: {
+    en: "A row of 5-liter glass jars of St. John's Wort oil during production.",
+    sl: "Vrsta 5-literskih steklenih kozarcev pripravljenega šentjanževega olja.",
   },
-  dandelions: {
-    en: "Image showing a field of dandelions in focus in the foreground with old-growth apple trees in the background.",
-    sl: "Slika cvetočega regrata z jablanami v ozadju.",
+  sentjanzevkaFlowersImg: {
+    en: "Freshly picked yellow flowers of the St. John's Wort plant.",
+    sl: "Sveže nabrane rumene cvetove šentjanževke.",
   },
-  jablane: {
-    en: "Image showing old-growth apple trees on a sloping hill, with forest in the background.",
-    sl: "Slika starejših jablan z gozdom v ozadju.",
+  presaBarrelImg: {
+    en: "A traditional oak barrel used to press apple juice.",
+    sl: "Tradicionalen hrastov sod za prešanje jabolk.",
   },
-  sliveFlowers: {
-    en: "Image showing plum trees in bloom in early spring.",
-    sl: "Slika cvetočih češpelj zgodaj spomladi.",
+  cisternsImg: {
+    en: "Tanks of maturing apple cider vinegar in our fermentation room.",
+    sl: "Cisterne jabolčnega kisa v naši kisarni.",
   },
 }

@@ -7,6 +7,7 @@ import HowToBuyButton from '@/components/HowToBuyButton.astro'
 import Bio from '@/shared/Bio.astro'
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
 import translations from '@/i18n/translations/products/sntolj.js';
+import imgAltTranslations from '@/i18n/translations/shared/imgAlts.js';
 import { sntolj as products } from '@/assets/data/products.js'
 
 import sntoljImg from '@/assets/img/sntolj.jpg'
@@ -35,7 +36,7 @@ const breadcrumbs = [
     <div class="mt-10 md:flex md:flex-row-reverse gap-x-8">
       <Image
         src={sntoljImg}
-        alt="sntoljImg"
+        alt={imgAltTranslations.sntoljImg[locale]}
         class="shrink-0 w-full mx-auto max-w-sm md:max-w-80 lg:max-w-96 max-h-72 object-cover rounded-md"
       />
       <div class="mt-5 md:mt-2 text-gray-800">
@@ -49,7 +50,7 @@ const breadcrumbs = [
     <div class="mt-5 md:mt-16 md:flex gap-x-8">
       <Image
         src={sentjanzevkaFlowersImg}
-        alt="sentjanzevkaFlowersImg"
+        alt={imgAltTranslations.sentjanzevkaFlowersImg[locale]}
         class="shrink-0 w-full mx-auto max-w-sm md:max-w-96 max-h-72 object-cover rounded-md"
       />
       <div class="mt-5 md:mt-2 text-gray-800">
@@ -61,7 +62,7 @@ const breadcrumbs = [
     <div class="mt-5 md:mt-16 md:flex md:flex-row-reverse gap-x-8">
       <Image
         src={sntoljJarsImg}
-        alt="sntoljJarsImg"
+        alt={imgAltTranslations.sntoljJarsImg[locale]}
         class="shrink-0 w-full mx-auto max-w-sm md:max-w-96 max-h-72 object-cover rounded-md"
       />
       <div class="mt-5 md:mt-2 text-gray-800">

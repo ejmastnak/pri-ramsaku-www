@@ -5,6 +5,7 @@ import I18nLinkSecondaryButton from '@/components/I18nLinkSecondaryButton.astro'
 import PageWrapper from '@/shared/PageWrapper.astro'
 import { extractLocaleFromRoute  } from '@/lib/routes.js';
 import translations from '@/i18n/translations/about/index.js';
+import imgAltTranslations from '@/i18n/translations/shared/imgAlts.js';
 
 const locale = extractLocaleFromRoute(Astro.url.pathname);
 
@@ -12,8 +13,8 @@ import carjevicImg from '@/assets/img/carjevic.jpg';
 import winterDomacijaImg from '@/assets/img/winter-domacija.jpg';
 import krivopeceljTreeImg from '@/assets/img/krivopecelj-tree.jpg';
 import applesCrateImg from '@/assets/img/apples-crate.jpg';
-import kanadkaImg from '@/assets/img/varieties/apple-fruit/kanadka.jpg';
-import boskopImg from '@/assets/img/varieties/apple-fruit/boskop.jpg';
+import kanadkaFruitImg from '@/assets/img/varieties/apple-fruit/kanadka.jpg';
+import boskopFruitImg from '@/assets/img/varieties/apple-fruit/boskop.jpg';
 
 ---
 
@@ -24,7 +25,7 @@ import boskopImg from '@/assets/img/varieties/apple-fruit/boskop.jpg';
   <p class="mt-5 max-w-xl mx-auto text-center">{translations.p1[locale]}</p>
 
   <div class="my-10 w-full max-w-4xl mx-auto">
-    <Image src={carjevicImg} alt="carjevicImg" class="rounded-lg h-96 mx-auto object-center object-cover" width={900} />
+    <Image src={carjevicImg} alt={imgAltTranslations.carjevicImg[locale]} class="rounded-lg h-96 mx-auto object-center object-cover" width={900} />
   </div>
 
   <div class="my-10 max-w-2xl mx-auto">
@@ -38,13 +39,13 @@ import boskopImg from '@/assets/img/varieties/apple-fruit/boskop.jpg';
     <!-- Image grid -->
     <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
       <div class="hidden lg:block h-48 sm:h-52 md:h-56 rounded">
-        <Image class="rounded h-full w-full object-cover" src={winterDomacijaImg} alt="Foo" height={400} />
+        <Image class="rounded h-full w-full object-cover" src={winterDomacijaImg} alt={imgAltTranslations.winterDomacijaImg[locale]} height={400} />
       </div>
       <div class="h-48 sm:h-52 md:h-56 rounded">
-        <Image class="rounded h-full w-full object-cover" src={krivopeceljTreeImg} alt="Foo" height={400} />
+        <Image class="rounded h-full w-full object-cover" src={krivopeceljTreeImg} alt={imgAltTranslations.krivopeceljTreeImg[locale]} height={400} />
       </div>
       <div class="hidden sm:block h-48 sm:h-52 md:h-56 rounded">
-        <Image class="rounded h-full w-full object-cover" src={applesCrateImg} alt="Foo" height={400} />
+        <Image class="rounded h-full w-full object-cover" src={applesCrateImg} alt={imgAltTranslations.applesCrateImg[locale]} height={400} />
       </div>
     </div>
 
@@ -60,10 +61,10 @@ import boskopImg from '@/assets/img/varieties/apple-fruit/boskop.jpg';
 
     <div class="my-8 grid sm:grid-cols-2 gap-4 place-items-center">
       <div class="h-48 sm:h-52 md:h-56 rounded">
-        <Image class="rounded h-full w-full object-cover" src={boskopImg} alt="Foo" height={400} />
+        <Image class="rounded h-full w-full object-cover" src={boskopFruitImg} alt={imgAltTranslations.boskopFruitImg[locale]} height={400} />
       </div>
       <div class="h-48 sm:h-52 md:h-56 rounded">
-        <Image class="rounded h-full w-full object-cover" src={kanadkaImg} alt="Foo" height={400} />
+        <Image class="rounded h-full w-full object-cover" src={kanadkaFruitImg} alt={imgAltTranslations.kanadkaFruitImg[locale]} height={400} />
       </div>
     </div>
 

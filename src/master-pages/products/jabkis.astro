@@ -8,11 +8,12 @@ import HowToBuyButton from '@/components/HowToBuyButton.astro'
 import Bio from '@/shared/Bio.astro'
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
 import translations from '@/i18n/translations/products/jabkis.js';
+import imgAltTranslations from '@/i18n/translations/shared/imgAlts.js';
+
 import { jabkis as products } from '@/assets/data/products.js'
 
 import jabkisImg from '@/assets/img/jabkis.jpg'
 import applesCrateImg from '@/assets/img/apples-crate.jpg'
-
 import cisternsImg from '@/assets/img/cisterns.jpg'
 import presaBarrelImg from '@/assets/img/presa-barrel-landscape.jpg'
 
@@ -38,7 +39,7 @@ const breadcrumbs = [
     <div class="mt-10 md:flex md:flex-row-reverse gap-x-8">
       <Image
         src={jabkisImg}
-        alt="jabkisImg"
+        alt={imgAltTranslations.jabkisImg[locale]}
         class="shrink-0 w-full mx-auto max-w-sm md:max-w-80 lg:max-w-96 max-h-72 object-cover rounded-md"
       />
       <div class="mt-5 md:mt-2 text-gray-800">
@@ -53,7 +54,7 @@ const breadcrumbs = [
     <div class="mt-5 md:mt-16 md:flex gap-x-8">
       <Image
         src={applesCrateImg}
-        alt="applesCrateImg"
+        alt={imgAltTranslations.applesCrateImg[locale]}
         class="shrink-0 w-full mx-auto max-w-sm md:max-w-80 lg:max-w-96 max-h-72 object-cover rounded-md"
       />
       <div class="mt-5 md:mt-2 text-gray-800">
@@ -66,7 +67,7 @@ const breadcrumbs = [
     <div class="mt-5 md:mt-16 md:flex md:flex-row-reverse gap-x-8">
       <Image
         src={presaBarrelImg}
-        alt="presaBarrelImg"
+        alt={imgAltTranslations.presaBarrelImg[locale]}
         class="shrink-0 w-full h-56 mx-auto md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover rounded-md"
       />
       <div class="mt-5 md:mt-2 text-gray-800">
@@ -80,7 +81,7 @@ const breadcrumbs = [
     <div class="mt-5 md:mt-16 md:flex gap-x-8">
       <Image
         src={cisternsImg}
-        alt="cisternsImg"
+        alt={imgAltTranslations.cisternsImg[locale]}
         class="shrink-0 w-full mx-auto max-w-sm md:max-w-80 lg:max-w-96 max-h-72 object-cover rounded-md"
       />
       <div class="mt-5 md:mt-2 text-gray-800">{translations.p6[locale]}</div>

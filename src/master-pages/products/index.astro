@@ -7,6 +7,7 @@ import BentoWrapper from '@/components/BentoWrapper.astro'
 import HowToBuyButton from '@/components/HowToBuyButton.astro'
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
 import translations from '@/i18n/translations/products/index.js';
+import imgAltTranslations from '@/i18n/translations/shared/imgAlts.js';
 
 import jabsokImg from '@/assets/img/jabsok.jpg';
 import jabkisImg from '@/assets/img/jabkis.jpg';
@@ -27,25 +28,25 @@ const locale = extractLocaleFromRoute(Astro.url.pathname);
     <BentoWrapper classes="my-10 gap-x-8 gap-y-12 grid-cols-1 lg:grid-cols-2">
 
       <I18nLink routeGroupName="jabsok">
-        <BentoCard title={translations.jabsokTitle[locale]} img={jabsokImg} imgAlt="Foo image">
+        <BentoCard title={translations.jabsokTitle[locale]} img={jabsokImg} imgAlt={imgAltTranslations.jabsokImg[locale]}>
           {translations.jabsokDescription[locale]}
         </BentoCard>
       </I18nLink>
 
       <I18nLink routeGroupName="jabkis">
-        <BentoCard title={translations.jabkisTitle[locale]} img={jabkisImg} imgAlt="Foo image">
+        <BentoCard title={translations.jabkisTitle[locale]} img={jabkisImg} imgAlt={imgAltTranslations.jabkisImg[locale]}>
           {translations.jabkisDescription[locale]}
         </BentoCard>
       </I18nLink>
 
       <I18nLink routeGroupName="sntolj">
-        <BentoCard title={translations.sntoljTitle[locale]} img={sntoljImg} imgAlt="Foo image">
+        <BentoCard title={translations.sntoljTitle[locale]} img={sntoljImg} imgAlt={imgAltTranslations.sntoljImg[locale]}>
           {translations.sntoljDescription[locale]}
         </BentoCard>
       </I18nLink>
 
       <I18nLink routeGroupName="otherProducts">
-        <BentoCard title={translations.otherTitle[locale]} img={applesCrateImg} imgAlt="Foo image">
+        <BentoCard title={translations.otherTitle[locale]} img={applesCrateImg} imgAlt={imgAltTranslations.applesCrateImg[locale]}>
           {translations.otherDescription[locale]}
         </BentoCard>
       </I18nLink>
