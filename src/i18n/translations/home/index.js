@@ -2,7 +2,7 @@ export default {
   head: {
     title: {
       en: "Home",
-      sl: "Domačija Ramšak",
+      sl: "Kmetija Ramšak",
     },
     description: {
       en: "Home page",

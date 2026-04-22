@@ -11,7 +11,7 @@ export default {
   },
   h1: {
     en: "Heirloom varieties",
-    sl: "Stare sort sadja",
+    sl: "Stare sorte sadja",
   },
   p1: {
     en: "We are proud to grow a number of interesting heirloom varieties of apples, pears, and other fruit not typically found in stores or commercial orchards. Below are galleries, with images and descriptions, of some of the apple and pear varieties on our farm that we have positively identified.",

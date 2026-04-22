@@ -18,18 +18,18 @@ export default {
     sl: "Smo manjša družinska kmetija na obronkih Pohorje na Tolstem Vrhu pri Mislinji. Ukvarjamo se predvsem s predelavo jabolčnega soka, kisa in sorodnih sadnih izdelkov iz starih, nekomercialnih sort jabolk, ki rastejo v naših travniških sadovnjakih.",
   },
   priRamsakuH2: {
-    en: "Domačija pri Ramšaku",
-    sl: "Domačija pri Ramšaku",
+    en: "Kmetija pri Ramšaku",
+    sl: "Kmetija pri Ramšaku",
   },
   priRamsakuPHtml: {
     en: `
-The name <i>Domačija Pri Ramšaku</i> translates to "The Ramšak Homestead" and is our farm's local/traditional name since the 1800s.
-In the Slovenian countryside a farm typically has a "local" name that stays with the farm regardless of the legal name of the family living there.
+The name <i>Kmetija Pri Ramšaku</i> (Ramšak Farm) is our farm's traditional name since the 1800s.
+In the Slovenian countryside a farm typically has a "traditional" local name that stays with the farm regardless of the legal name of the family living there.
 The first people to develop the farm were named Ramšak—a common last name in the local Koroška region—and the name stayed with the farm.
 `,
     sl: `
-The name <i>Domačija Pri Ramšaku</i> translates to "The Ramšak Homestead" and is our farm's local/traditional name since the 1800s.
-In the Slovenian countryside a farm typically has a "local" name that stays with the farm regardless of the legal name of the family living there.
+The name <i>Kmetija Pri Ramšaku</i> (Ramšak Farm) is our farm's traditional name since the 1800s.
+In the Slovenian countryside a farm typically has a "traditional" local name that stays with the farm regardless of the legal name of the family living there.
 The first people to develop the farm were named Ramšak—a common last name in the local Koroška region—and the name stayed with the farm.
 `,
   },

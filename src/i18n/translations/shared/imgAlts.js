@@ -17,7 +17,7 @@ export default {
   },
   winterDomacijaImg: {
     en: "A view of the farmhouse in winter from an overlooking hill, showing the countryside covered in snow.",
-    sl: "Domačija pozimi, s sadovnjakom in smrekovem gozdom pokritim s snegom v ozadju.",
+    sl: "Kmetija pozimi, s sadovnjakom in smrekovem gozdom pokritim s snegom v ozadju.",
   },
   carjevicImg: {
     en: "Apple trees in full bloom on a hill overlooking the farmhouse",
