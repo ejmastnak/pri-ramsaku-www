@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import Hero from './partials/Hero.astro'
+import Varieties from './partials/Varieties.astro'
 import I18nLink from '@/components/I18nLink.astro'
 import I18nLinkButton from '@/components/I18nLinkButton.astro'
 import Wrapper from '@/shared/Wrapper.astro'
@@ -23,6 +24,28 @@ import jabkisImg from '@/assets/img/jabkis.jpg';
 
   <Wrapper classes="py-6 md:py-8">
 
+    <!-- Products -->
+    <div class="mt-12 max-w-2xl mx-auto text-center">
+
+      <div class="mt-2 grid sm:grid-cols-2 gap-8 place-items-center">
+        <div class="h-48 sm:h-60 rounded">
+          <Image class="rounded h-full w-full object-cover" src={jabsokImg} alt={imgAltTranslations.jabsokImg[locale]} height={400} />
+        </div>
+        <div class="hidden sm:block h-48 sm:h-60 rounded">
+          <Image class="rounded h-full w-full object-cover" src={jabkisImg} alt={imgAltTranslations.jabkisImg[locale]} height={400} />
+        </div>
+      </div>
+
+      <p class="my-5 max-w-md mx-auto">
+        {translations.productsP[locale]}
+      </p>
+
+      <I18nLinkButton routeGroupName="products">{translations.productsLink[locale]}</I18nLinkButton>
+
+    </div>
+
+    <Varieties />
+
     <div>
       <p class="max-w-xl mx-auto text-center">
         {translations.p1[locale]}
@@ -43,25 +66,6 @@ import jabkisImg from '@/assets/img/jabkis.jpg';
       <p class="my-12 max-w-xl mx-auto text-center">
         {translations.p2[locale]}
       </p>
-    </div>
-
-    <!-- Products -->
-    <div class="border-t border-gray-100 my-10 pt-10 max-w-2xl mx-auto text-center">
-      <h2 class="text-xl text-center font-bold">{translations.productsH2[locale]}</h2>
-      <p class="mt-2 max-w-md mx-auto">
-        {translations.productsP[locale]}
-      </p>
-
-      <I18nLinkButton routeGroupName="products" classes="my-5">{translations.productsLink[locale]}</I18nLinkButton>
-
-      <div class="mt-2 grid sm:grid-cols-2 gap-8 place-items-center">
-        <div class="h-48 sm:h-60 rounded">
-          <Image class="rounded h-full w-full object-cover" src={jabsokImg} alt={imgAltTranslations.jabsokImg[locale]} height={400} />
-        </div>
-        <div class="hidden sm:block h-48 sm:h-60 rounded">
-          <Image class="rounded h-full w-full object-cover" src={jabkisImg} alt={imgAltTranslations.jabkisImg[locale]} height={400} />
-        </div>
-      </div>
     </div>
 
     <!-- Links -->
