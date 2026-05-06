@@ -18,7 +18,7 @@ export default {
         In addition to our apple juice and apple cider vinegar, we also produce a number of other products on a small scale from the fruits and herbs growing on our farms and meadows. These include dried apples and pears, jams and fruit butters (apple, pear, plum...), and a large assortement of herbal teas. We may be able arrange other products by agreement, and during good seasons we also sell our fresh apples.
     `,
     sl: `
-        Poleg jabolčnega soka, kisa in šentjanževega olja, ki predstavljajo našo glavno dejavnost, na kmetiji predelujemo tudi sorodne sadne in zeliščne izdelke na manjši skali.
+        Poleg jabolčnega soka in kisa, ki predstavljajo našo glavno dejavnost, na kmetiji predelujemo tudi sorodne sadne in zeliščne izdelke na manjši skali.
         Tukaj naj omenimo suhe krhlje iz starih sort jabolk in hrušk; marmelade in namaze iz jabolk, hrušk in sliv; in večja izbira zeliščnih čajev. V kolikor je dobra letina se lahko dogovorimo tudi za nakup svežih jabolk.
     `,
   },

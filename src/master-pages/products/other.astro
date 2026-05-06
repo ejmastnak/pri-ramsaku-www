@@ -26,25 +26,13 @@ const breadcrumbs = [
 <PageWrapper>
   <div class="max-w-4xl mx-auto">
 
-    <h1 class="text-4xl text-center">{translations.h1[locale]}</h1>
-    <Breadcrumbs classes="text-center mx-auto" breadcrumbs={breadcrumbs} />
+    <h1 class="text-4xl">{translations.h1[locale]}</h1>
+    <Breadcrumbs classes="mx-auto" breadcrumbs={breadcrumbs} />
 
-    <div class="mt-5 md:mt-8">
-      <p class="max-w-xl mx-auto text-center">{translations.p1[locale]}</p>
+    <div class="mt-5 md:mt-8 max-w-xl">
+      <p class="mx-auto">{translations.p1[locale]}</p>
 
-      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
-        <div class="hidden lg:block h-48 sm:h-52 md:h-56 rounded">
-          <Image class="rounded h-full w-full object-cover" src={winterDomacijaImg} alt={imgAltTranslations.winterDomacijaImg[locale]} height={400} />
-        </div>
-        <div class="h-48 sm:h-52 md:h-56 rounded">
-          <Image class="rounded h-full w-full object-cover" src={krivopeceljTreeImg} alt={imgAltTranslations.krivopeceljTreeImg[locale]} height={400} />
-        </div>
-        <div class="hidden sm:block h-48 sm:h-52 md:h-56 rounded">
-          <Image class="rounded h-full w-full object-cover" src={applesCrateImg} alt={imgAltTranslations.applesCrateImg[locale]} height={400} />
-        </div>
-      </div>
-
-      <p class="my-12 max-w-lg mx-auto text-center">
+      <p class="my-5">
         {translations.p2[locale]}
         <I18nLink routeGroupName="contact" classes="text-blue-500 hover:text-blue-600 hover:underline">{translations.contact[locale]}</I18nLink>
       </p>

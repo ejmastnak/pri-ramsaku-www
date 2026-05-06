@@ -14,8 +14,8 @@ export default {
     sl: "Izdelki",
   },
   p1: {
-    en: "We sell the following products. Click a product for more information about production and ingredients.",
-    sl: "Ponujamo sledeče izdelke. Več o izdelku si lahko preberete na posamezni strani izdelka.",
+    en: "We sell products made from the apples and herbs grown in our orchards and meadows. Click a product for more information about production and ingredients.",
+    sl: "Ponujamo izdelke iz sadja in zelišč iz naših sadovnjakov in travnikov, s poudarkom na stare sorte jabolk. Več o izdelku si lahko preberete na posamezni strani izdelka.",
   },
   jabsokTitle: {
     en: "Apple juice",
