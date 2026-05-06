@@ -29,7 +29,7 @@ export default {
     {
       en: "Our farm consists primarily of",
       sl: `
-Na naši kmetiji imamo visokodebelni travniški sadovnjak. Marsikoga od naših obiskovalcev in strank zanima, kaj je visokodebelni travniški sadovnjak. Gre namreč za habitat, ki ga redko najdete drugje kot na podeželju. Opišemo ga lahjo takole:
+Na naši kmetiji imamo visokodebelni travniški sadovnjak. Marsikoga od naših obiskovalcev in strank zanima, kaj je visokodebelni travniški sadovnjak. Gre namreč za habitat, ki ga redko najdete drugje kot na podeželju. Opišemo ga lahko takole:
 `,
     },
     {
