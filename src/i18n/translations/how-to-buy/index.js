@@ -30,8 +30,8 @@ export default {
     sl: "ali po e-pošti na naslovu",
   },
   details: {
-    en: "We'll respond to confirm your order and arrange delivery.",
-    sl: "Skupaj se dogovorimo za praktične detalje naročila.",
+    en: "We are a small, single-family farm and are happy to work on a case-by-case basis with our customers; together we'll confirm your order and arrange delivery.",
+    sl: "Smo majhna kmetija in smo veseli osebnih stikov. Skupaj se dogovorimo za praktične detalje naročila.",
   },
   orderByWebshop: {
     en: "Option 1: Use our online shop",
