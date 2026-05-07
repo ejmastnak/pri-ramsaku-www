@@ -1,22 +1,30 @@
 ---
 import { Image } from 'astro:assets';
 import PageWrapper from '@/shared/PageWrapper.astro'
+import Breadcrumbs from '@/components/Breadcrumbs.astro'
 import SimpleImagePanel from '@/components/SimpleImagePanel.astro'
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
 import translations from '@/i18n/translations/meadow-orchard/index.js';
+import aboutTranslations from '@/i18n/translations/about/index.js';
 import imgAltTranslations from '@/i18n/translations/shared/imgAlts.js';
-
-const locale = extractLocaleFromRoute(Astro.url.pathname);
 
 import jablaneImg from '@/assets/img/jablane.jpg'
 import dandelionsImg from '@/assets/img/dandelions.jpg'
 import sliveBlossomsImg from '@/assets/img/slive-flowers.jpg'
+
+const locale = extractLocaleFromRoute(Astro.url.pathname);
+
+const breadcrumbs = [
+  { routeGroupName: "about", title: aboutTranslations.h1[locale], },
+  { routeGroupName: "meadowOrchard", title: translations.h1[locale], },
+]
 
 ---
 
 <PageWrapper>
   <div class="max-w-3xl mx-auto">
     <h1 class="text-5xl">{translations.h1[locale]}</h1>
+    <Breadcrumbs breadcrumbs={breadcrumbs} />
 
     <p class="mt-10 max-w-xl">
       {translations.intro[0][locale]}

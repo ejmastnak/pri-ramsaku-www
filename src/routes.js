@@ -13,6 +13,34 @@ const routeGroups = {
     "/sl/o-nas": { type: 'explicit', },
   },
 
+  varieties: {
+    "/about/varieties": { type: "implicit", canonical: "/en/about/varieties" },
+    "/en/about/varieties": { type: "explicit", },
+    "/o-nas/stare-sorte": { type: "implicit", canonical: "/sl/o-nas/stare-sorte" },
+    "/sl/o-nas/stare-sorte": { type: "explicit", },
+  },
+
+  appleVarieties: {
+    "/about/apple-varieties": { type: "implicit", canonical: "/en/about/apple-varieties" },
+    "/en/about/apple-varieties": { type: "explicit", },
+    "/o-nas/sorte-jabolk": { type: "implicit", canonical: "/sl/o-nas/sorte-jabolk" },
+    "/sl/o-nas/sorte-jabolk": { type: "explicit", },
+  },
+
+  pearVarieties: {
+    "/about/pear-varieties": { type: "implicit", canonical: "/en/about/pear-varieties" },
+    "/en/about/pear-varieties": { type: "explicit", },
+    "/o-nas/sorte-hrusk": { type: "implicit", canonical: "/sl/o-nas/sorte-hrusk" },
+    "/sl/o-nas/sorte-hrusk": { type: "explicit", },
+  },
+
+  meadowOrchard: {
+    "/about/meadow-orchard": { type: "implicit", canonical: "/en/about/meadow-orchard" },
+    "/en/about/meadow-orchard": { type: "explicit", },
+    "/o-nas/travniski-sadovnjak": { type: "implicit", canonical: "/sl/o-nas/travniski-sadovnjak" },
+    "/sl/o-nas/travniski-sadovnjak": { type: "explicit", },
+  },
+
   howToBuy: {
     "/how-to-buy": { type: "implicit", canonical: "/en/how-to-buy" },
     "/en/how-to-buy": { type: "explicit", },
@@ -63,34 +91,6 @@ const routeGroups = {
     "/en/products/by-agreement": { type: "explicit", },
     "/izdelki/po-dogovoru": { type: "implicit", canonical: "/sl/izdelki/po-dogovoru" },
     "/sl/izdelki/po-dogovoru": { type: "explicit", },
-  },
-
-  varieties: {
-    "/heirloom-varieties": { type: "implicit", canonical: "/en/heirloom-varieties" },
-    "/en/heirloom-varieties": { type: "explicit", },
-    "/stare-sorte": { type: "implicit", canonical: "/sl/stare-sorte" },
-    "/sl/stare-sorte": { type: "explicit", },
-  },
-
-  appleVarieties: {
-    "/heirloom-varieties/apples": { type: "implicit", canonical: "/en/heirloom-varieties/apples" },
-    "/en/heirloom-varieties/apples": { type: "explicit", },
-    "/stare-sorte/jabolka": { type: "implicit", canonical: "/sl/stare-sorte/jabolka" },
-    "/sl/stare-sorte/jabolka": { type: "explicit", },
-  },
-
-  pearVarieties: {
-    "/heirloom-varieties/pears": { type: "implicit", canonical: "/en/heirloom-varieties/pears" },
-    "/en/heirloom-varieties/pears": { type: "explicit", },
-    "/stare-sorte/hruske": { type: "implicit", canonical: "/sl/stare-sorte/hruske" },
-    "/sl/stare-sorte/hruske": { type: "explicit", },
-  },
-
-  meadowOrchard: {
-    "/meadow-orchard": { type: "implicit", canonical: "/en/meadow-orchard" },
-    "/en/meadow-orchard": { type: "explicit", },
-    "/travniski-sadovnjak": { type: "implicit", canonical: "/sl/travniski-sadovnjak" },
-    "/sl/travniski-sadovnjak": { type: "explicit", },
   },
 
 }

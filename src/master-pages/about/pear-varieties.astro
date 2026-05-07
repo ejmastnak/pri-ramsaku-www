@@ -4,7 +4,7 @@ import Breadcrumbs from '@/components/Breadcrumbs.astro'
 import FruitPanel from './partials/FruitPanel.astro'
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
 import translations from '@/i18n/translations/varieties/pears.js';
-import varietiesTranslations from '@/i18n/translations/varieties/index.js';
+import aboutTranslations from '@/i18n/translations/about/index.js';
 
 import drobnicaFruitImage from '@/assets/img/varieties/pear-fruit/drobnica.jpg'
 import drobnicaTreeImage from '@/assets/img/varieties/pear-trees/drobnica.jpg'
@@ -20,7 +20,7 @@ import pearBlossoms4Image from '@/assets/img/varieties/pear-trees/pear-blossoms-
 const locale = extractLocaleFromRoute(Astro.url.pathname);
 
 const breadcrumbs = [
-  { routeGroupName: "varieties", title: varietiesTranslations.h1[locale], },
+  { routeGroupName: "about", title: aboutTranslations.h1[locale], },
   { routeGroupName: "pearVarieties", title: translations.h1[locale], },
 ]
 

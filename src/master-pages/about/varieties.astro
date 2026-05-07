@@ -1,24 +1,33 @@
 ---
-import I18nLink from '@/components/I18nLink.astro'
 import PageWrapper from '@/shared/PageWrapper.astro'
+import Breadcrumbs from '@/components/Breadcrumbs.astro'
+import I18nLink from '@/components/I18nLink.astro'
 import BentoCard from '@/components/BentoCard.astro'
 import BentoWrapper from '@/components/BentoWrapper.astro'
 
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
 import translations from '@/i18n/translations/varieties/index.js';
+import aboutTranslations from '@/i18n/translations/about/index.js';
 import imgAltTranslations from '@/i18n/translations/shared/imgAlts.js';
 
 import boskopFruitImg from '@/assets/img/varieties/apple-fruit/boskop.jpg'
 import hardijevaFruitImg from '@/assets/img/varieties/pear-fruit/hardijeva.jpg'
 
 const locale = extractLocaleFromRoute(Astro.url.pathname);
+
+const breadcrumbs = [
+  { routeGroupName: "about", title: aboutTranslations.h1[locale], },
+  { routeGroupName: "varieties", title: translations.h1[locale], },
+]
+
 ---
 
 <PageWrapper>
   <div class="max-w-4xl mx-auto text-center">
     <h1 class="text-4xl text-center">{translations.h1[locale]}</h1>
+  <Breadcrumbs breadcrumbs={breadcrumbs} />
 
-    <p class="mt-2 mx-auto text-center max-w-sm text-sm text-gray-600 italic">{translations.p1[locale]}</p>
+    <p class="mt-5 mx-auto text-center max-w-sm text-sm text-gray-600 italic">{translations.p1[locale]}</p>
 
     <BentoWrapper classes="my-10 gap-x-8 gap-y-12 grid-cols-1 lg:grid-cols-2">
       <I18nLink routeGroupName="appleVarieties">
