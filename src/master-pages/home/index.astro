@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import Hero from './partials/Hero.astro'
-import Varieties from './partials/Varieties.astro'
+import HeirloomVarietiesPreview from '@/shared/HeirloomVarietiesPreview.astro'
 import I18nLink from '@/components/I18nLink.astro'
 import I18nLinkButton from '@/components/I18nLinkButton.astro'
 import Wrapper from '@/shared/Wrapper.astro'
@@ -44,12 +44,19 @@ import jabkisImg from '@/assets/img/jabkis.jpg';
 
     </div>
 
-    <Varieties />
+    <!-- HeirloomVarieties -->
+    <section class="mt-20 text-center">
+      <h2 class="text-xl font-bold">{translations.varietiesHeading[locale]}</h2>
+      <p class="mt-3 max-w-xl mx-auto ">{translations.varietiesBody[locale]}</p>
+      <HeirloomVarietiesPreview />
+    </section>
 
-    <div>
-      <p class="max-w-xl mx-auto text-center">
-        {translations.p1[locale]}
-      </p>  
+    <!-- About farm -->
+    <section class="mt-16 text-center">
+
+      <h2 class="text-xl font-bold">{translations.aboutHeading[locale]}</h2>
+
+      <p class="mt-3 max-w-xl mx-auto">{translations.aboutBody1[locale]}</p>  
 
       <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
         <div class="hidden lg:block h-48 sm:h-52 md:h-56 rounded">
@@ -63,18 +70,17 @@ import jabkisImg from '@/assets/img/jabkis.jpg';
         </div>
       </div>
 
-      <p class="my-12 max-w-xl mx-auto text-center">
-        {translations.p2[locale]}
-      </p>
-    </div>
+      <p class="my-12 max-w-xl mx-auto text-center">{translations.aboutBody2[locale]}</p>
+
+    </section>
 
     <!-- Links -->
-    <div class="mt-12 pt-8 border-t border-gray-100 max-w-xl mx-auto">
+    <div class="mt-12 border-t border-gray-100 max-w-xl mx-auto">
       <h2 class="text-xl text-center font-bold">{translations.linksH2[locale]}</h2>
       <ul class="mt-2 text-left list-disc ml-5">
-        <li><I18nLink routeGroupName="varieties" classes="text-blue-500 hover:text-blue-600 hover:underline">{translations.varietiesLink[locale]}</I18nLink></li>
-        <li><I18nLink routeGroupName="meadowOrchard" classes="text-blue-500 hover:text-blue-600 hover:underline">{translations.meadowOrchardLink[locale]}</I18nLink></li>
-        <li><I18nLink routeGroupName="about" classes="text-blue-500 hover:text-blue-600 hover:underline">{translations.aboutLink[locale]}</I18nLink></li>
+        <li><I18nLink routeGroupName="varieties" classes="text-orange-950 font-medium hover:text-orange-700 hover:underline">{translations.varietiesLink[locale]}</I18nLink></li>
+        <li><I18nLink routeGroupName="meadowOrchard" classes="text-orange-950 font-medium hover:text-orange-700 hover:underline">{translations.meadowOrchardLink[locale]}</I18nLink></li>
+        <li><I18nLink routeGroupName="about" classes="text-orange-950 font-medium hover:text-orange-700 hover:underline">{translations.aboutLink[locale]}</I18nLink></li>
       </ul>
     </div>
 

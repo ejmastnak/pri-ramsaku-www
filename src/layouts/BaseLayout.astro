@@ -43,7 +43,7 @@ const { locale, head, ambiguousLocale = false } = Astro.props as Props;
 
   </head>
 
-  <body>
+  <body class="bg-orange-50">
     { !ambiguousLocale && <Nav />}
     <main class="mx-auto">
       <slot />

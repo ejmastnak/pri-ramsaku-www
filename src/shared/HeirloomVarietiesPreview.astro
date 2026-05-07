@@ -16,11 +16,7 @@ const locale = extractLocaleFromRoute(Astro.url.pathname);
 
 <PageWrapper>
   <div class="max-w-4xl mx-auto text-center">
-    <h1 class="text-4xl text-center">{translations.h1[locale]}</h1>
-
-    <p class="mt-2 mx-auto text-center max-w-sm text-sm text-gray-600 italic">{translations.p1[locale]}</p>
-
-    <BentoWrapper classes="my-10 gap-x-8 gap-y-12 grid-cols-1 lg:grid-cols-2">
+    <BentoWrapper classes="gap-x-8 gap-y-12 grid-cols-1 lg:grid-cols-2">
       <I18nLink routeGroupName="appleVarieties">
         <BentoCard classes="hover:shadow-md hover:outline hover:outline-1 hover:outline-gray-200" title={translations.applesH2[locale]} img={boskopFruitImg} imgAlt={imgAltTranslations.boskopFruitImg[locale]}>
           {translations.applesP1[locale]}
@@ -33,6 +29,5 @@ const locale = extractLocaleFromRoute(Astro.url.pathname);
         </BentoCard>
       </I18nLink>
     </BentoWrapper>
-
   </div>
 </PageWrapper>

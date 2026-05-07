@@ -9,18 +9,16 @@ export default {
       sl: "Glavna stran",
     },
   },
-  p1: {
-    en: `We are a family farm specializing in small-scale production of apple juice, cider vinegar, and related fruit products using traditional heirloom apple varieties from Slovenia and the former Austro-Hungarian empire. We strive to make tastier, less processed, and nutrionally richer products than typical commercial equivalents.`,
-    sl: `Smo manjša družinska kmetija na slovenskem Koroškem. Po načelih ekološkega kmetovanja pridelujemo jabolčni sok, jabolčni kis in sorodne sadne izdelke iz starih sort jabolk in hrušk, ki dozorijo v našem visokodebelnem travniškem sadovnjaku, in zeliščne izdelke iz zelišč z našega travnika in iz gozda.
-        Delamo s poudarkom na uporabo starih, nekomercialnih sort ter ročno predelavo na manjši skali, da bi naši izdelki imeli bogat okus in polno hranilno vrednost.
-`,
+
+  varietiesHeading: {
+    en: "Heirloom varieties",
+    sl: "Stare sorte sadja",
   },
-  p2: {
-    en: `We strive to preserve the use of heirloom varieties; traditional, small-scale production methods, and ecologically-important meadow-orchard habitat, and to contribute to the preservation and continued cultivation of the Slovene farming countryside.
-`,
-    sl: `Trudimo se, da bi ohranili uporabo starih sort, tradicionalne načine predelave, ohranili kmetijsko krajino in pomembni ekološki habitat (visokodebelni travniški sadovnjaki) prispevali k ohranitvi in slovenskega podeželja, ipd.
-`,
+  varietiesBody: {
+    en: "We grow a number of interesting heirloom varieties of apples, pears, and other fruit not typically found in stores or commercial orchards. Below are galleries, with images and descriptions, of some of the apple and pear varieties on our farm that we have positively identified.",
+    sl: "Na kmetiji gojimo številne tradicionalne stare sorte jabolk, hrušk in drugega sadja, ki se tipično ne najdejo v trgovinah ali v komercialnih sadovnjakih. Na naslednjih povezavah najdete slike in opise nekaterih teh sort.",
   },
+
   productsH2: {
     en: "Products",
     sl: "Izdelki",
@@ -33,6 +31,22 @@ export default {
     en: "View our products",
     sl: "Ogled naših izdelkov",
   },
+
+  aboutHeading: {
+    en: "About the farm",
+    sl: "O kmetiji",
+  },
+  aboutBody1: {
+    en: `We are a family farm specializing in small-scale production of apple juice, cider vinegar, and related fruit products using traditional heirloom apple varieties from Slovenia and the former Austro-Hungarian empire.`,
+    sl: "Smo manjša družinska kmetija na slovenskem Koroškem. Po načelih ekološkega kmetovanja pridelujemo jabolčni sok, jabolčni kis in sorodne sadne izdelke iz starih sort jabolk in hrušk, ki dozorijo v našem visokodebelnem travniškem sadovnjaku, in zeliščne izdelke iz zelišč z našega travnika in iz gozda. Delamo s poudarkom na uporabo starih, nekomercialnih sort ter ročno predelavo na manjši skali, da bi naši izdelki imeli bogat okus in polno hranilno vrednost.",
+  },
+  aboutBody2: {
+    en: `We specialize in the use of heirloom varieties and small-scale production methods; and strive to preserve and cultivate the ecologically-important meadow-orchard habitat typical of the traditional Slovene farming countryside.
+`,
+    sl: `Trudimo se, da bi ohranili uporabo starih sort, tradicionalne načine predelave, ohranili kmetijsko krajino in pomembni ekološki habitat (visokodebelni travniški sadovnjaki) prispevali k ohranitvi in slovenskega podeželja, ipd.
+`,
+  },
+
   linksH2: {
     en: "Links",
     sl: "Povezave",

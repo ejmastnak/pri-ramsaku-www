@@ -59,7 +59,7 @@ import boskopFruitImg from '@/assets/img/varieties/apple-fruit/boskop.jpg';
       </div>
     </div>
 
-    <div class="my-8 grid sm:grid-cols-2 gap-4 place-items-center">
+    <div class="mt-8 grid sm:grid-cols-2 gap-4 place-items-center">
       <div class="h-48 sm:h-52 md:h-56 rounded">
         <Image class="rounded h-full w-full object-cover" src={boskopFruitImg} alt={imgAltTranslations.boskopFruitImg[locale]} height={400} />
       </div>
@@ -69,17 +69,31 @@ import boskopFruitImg from '@/assets/img/varieties/apple-fruit/boskop.jpg';
     </div>
 
     <!-- Focus on traditional heirloom varieties -->
-    <div>
+    <div class="mt-8">
       <h2 class="text-xl text-center font-bold">{translations.varietiesH2[locale]}</h2>
-      <div class="mt-3 flex flex-col gap-y-2 max-w-xl mx-auto">
+      <div class="mt-3 space-y-2 max-w-xl mx-auto">
         <p>{translations.varietiesP1[locale]}</p>
         <p>{translations.varietiesP2[locale]}</p>
-        <p set:html={translations.varietiesP3Html[locale]}/>
-        <I18nLinkSecondaryButton routeGroupName="varieties" classes="my-2 mx-auto">{translations.varietiesLink[locale]}</I18nLinkSecondaryButton>
-        <p>{translations.varietiesP4[locale]}</p>
-        <I18nLinkSecondaryButton routeGroupName="meadowOrchard" classes="mt-2 mx-auto">{translations.meadowOrchardLink[locale]}</I18nLinkSecondaryButton>
       </div>
     </div>
+
+
+    <!-- Heirloom varieties -->
+    <div class="mt-8">
+      <h2 class="text-xl text-center font-bold">Slike starih sort</h2>
+      <div class="mt-3 space-y-2 max-w-xl mx-auto">
+        <p set:html={translations.varietiesP3Html[locale]}/>
+      </div>
+    </div>
+
+    <!-- Heirloom varieties -->
+    <div class="mt-8">
+      <h2 class="text-xl text-center font-bold">Travniski sadovnjak</h2>
+      <div class="mt-3 space-y-2 max-w-xl mx-auto">
+        <p>{translations.varietiesP4[locale]}</p>
+      </div>
+    </div>
+
 
   </div>
 
