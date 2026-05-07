@@ -1,5 +1,7 @@
 ---
 import { Image } from 'astro:assets';
+import HeirloomVarietiesPreview from '@/shared/HeirloomVarietiesPreview.astro'
+import MeadowOrchardPreview from '@/shared/MeadowOrchardPreview.astro'
 import I18nLink from '@/components/I18nLink.astro'
 import I18nLinkSecondaryButton from '@/components/I18nLinkSecondaryButton.astro'
 import PageWrapper from '@/shared/PageWrapper.astro'
@@ -22,18 +24,18 @@ import boskopFruitImg from '@/assets/img/varieties/apple-fruit/boskop.jpg';
 
   <h1 class="text-4xl text-center">{translations.h1[locale]}</h1>
 
-  <p class="mt-5 max-w-xl mx-auto text-center">{translations.p1[locale]}</p>
+  <p class="mt-5 max-w-xl mx-auto text-center">{translations.intro[locale]}</p>
 
   <div class="my-10 w-full max-w-4xl mx-auto">
     <Image src={carjevicImg} alt={imgAltTranslations.carjevicImg[locale]} class="rounded-lg h-96 mx-auto object-center object-cover" width={900} />
   </div>
 
-  <div class="my-10 max-w-2xl mx-auto">
+  <div class="my-10 mx-auto">
 
     <!-- Pri Ramšaku name -->
     <div>
-      <h2 class="text-xl text-center font-bold">{translations.priRamsakuH2[locale]}</h2>
-      <p set:html={translations.priRamsakuPHtml[locale]} class="mt-4 max-w-xl mx-auto text-center" />
+      <h2 class="text-xl text-center font-bold">{translations.priRamsakuHeading[locale]}</h2>
+      <p set:html={translations.priRamsakuBodyHtml[locale]} class="mt-4 max-w-xl mx-auto text-center" />
     </div>
 
     <!-- Image grid -->
@@ -51,7 +53,7 @@ import boskopFruitImg from '@/assets/img/varieties/apple-fruit/boskop.jpg';
 
     <!-- History -->
     <div class="mt-8">
-      <h2 class="text-xl text-center font-bold">{translations.historyH2[locale]}</h2>
+      <h2 class="text-xl text-center font-bold">{translations.historyHeading[locale]}</h2>
       <div class="mt-3 flex flex-col gap-y-2 max-w-xl mx-auto">
         <p set:html={translations.historyP1Html[locale]} />
         <p>{translations.historyP2[locale]}</p>
@@ -69,31 +71,29 @@ import boskopFruitImg from '@/assets/img/varieties/apple-fruit/boskop.jpg';
     </div>
 
     <!-- Focus on traditional heirloom varieties -->
-    <div class="mt-8">
-      <h2 class="text-xl text-center font-bold">{translations.varietiesH2[locale]}</h2>
+    <section class="mt-8">
+      <h2 class="text-xl text-center font-bold">{translations.varietiesHeading[locale]}</h2>
       <div class="mt-3 space-y-2 max-w-xl mx-auto">
         <p>{translations.varietiesP1[locale]}</p>
         <p>{translations.varietiesP2[locale]}</p>
       </div>
-    </div>
-
-
-    <!-- Heirloom varieties -->
-    <div class="mt-8">
-      <h2 class="text-xl text-center font-bold">Slike starih sort</h2>
-      <div class="mt-3 space-y-2 max-w-xl mx-auto">
-        <p set:html={translations.varietiesP3Html[locale]}/>
-      </div>
-    </div>
+    </section>
 
     <!-- Heirloom varieties -->
-    <div class="mt-8">
-      <h2 class="text-xl text-center font-bold">Travniski sadovnjak</h2>
-      <div class="mt-3 space-y-2 max-w-xl mx-auto">
-        <p>{translations.varietiesP4[locale]}</p>
+    <section class="mt-8">
+      <h2 class="text-xl text-center font-bold">{translations.picturesHeading[locale]}</h2>
+      <div class="mt-3">
+        <p class="max-w-xl mx-auto" set:html={translations.picturesParagraph[locale]}/>
+        <HeirloomVarietiesPreview />
       </div>
-    </div>
+    </section>
 
+    <!-- Heirloom varieties -->
+    <section class="mt-8">
+      <h2 class="text-xl text-center font-bold">{translations.meadowOrchardHeading[locale]}</h2>
+      <p class="mt-3 space-y-2 max-w-xl mx-auto">{translations.meadowOrchardParagraph[locale]}</p>
+      <MeadowOrchardPreview />
+    </section>
 
   </div>
 

@@ -13,27 +13,19 @@ export default {
     en: "About",
     sl: "O kmetiji",
   },
-  p1: {
+  intro: {
     en: "We are a small family-run farm in the foothills of the Pohorje mountains in Mislinja, Slovenia and specialize in juice and fruit products from non-commercial, heirloom-variety apples grown in traditional meadow orchards.",
     sl: "Smo manjša družinska kmetija na Tolstem Vrhu pri Mislinji, na obronkih Pohorja. Ukvarjamo se predvsem s predelavo jabolčnega soka, kisa in sorodnih sadnih izdelkov iz starih, nekomercialnih sort jabolk, ki rastejo v naših travniških sadovnjakih.",
   },
-  priRamsakuH2: {
+  priRamsakuHeading: {
     en: "Kmetija pri Ramšaku",
     sl: "Kmetija pri Ramšaku",
   },
-  priRamsakuPHtml: {
-    en: `
-The name <i>Kmetija Pri Ramšaku</i> (Ramšak Farm) is our farm's traditional name since the 1800s.
-In the Slovenian countryside a farm typically has a "traditional" local name that stays with the farm regardless of the legal name of the family living there.
-The first people to develop the farm were named Ramšak—a common last name in the local Koroška region—and the name stayed with the farm.
-`,
-    sl: `
-The name <i>Kmetija Pri Ramšaku</i> (Ramšak Farm) is our farm's traditional name since the 1800s.
-In the Slovenian countryside a farm typically has a "traditional" local name that stays with the farm regardless of the legal name of the family living there.
-The first people to develop the farm were named Ramšak—a common last name in the local Koroška region—and the name stayed with the farm.
-`,
+  priRamsakuBodyHtml: {
+    en: "The name <i>Kmetija Pri Ramšaku</i> (Ramšak Farm) is our farm's traditional name since the 1800s. In the Slovenian countryside a farm typically has a \"traditional\" local name that stays with the farm regardless of the legal name of the family living there. The first people to develop the farm were named Ramšak—a common last name in the local Koroška region—and the name stayed with the farm.",
+    sl: "The name <i>Kmetija Pri Ramšaku</i> (Ramšak Farm) is our farm's traditional name since the 1800s. In the Slovenian countryside a farm typically has a \"traditional\" local name that stays with the farm regardless of the legal name of the family living there. The first people to develop the farm were named Ramšak—a common last name in the local Koroška region—and the name stayed with the farm.",
   },
-  historyH2: {
+  historyHeading: {
     en: "The farm's history",
     sl: "Zgodovina domačije",
   },
@@ -46,10 +38,11 @@ The first people to develop the farm were named Ramšak—a common last name in 
     sl: "But for lack of a younger generation to take over—as is unfortunately all too common in the rural European countryside—the farm drifted into dormancy by the 2000s. In the early 2020s, the farm changed hands to the Mastnak family, who revived and now continue operation of the farm, and whose voice you are reading on this page.",
   },
   historyP3: {
-    en: "We are now a small family operation and by no means professional nor full-time farmers, but have done our best to keep the land in cultivation, preserve the farm's long tradition and history, and plant a new generation of fruit trees.",
+    en: "We are now a small family operation and by no means professional nor full-time farmers, but have done our best to keep the land in cultivation, plant a new generation of fruit trees, and preserve the farm's long tradition and history.",
     sl: "We are now a small family operation and by no means professional nor full-time farmers, but have done our best to keep the land in cultivation, preserve the farm's long tradition and history, and plant a new generation of fruit trees."
   },
-  varietiesH2: {
+
+  varietiesHeading: {
     en: "Current focus on traditional heirloom varieties",
     sl: "Pridelava starih, nekomercialnih sort",
   },
@@ -61,20 +54,22 @@ The first people to develop the farm were named Ramšak—a common last name in 
     en: "We grow these varieites motivated by the practical reality that we are a small-scale, family operation and not full-time farmers with the manpower and equipment needed to maintain a conventional commercial orchard. Because our production is limited, we prefer to offer interesting, unconventional products than try to compete on a basis of scale or price with high-volume commercial farms.",
     sl: "We grow these varieites motivated by the practical reality that we are a small-scale, family operation and not full-time farmers with the manpower and equipment needed to maintain a conventional commercial orchard. Because our production is limited, we prefer to offer interesting, unconventional products than try to compete on a basis of scale or price with high-volume commercial farms.",
   },
-  varietiesP3Html: {
-    en: "We have made an effort to document and photograph the apple and pear varieties on our farm, which you can read about on a dedicated page:",
-    sl: "Od kar smo prevzeli domačijo se trudimo, da bi poslikali in opisali sorte jabolk in hrušk, ki rastejo na kmetiji. Opise in slike si lahko ogledate na sledeči strani:",
+
+  picturesHeading: {
+    en: "Pictures of heirloom varieties",
+    sl: "Slike starih sort",
   },
-  varietiesLink: {
-    en: "Pictures and descriptions of heirloom varieties",
-    sl: "Slike in opisi starih sort",
+  picturesParagraph: {
+    en: "We have made an effort to document and photograph the apple and pear varieties on our farm, which you can view in the links below:",
+    sl: "Od kar smo prevzeli domačijo se trudimo, da bi poslikali in opisali sorte jabolk in hrušk, ki rastejo na kmetiji. Opise in slike si lahko ogledate na sledečih povezavah:",
   },
-  varietiesP4: {
+
+  meadowOrchardHeading: {
+    en: "Tall-trunk meadow orchards",
+    sl: "Travniski sadovnjak",
+  },
+  meadowOrchardParagraph: {
     en: "Similarly, we have put together a short description of the ecologically-important tall-trunk meadow orchard habitat characteristic of the Slovenian agricultural countryside and our farm:",
     sl: "Prav tako smo pripravili predstavitev visokodebelnega travniškega sadovnjaka—to je ekološko pomemben habit, ki je značilen za slovensko kmetijsko krajino in ki ga najdemo tudi na naši kmetiji:",
-  },
-  meadowOrchardLink: {
-    en: "Description of the meadow-orchard habitat",
-    sl: "Opredelitev travniškega sadovnjaka",
   },
 }
