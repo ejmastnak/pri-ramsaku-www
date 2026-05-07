@@ -1,11 +1,14 @@
 ---
+import { Image } from 'astro:assets';
+import apples3Image from '@/assets/img/apples3.png'
 ---
 
-<div class="clip-wave-top-condensed sm:clip-wave-top bg-red-900 text-white px-4 pt-16 pb-24 text-lg">
-  <div class="max-w-5xl mx-auto flex">
+<div class="clip-wave-top-condensed sm:clip-wave-top bg-red-900 text-white px-4 pt-16 pb-8 sm:pb-24">
+  <div class="max-w-5xl mx-auto flex flex-col sm:flex-row gap-y-5 px-4">
 
-    <div class="ml-4">
-      <p class="text-5xl font-serif">Pri Ramšaku</p>
+    <div>
+      <p class="text-2xl sm:text-3xl font-serif">Kmetija</p>
+      <p class="text-4xl sm:text-5xl font-serif">Pri Ramšaku</p>
       <div class="mt-8">
         <p>Tolsti Vrh pri Mislinji 47</p>
         <p>2382 Mislinja, Slovenija</p>
@@ -19,6 +22,10 @@
           <p>386 31 230 167</p>
         </a>
       </div>
+    </div>
+
+    <div class="shrink-0 sm:ml-auto sm:self-end">
+      <Image src={apples3Image} alt={"Logo of three apples"} class="w-24 sm:w-28 md:w-32"/>
     </div>
 
   </div>
