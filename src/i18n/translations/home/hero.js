@@ -1,10 +1,10 @@
 export default {
   text: {
-    en: "Heirloom-variety apple juice and fruit products from traditional meadow orchards. Family-run on the foothills of the Pohorje mountains in Mislinja, Slovenia.",
-    sl: "Sokovi, kis in zeliščni izdelki iz starih sort z lastnih travniških sadovnjakov, družinkso in ekološko pridelano na obronkih Pohorja.",
+    en: "We offer fruit and herb products made from the apples and herbs grown in our orchards and meadows, specializing in heirloom varieties and small-scale production.",
+    sl: "Ponujamo izdelke iz sadja in zelišč iz lastnih Pohorskih sadovnjakov in travnikov, s poudarkom na uporabo starih sort.",
   },
   more: {
-    en: "About us",
-    sl: "Več o nas",
+    en: "More about us",
+    sl: "Več o kmetiji",
   },
 }
