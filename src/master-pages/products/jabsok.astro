@@ -2,14 +2,12 @@
 import { Image } from 'astro:assets';
 import PageWrapper from '@/shared/PageWrapper.astro'
 import Breadcrumbs from '@/components/Breadcrumbs.astro'
-import PriceList from '@/components/PriceList.astro'
 import HowToBuyButton from '@/components/HowToBuyButton.astro'
 import Bio from '@/shared/Bio.astro'
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
 import translations from '@/i18n/translations/products/jabsok.js';
 import productsTranslations from '@/i18n/translations/products/index.js';
 import imgAltTranslations from '@/i18n/translations/shared/imgAlts.js';
-import { jabsok as products } from '@/assets/data/products.js'
 
 import jabsokImg from '@/assets/img/jabsok.jpg'
 import applesCrateImg from '@/assets/img/apples-crate.jpg'
@@ -62,8 +60,6 @@ const breadcrumbs = [
     <div class="my-5 md:my-10 max-w-xl">
       {translations.p3[locale]}
     </div>
-
-    <PriceList products={products} />
 
   </div>
 </PageWrapper>

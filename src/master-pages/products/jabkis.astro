@@ -3,15 +3,12 @@ import { Image } from 'astro:assets';
 import I18nLink from '@/components/I18nLink.astro'
 import PageWrapper from '@/shared/PageWrapper.astro'
 import Breadcrumbs from '@/components/Breadcrumbs.astro'
-import PriceList from '@/components/PriceList.astro'
 import HowToBuyButton from '@/components/HowToBuyButton.astro'
 import Bio from '@/shared/Bio.astro'
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
 import translations from '@/i18n/translations/products/jabkis.js';
 import productsTranslations from '@/i18n/translations/products/index.js';
 import imgAltTranslations from '@/i18n/translations/shared/imgAlts.js';
-
-import { jabkis as products } from '@/assets/data/products.js'
 
 import jabkisImg from '@/assets/img/jabkis.jpg'
 import applesCrateImg from '@/assets/img/apples-crate.jpg'
@@ -87,13 +84,6 @@ const breadcrumbs = [
       />
       <div class="mt-5 md:mt-2 text-gray-800">{translations.p6[locale]}</div>
     </div>
-
-    <PriceList classes="mt-10" products={products} />
-    <p class="mt-2 max-w-lg">
-      <span set:html={translations.buyToOrderHtml[locale]}/>
-      <I18nLink routeGroupName="contact" classes="text-blue-500 hover:text-blue-600 hover:underline">{translations.contact[locale]}</I18nLink>
-    </p>
-    
 
   </div>
 </PageWrapper>

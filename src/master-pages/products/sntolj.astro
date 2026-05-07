@@ -2,14 +2,12 @@
 import { Image } from 'astro:assets';
 import PageWrapper from '@/shared/PageWrapper.astro'
 import Breadcrumbs from '@/components/Breadcrumbs.astro'
-import PriceList from '@/components/PriceList.astro'
 import HowToBuyButton from '@/components/HowToBuyButton.astro'
 import Bio from '@/shared/Bio.astro'
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
 import translations from '@/i18n/translations/products/sntolj.js';
 import productsTranslations from '@/i18n/translations/products/index.js';
 import imgAltTranslations from '@/i18n/translations/shared/imgAlts.js';
-import { sntolj as products } from '@/assets/data/products.js'
 
 import sntoljImg from '@/assets/img/sntolj.jpg'
 import sentjanzevkaFlowersImg from '@/assets/img/sentjanzevka-flowers.jpg'
@@ -79,8 +77,6 @@ const breadcrumbs = [
     </div>
 
     <p class="mt-5 md:mt-10 max-w-lg" set:html={translations.contraindicationsHtml[locale]}></p>
-
-    <PriceList classes="mt-10" products={products} />
 
   </div>
 </PageWrapper>
