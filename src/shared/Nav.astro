@@ -1,13 +1,10 @@
 ---
-import { Image } from 'astro:assets';
 import LocaleSwitcher from "@/components/LocaleSwitcher.astro"
 import I18nNavLink from '@/components/I18nNavLink.astro'
 import Bars3 from 'astro-heroicons/outline/Bars3.astro';
 import XMark from 'astro-heroicons/outline/XMark.astro';
 import translations from '@/i18n/translations/shared/nav.js';
 import { extractLocaleFromRoute } from '@/lib/routes.js';
-
-import apples3Image from '@/assets/img/apples3.png'
 
 const locale = extractLocaleFromRoute(Astro.url.pathname);
 ---
@@ -35,10 +32,7 @@ observer.observe(menu, { attributes: true });
 
     <div class="flex gap-x-5 items-center">
 
-      <I18nNavLink className="nav:hidden shrink-0 flex gap-x-3 items-center" routeGroupName="home">
-        <Image src={apples3Image} alt={"Logo of three apples"} class="hidden xs:block w-12"/>
-        <span class="hidden xxs:inline-block text-lg font-medium">Pri Ramšaku</span>
-      </I18nNavLink>
+      <I18nNavLink className="nav:hidden text-lg font-medium" routeGroupName="home">Pri Ramšaku</I18nNavLink>
 
       <!-- Desktop -->
       <ul class="hidden nav:flex flex ml-auto gap-x-8 mr-5">
