@@ -1,7 +1,7 @@
 export default {
   home: {
     en: "Home",
-    sl: "Glavna stran",
+    sl: "Prva stran",
   },
   about: {
     en: "About us",

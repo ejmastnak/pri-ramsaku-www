@@ -1,10 +1,13 @@
 ---
+import { Image } from 'astro:assets';
 import LocaleSwitcher from "@/components/LocaleSwitcher.astro"
 import I18nNavLink from '@/components/I18nNavLink.astro'
 import Bars3 from 'astro-heroicons/outline/Bars3.astro';
 import XMark from 'astro-heroicons/outline/XMark.astro';
 import translations from '@/i18n/translations/shared/nav.js';
 import { extractLocaleFromRoute } from '@/lib/routes.js';
+
+import apples3Image from '@/assets/img/apples3.png'
 
 const locale = extractLocaleFromRoute(Astro.url.pathname);
 ---
@@ -27,13 +30,18 @@ const observer = new MutationObserver(mutations => {
 observer.observe(menu, { attributes: true });
 </script>
 
-<nav class="sticky relative top-0 bg-orange-50 border-b z-20 py-5 px-6">
+<nav class="sticky relative top-0 bg-orange-50 border-b z-20 py-4 px-6">
   <div class="max-w-5xl mx-auto">
 
-    <div class="flex gap-x-5 items-center ml-auto w-fit">
+    <div class="flex gap-x-5 items-center">
+
+      <I18nNavLink className="nav:hidden shrink-0 flex gap-x-3 items-center" routeGroupName="home">
+        <Image src={apples3Image} alt={"Logo of three apples"} class="hidden xs:block w-12"/>
+        <span class="hidden xxs:inline-block text-lg font-medium">Pri Ramšaku</span>
+      </I18nNavLink>
 
       <!-- Desktop -->
-      <ul class="hidden sm:flex flex gap-x-8 mr-5">
+      <ul class="hidden nav:flex flex ml-auto gap-x-8 mr-5">
         <li><I18nNavLink routeGroupName="home">{translations.home[locale]}</I18nNavLink></li>
         <li><I18nNavLink routeGroupName="about">{translations.about[locale]}</I18nNavLink></li>
         <li><I18nNavLink routeGroupName="products">{translations.products[locale]}</I18nNavLink></li>
@@ -41,16 +49,18 @@ observer.observe(menu, { attributes: true });
         <li><I18nNavLink routeGroupName="contact">{translations.contact[locale]}</I18nNavLink></li>
       </ul>
 
-      <LocaleSwitcher />
+      <div class="ml-auto">
+        <LocaleSwitcher />
+      </div>
 
       <!-- Mobile menu -->
-      <el-dropdown class="inline-block sm:hidden">
-        <button class="inline-flex items-center justify-center gap-x-1.5 rounded-md bg-white px-2 py-1 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 dark:bg-white/10 dark:text-white dark:shadow-none dark:ring-white/5 dark:hover:bg-white/20">
+      <el-dropdown class="inline-block nav:hidden">
+        <button class="inline-flex items-center justify-center gap-x-1.5 rounded-md bg-orange-50 px-2 py-1 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
           <Bars3 id="mobile-menu-bars-icon" class="text-gray-600 h-[1.75rem] w-[1.75rem] xs:h-[2rem] xs:w-[2rem]" />
           <XMark id="mobile-menu-x-icon" class="hidden text-gray-600 h-[1.75rem] w-[1.75rem] xs:h-[2rem] xs:w-[2rem]" />
         </button>
 
-        <el-menu id="mobile-menu-el-menu" anchor="bottom end" popover class="m-0 origin-top-right rounded-md bg-white p-0 shadow-lg outline outline-1 outline-black/5 transition [--anchor-gap:theme(spacing.2)] [transition-behavior:allow-discrete] data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in dark:bg-gray-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10 w-fit min-w-[160px]">
+        <el-menu id="mobile-menu-el-menu" anchor="bottom end" popover class="m-0 origin-top-right rounded-md bg-orange-50 p-0 shadow-lg outline outline-1 outline-black/5 transition [--anchor-gap:theme(spacing.2)] [transition-behavior:allow-discrete] data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in w-fit min-w-[160px]">
           <ul class="flex flex-col px-8 pt-6 pb-8 text-left mx-auto gap-y-4">
             <li class="border-b"><I18nNavLink routeGroupName="home">{translations.home[locale]}</I18nNavLink></li>
             <li class="border-b"><I18nNavLink routeGroupName="about">{translations.about[locale]}</I18nNavLink></li>

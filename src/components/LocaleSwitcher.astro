@@ -26,7 +26,7 @@ const currentLocale = extractLocaleFromRoute(Astro.url.pathname);
 
 <div id="locale-switcher-js" class="js-only">
   <el-dropdown class="inline-block">
-    <button class="inline-flex items-center justify-center gap-x-1.5 rounded-md bg-orange-50 px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:shadow-sm hover:ring-orange-700">
+    <button class="inline-flex items-center justify-center gap-x-1.5 rounded-md bg-orange-50 px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:shadow-sm hover:bg-white">
       <div class="inline-flex items-center gap-x-1 rounded-l-md text-white">
         <GlobeAlt class="-ml-0.5 size-5 text-gray-600" />
         <p class="text-sm font-semibold text-gray-700 w-4">{currentLocale}</p>
@@ -38,12 +38,13 @@ const currentLocale = extractLocaleFromRoute(Astro.url.pathname);
     <el-menu anchor="bottom end" popover class="m-0 w-40 origin-top-right rounded-md bg-orange-50 p-0 shadow-lg outline outline-1 outline-black/5 transition [--anchor-gap:theme(spacing.2)] [transition-behavior:allow-discrete] data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in">
       <div>
         <ul class="flex flex-col divide-y divide-gray-200" data-locale-switcher>
+
           {Object.entries(routes).map(([locale, route]) => (
           <li>
             <button
               id={`locale-switcher-button-${locale}`}
               type="button"
-              class={`flex w-full justify-between hover:underline px-4 py-4 ${locale === currentLocale ? 'bg-orange-100 font-semibold' : ""}`}
+              class={`flex w-full justify-between hover:underline px-4 py-4 ${locale === currentLocale ? 'font-semibold' : ""}`}
               data-locale={locale}
               data-route={route}
               data-current={locale === currentLocale}

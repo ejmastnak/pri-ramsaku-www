@@ -2,18 +2,16 @@
 import { extractLocaleFromRoute, getExplicitRoute, normalizeRoute } from "@/lib/routes.js";
 
 interface Props {
-  routeGroupName: string,
+  routeGroupName: string;
+  className?: string;
 };
-const { routeGroupName, } = Astro.props as Props;
+const { routeGroupName, className, } = Astro.props as Props;
 
 const locale = extractLocaleFromRoute(Astro.url.pathname);
 const route = getExplicitRoute(routeGroupName, locale);
 const currentRoute = normalizeRoute(Astro.url.pathname);
-
-let classes = "hover:underline hover:text-blue-600"
-if (route === currentRoute) classes += " font-medium";
 ---
 
-<a href={route} class={classes} >
+<a href={route} class={`hover:underline hover:text-blue-600 text-nowrap ${route === currentRoute ? "font-semibold text-orange-950" : ""} ${className ?? ""}`} >
   <slot/>
 </a>
