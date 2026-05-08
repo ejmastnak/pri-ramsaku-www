@@ -6,6 +6,12 @@ html {
   font-size: 20px;
 }
 
+@layer components {
+  .h1 {
+    @apply text-4xl;
+  }
+}
+
 @layer utilities {
   .clip-none {
     clip-path: none;
