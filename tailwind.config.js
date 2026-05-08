@@ -14,8 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        'sans': ['Noto Sans', ...defaultTheme.fontFamily.sans],
-        'serif': ['Noto Serif', ...defaultTheme.fontFamily.serif],
+        'sans': ['Figtree', ...defaultTheme.fontFamily.sans],
       },
     },
   },

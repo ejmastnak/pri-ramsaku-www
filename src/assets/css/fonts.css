@@ -1,7 +1,7 @@
 /* Variable fonts first! (normal) */
 @font-face {
-  font-family: "Noto Sans";
-  src: url('@/assets/fonts/NotoSans-VariableFont.ttf') format('truetype');
+  font-family: "Figtree";
+  src: url('@/assets/fonts/Figtree-VariableFont.ttf') format('truetype');
   font-weight: 100 900; /* variable range */
   font-style: normal;
   font-display: swap;
@@ -9,76 +9,33 @@
 
 /* Variable font (italic) */
 @font-face {
-  font-family: "Noto Sans";
-  src: url('@/assets/fonts/NotoSans-Italic-VariableFont.ttf') format('truetype');
+  font-family: "Figtree";
+  src: url('@/assets/fonts/Figtree-Italic-VariableFont.ttf') format('truetype');
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;
 }
 
-/* Variable fonts first! (normal) */
+/* Fallbacks (Figtree) */
 @font-face {
-  font-family: "Noto Serif";
-  src: url('@/assets/fonts/NotoSerif-VariableFont.ttf') format('truetype');
-  font-weight: 100 900; /* variable range */
-  font-style: normal;
-  font-display: swap;
-}
-
-/* Variable font (italic) */
-@font-face {
-  font-family: "Noto Serif";
-  src: url('@/assets/fonts/NotoSerif-Italic-VariableFont.ttf') format('truetype');
-  font-weight: 100 900;
-  font-style: italic;
-  font-display: swap;
-}
-
-/* Fallbacks (Noto Sans) */
-@font-face {
-  font-family: "Noto Sans";
-  src: url('@/assets/fonts/NotoSans-Regular.ttf') format('truetype');
+  font-family: "Figtree";
+  src: url('@/assets/fonts/Figtree-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Noto Sans";
-  src: url('@/assets/fonts/NotoSans-Bold.ttf') format('truetype');
+  font-family: "Figtree";
+  src: url('@/assets/fonts/Figtree-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Noto Sans";
-  src: url('@/assets/fonts/NotoSans-Italic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-/* Fallbacks (Noto Serif) */
-@font-face {
-  font-family: "Noto Serif";
-  src: url('@/assets/fonts/NotoSerif-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Noto Serif";
-  src: url('@/assets/fonts/NotoSerif-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Noto Serif";
-  src: url('@/assets/fonts/NotoSerif-Italic.ttf') format('truetype');
+  font-family: "Figtree";
+  src: url('@/assets/fonts/Figtree-Italic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
