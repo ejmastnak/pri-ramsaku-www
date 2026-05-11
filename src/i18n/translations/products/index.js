@@ -5,8 +5,8 @@ export default {
       sl: "Izdelki",
     },
     description: {
-      en: "Products",
-      sl: "Izdelki",
+      en: "We sell apple juice, vinegar, dried fruit, jams, teas, and other products made from the heirloom apples and herbs grown in our orchards and meadows. View a product for more information about production and ingredients.",
+      sl: "Ponujamo sokove, kis, krhlje, marmelade, čaje, in sorodne izdelke iz sadja in zelišč iz naših sadovnjakov in travnikov, s poudarkom na stare sorte jabolk. Več o izdelku si lahko preberete na posamezni strani izdelka.",
     },
   },
   h1: {

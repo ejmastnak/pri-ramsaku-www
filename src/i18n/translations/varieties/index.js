@@ -5,8 +5,8 @@ export default {
       sl: "Stare sorte na kmetiji",
     },
     description: {
-      en: "Heirloom varieties",
-      sl: "Stare sorte na kmetiji",
+      en: "We grow heirloom varieties of apples, pears, and other fruit not typically found in stores or commercial orchards. Below are galleries, with images and descriptions, of some of the apple and pear varieties on our farm.",
+      sl: "Na kmetiji gojimo številne tradicionalne stare sorte jabolk, hrušk in drugega sadja, ki se tipično ne najdejo v trgovinah ali v komercialnih sadovnjakih. Na naslednjih povezavah najdete slike in opise nekaterih teh sort.",
     },
   },
   h1: {

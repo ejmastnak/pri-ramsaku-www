@@ -5,8 +5,8 @@ export default {
       sl: "O kmetiji",
     },
     description: {
-      en: "About",
-      sl: "O kmetiji",
+      en: "We are a small family-run farm in the foothills of the Pohorje mountains in Mislinja, Slovenia, with a history reaching back to the 1800s. We specialize in juice and fruit products from non-commercial, heirloom-variety apples grown in traditional meadow orchards.",
+      sl: "Smo manjša družinska kmetija na Tolstem Vrhu pri Mislinji na obronkih Pohorja, z zgodovina ki sega v 19. stoletje. Ukvarjamo se predvsem s predelavo jabolčnega soka, kisa in sorodnih sadnih izdelkov iz starih, nekomercialnih sort jabolk, ki rastejo v naših travniških sadovnjakih.",
     },
   },
   h1: {

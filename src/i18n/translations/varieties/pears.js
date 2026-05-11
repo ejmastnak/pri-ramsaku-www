@@ -5,8 +5,8 @@ export default {
       sl: "Stare sorte hrušk",
     },
     description: {
-      en: "Heirloom pear varieties",
-      sl: "Stare sorte hrušk na kmetiji",
+      en: "Photographs and descriptions of traditional heirloom pears from Slovenia and Central Europe grown in our meadow orchards, including Pastorjevka, Hardijeva, Junijska lepotica, and more. Learn about each variety's history, characteristics, and uses.",
+      sl: "Fotografije in opisi tradicionalnih starih sort hrušk iz Slovenije in Srednje Evrope, ki rastejo v naših travniških sadovnjakih, med njimi Pastorjevka, Hardijeva, Junijska lepotica in druge. Spoznajte zgodovino, značilnosti in uporabo posameznih sort.",
     },
   },
   h1: {

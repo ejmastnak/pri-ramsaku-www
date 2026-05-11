@@ -5,8 +5,8 @@ export default {
       sl: "Nakup izdelkov",
     },
     description: {
-      en: "Purchase and Delivery",
-      sl: "Nakup izdelkov",
+      en: "How to order products from our farm, including details about our online shop, direct orders by phone or email, and delivery within Ljubljana, the Mislinja region, and elsewhere in Slovenia by arrangement.",
+      sl: "Kako naročiti izdelke z naše kmetije: vključno s podrobnostmi o spletni trgovini, neposrednem naročanju po telefonu ali e-pošti ter dostavi po Ljubljani, Mislinjski dolini in drugod po Sloveniji po dogovoru.",
     },
   },
   h1: {

@@ -5,8 +5,8 @@ export default {
       sl: "Jabolčni kis",
     },
     description: {
-      en: "Apple Cider Vinegar",
-      sl: "Jabolčni kis",
+      en: "Our apple cider vinegar is made each autumn from a diverse selection of heirloom apples, including Šampanjska reneta, Mošancelj, Krivopecelj, and Grafenštajnc. It is slowly fermented over the winter and left unfiltered and unpasteurized for a gentle flavor, natural complexity, and living character.",
+      sl: "Kis predelujemo iz jabolčnih tropin, ki nastanejo pri stiskanju jabolk za jabolčni sok. K okusu kisa prispevajo bogata mešanica starih jabolčnih sort, čista voda iz lastnih pohorskih izvirov, in počasen proces fermentacije, ki traja vso zimo.",
     },
   },
   h1: {
@@ -16,8 +16,7 @@ export default {
   p1: {
     en: `Our production of apple cider vinegar goes hand in hand with the pressing of apple juice each fall—we make our vinegar from the pulp and residual juice left over from the pressing process. Our vinegar is special in that we use apple pulp as a primary raw ingredient (conventional vinegar is made with pure juice). Together with the heirloom varieties' vibrant flavor and a slow fermentation all winter long, this gives our vinegar a smoothness, gentleness, and complexity not found in conventional vinegar made only from fermented apple juice.
 `,
-    sl: `Kis predelujemo iz jabolčnih tropin, ki nastanejo pri stiskanju jabolk za jabolčni sok. (Konvencionalni jabolčni kis se dela iz čistega jabolčnega sok.) Na ta način so pri nas že dolga leta poskrbeli, da so se tudi jabolčne tropine uporabili za koristen namen.
-`,
+    sl: "Kis predelujemo iz jabolčnih tropin, ki nastanejo pri stiskanju jabolk za jabolčni sok. (Konvencionalni jabolčni kis se dela iz čistega jabolčnega sok.) Na ta način so pri nas že dolga leta poskrbeli, da so se tudi jabolčne tropine uporabili za koristen namen.",
   },
   p2: {
     en: ``,

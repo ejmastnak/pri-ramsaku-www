@@ -5,8 +5,8 @@ export default {
       sl: "Kontakt",
     },
     description: {
-      en: "Contact",
-      sl: "Kontakt",
+      en: "Contact information for farm, including address, phone, WhatsApp, and email. We are happy to answer questions, assist with orders, and arrange delivery directly with customers.",
+      sl: "Kontaktni podatki kmetije, vključno z naslovom, telefonom, WhatsAppom in e-pošto. Z veseljem odgovorimo na vprašanja, pomagamo pri naročilih in se neposredno dogovorimo za dostavo.",
     },
   },
   h1: {

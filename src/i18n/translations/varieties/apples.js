@@ -5,8 +5,8 @@ export default {
       sl: "Stare sorte jabolk",
     },
     description: {
-      en: "Heirloom apple varieties",
-      sl: "Stare sorte jabolk na kmetiji",
+      en: "Photographs and descriptions of traditional heirloom apples from Slovenia and Central Europe grown in our meadow orchards, including Bobovec, Carjevič, Boskopski kosmač, and more. Learn about each variety's history, characteristics, and uses.",
+      sl: "Fotografije in opisi tradicionalnih starih sort jabolk iz Slovenije in Srednje Evrope, ki rastejo v naših travniških sadovnjakih, med njimi Bobovec, Carjevič, Boskopski kosmač in druge. Spoznajte zgodovino, značilnosti in uporabo posameznih sort.",
     },
   },
   h1: {

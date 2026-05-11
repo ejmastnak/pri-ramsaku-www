@@ -5,8 +5,8 @@ export default {
       sl: "Travniški sadovnjak",
     },
     description: {
-      en: "Meadow orchard",
-      sl: "Travniški sadovnjak",
+      en: "What is a meadow orchards? Tall fruit trees, mixed varieties, grazing land, and rich biodiversity make these orchards a unique form of cultural landscape in Slovenia and Central Europe. Explore their history, biodiversity, fruit trees, and contrast with modern intensive orchards.",
+      sl: "Kaj je to, travniški sadovnjak? Visoka sadna drevesa, raznolike sorte, pašne površine in bogata biodiverziteta ustvarjajo značilno kulturno krajino Slovenskega in Evropskega podeželja. Spoznajte njihovo zgodovino, ekološki pomen, sadno drevje in razliko med travniškimi in sodobnimi intenzivnimi sadovnjaki.",
     },
   },
   h1: {

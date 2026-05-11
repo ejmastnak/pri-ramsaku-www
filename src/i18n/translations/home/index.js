@@ -5,11 +5,10 @@ export default {
       sl: "Kmetija Ramšak",
     },
     description: {
-      en: "Home page",
-      sl: "Glavna stran",
+      en: "We are a small family-run farm in the foothills of the Pohorje mountains in Mislinja, Slovenia. We specialize in juice and fruit products from non-commercial, heirloom-variety apples grown in traditional meadow orchards.",
+      sl: "Smo manjša družinska kmetija na Tolstem Vrhu pri Mislinji na obronkih Pohorja. Ukvarjamo se predvsem s predelavo jabolčnega soka, kisa in sorodnih sadnih izdelkov iz starih, nekomercialnih sort jabolk, ki rastejo v naših travniških sadovnjakih.",
     },
   },
-
   varietiesHeading: {
     en: "Heirloom varieties",
     sl: "Stare sorte sadja",
