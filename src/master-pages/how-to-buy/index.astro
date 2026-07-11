@@ -21,41 +21,50 @@ const locale = extractLocaleFromRoute(Astro.url.pathname);
   <div class="mt-10 lg:flex space-x-16 lg:-mr-12">
     <div class="max-w-sm flex flex-col gap-y-5">
 
+      <p>Trenutno še razvijamo izdelke in nimamo utečenega prodajnega programa. Redno prodajo izdelkov bomo začeli predvidoma oktobra in novembra 2026 po zaključeni sezoni obiranja jabolk.</p>
+
+      <p>
+      Do takrat se lahko za manjše nakupe dogovorimo neposredno na telefonski številki <span class="font-bold">+386 31 230 167</span> (klic ali SMS, kar vam bolj odgovarja) ali po e-pošti na naslovu <span class="font-bold">priramsaku@ejmastnak.com</span>. Smo majhna kmetija in smo veseli osebnih stikov. Skupaj se dogovorimo za praktične detalje naročila.
+      </p>
+
       <!-- E-shop -->
-      <div>
-        <p class="font-bold">{translations.orderByWebshop[locale]}</p>
-        <p>{translations.webshop[locale]}</p>
-        <div class="mt-3">
-          <PrimaryLink classes="inline-flex items-center gap-x-1.5" href="https://shop.gaia.si">
-            <span>{translations.webshopLink[locale]}</span>
-            <ArrowTopRightOnSquare class="size-5 text-white shrink-0" />
-          </PrimaryLink>
-        </div>
-      </div>
+      <!-- <div> -->
+      <!--   <p class="font-bold">{translations.orderByWebshop[locale]}</p> -->
+      <!--   <p>{translations.webshop[locale]}</p> -->
+      <!--   <div class="mt-3"> -->
+      <!--     <PrimaryLink classes="inline-flex items-center gap-x-1.5" href="https://shop.gaia.si"> -->
+      <!--       <span>{translations.webshopLink[locale]}</span> -->
+      <!--       <ArrowTopRightOnSquare class="size-5 text-white shrink-0" /> -->
+      <!--     </PrimaryLink> -->
+      <!--   </div> -->
+      <!-- </div> -->
 
       <!-- Contact us directly to order -->
-      <div>
-        <p class="font-bold">{translations.orderByContact[locale]}</p>
-        <p class="mt-1">
-          {translations.phone1[locale]} <a class="inline font-bold text-gray-800 hover:text-blue-600" href="tel:+38631230167">+386 31 230 167</a> {translations.phone2[locale]} {translations.email[locale]} <a class="inline font-bold text-gray-800 hover:text-blue-600" href="mailto:priramsaku@ejmastnak.com">priramsaku@ejmastnak.com</a>.
-          {translations.details[locale]}
-        </p>
-      </div>
+      <!-- <div> -->
+      <!--   <p class="font-bold">{translations.orderByContact[locale]}</p> -->
+      <!--   <p class="mt-1"> -->
+      <!--   {translations.phone1[locale]} <a class="inline font-bold text-gray-800 hover:text-blue-600" href="tel:+38631230167">+386 31 230 167</a> {translations.phone2[locale]} {translations.email[locale]} <a class="inline font-bold text-gray-800 hover:text-blue-600" href="mailto:priramsaku@ejmastnak.com">priramsaku@ejmastnak.com</a>. -->
+      <!--   {translations.details[locale]} -->
+      <!--   </p> -->
+      <!-- </div> -->
 
     </div>
 
     <Image
-      src={orehTreeImg}
-      alt={imgAltTranslations.orehTreeImg[locale]}
-      class="hidden lg:block mx-auto !w-96 h-80 object-cover rounded-md"
-    />
+        src={orehTreeImg}
+        alt={imgAltTranslations.orehTreeImg[locale]}
+        class="hidden lg:block mx-auto !w-96 h-80 object-cover rounded-md"
+        />
 
   </div>
 
   <!-- Delivery -->
   <div class="mt-8 max-w-xl">
     <h2 class="text-2xl">{translations.deliveryH2[locale]}</h2>
-    <p class="mt-1">{translations.deliveryP[locale]}</p>
+    <p class="mt-1">
+    Izdelko lahko dostavimo po Ljubljani ter lokalno v širši mislinjski regiji. Pri večjih naročilih se lahko tudi dogovorimo za dostavo kjerkoli v Sloveniji. Kontaktirajte nas, da dorečemo praktične detalje.
+    </p>
+    <!-- <p class="mt-1">{translations.deliveryP[locale]}</p> -->
   </div>
 
 
