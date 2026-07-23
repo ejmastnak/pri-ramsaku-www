@@ -21,7 +21,7 @@ export default {
   p2: {
     en: ``,
     sl: `
-Kis je v osnovi podoben konvencionalnemu, le da je manj oster in ima večjo mehkobo, nežnost in kopleksnost zaradi prisotnosi polifenolov, pektinov in drugih bioaktivnih rastlinskih snovi v jabolčnih tropinah. 
+Kis je v osnovi podoben konvencionalnemu, le da je manj oster in ima večjo mehkobo, nežnost in kompleksnost zaradi prisotnosti polifenolov, pektinov in drugih bioaktivnih rastlinskih snovi v jabolčnih tropinah. 
 K okusu kisa prispevajo tudi bogata mešanica starih jabolčnih sort, čista voda iz lastnih pohorskih izvirov, in počasen proces fermentacije, ki traja vso zimo.
 `,
   },
@@ -34,7 +34,7 @@ K okusu kisa prispevajo tudi bogata mešanica starih jabolčnih sort, čista vod
     en: `
 We hand-pick our apples in October and November, carefully wash them, and then grind, crush, and press them to extract the juice. We then use the pulp and residual juice to make our vinegar.
 `,
-    sl: "Jabolka so ročno obrana, ko dozorijo, in skrbno oprana. Sledi mletje in stiskanje s staro tradicionalno stikalnico, nato pa pridelamo kis iz tropine in soka, ki ostaneta po stiskanju jabolk.",
+    sl: "Jabolka so ročno obrana, ko dozorijo, in skrbno oprana. Sledi mletje in stiskanje s staro tradicionalno stiskalnico, nato pa pridelamo kis iz tropine in soka, ki ostaneta po stiskanju jabolk.",
   },
   p4: {
     en: `

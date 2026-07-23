@@ -63,6 +63,6 @@ When massaged into the skin surface, its purported—and in many cases scientifi
   },
   contraindicationsHtml: {
     en: "<b>Contraindications:</b> the hypericin in St. John's Wort can cause photosensitivity—increased sensitivity of the skin to sun exposure. After application of St. John's Wort oil, it is prudent to wait 12-24 hours after application before intense sun exposure.",
-    sl: "<b>Opozorilo:</b> Hipericin, ki ga vsebuje šentjanževka, lahko povzroči fotosenzitivnost – povečano občutljivost kože na izpostavljenost soncu. Priporočljivo je, da po uporabi šentjanževega olja počakate  od 12 do 24 ur, predno se izpostavite močnejšem soncu.",
+    sl: "<b>Opozorilo:</b> Hipericin, ki ga vsebuje šentjanževka, lahko povzroči fotosenzitivnost – povečano občutljivost kože na izpostavljenost soncu. Priporočljivo je, da po uporabi šentjanževega olja počakate  od 12 do 24 ur, preden se izpostavite močnejšem soncu.",
   },
 }
