@@ -12,6 +12,6 @@ const route = getExplicitRoute(routeGroupName, locale);
 const currentRoute = normalizeRoute(Astro.url.pathname);
 ---
 
-<a href={route} class={`hover:underline hover:text-blue-600 text-nowrap ${route === currentRoute ? "font-semibold text-orange-950" : ""} ${className ?? ""}`} >
+<a href={route} class={`hover:underline hover:text-orange-900 text-nowrap ${route === currentRoute ? "font-semibold text-orange-950" : ""} ${className ?? ""}`} >
   <slot/>
 </a>
