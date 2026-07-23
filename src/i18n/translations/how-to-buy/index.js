@@ -13,47 +13,34 @@ export default {
     en: "How to buy",
     sl: "Nakup izdelkov",
   },
-  orderByContact: {
-    en: "Option 2: Contact us by phone or email",
-    sl: "2. opcija: Naročilo po telefonu ali e-pošti",
+
+  p1: {
+    en: "We are currently developing our product line and don't have an established sales program in stores or otherwise. We plan to begin with regular sales in late fall 2026 after the apple harvest season.",
+    sl: "Trenutno še razvijamo izdelke in nimamo utečenega prodajnega programa. Redno prodajo izdelkov bomo začeli predvidoma oktobra in novembra 2026 po zaključeni sezoni obiranja jabolk.",
   },
-  phone1: {
-    en: "Contact us directly by phone at",
-    sl: "Če vam bolj odgovarja lahko naročite izdelke neposredno na telefonski številki",
-  },
-  phone2: {
-    en: "(call or SMS, whichever you prefer) ",
-    sl: "(klic ali SMS, kar vam bolj odgovarja)",
-  },
-  email: {
-    en: "or by email at",
-    sl: "ali po e-pošti na naslovu",
-  },
-  details: {
-    en: "We are a small, single-family farm and are happy to work on a case-by-case basis with our customers; together we'll confirm your order and arrange delivery.",
-    sl: "Smo majhna kmetija in smo veseli osebnih stikov. Skupaj se dogovorimo za praktične detalje naročila.",
-  },
-  orderByWebshop: {
-    en: "Option 1: Use our online shop",
-    sl: "1. opcija: Naročilo v spletni trgovini",
-  },
-  webshop: {
-    en: "You can order products directly from our online shop:",
-    sl: "Izdelke lahko naročite v naši spletni trgovini:",
-  },
-  webshopLink: {
-    en: "Our online shop",
-    sl: "Naša spletna trgovina",
-  },
+
+  p2: [
+    {
+      en: "Until then we will happily sell our products in person by personal arrangement. You can reach us by phone or WhatsApp at",
+      sl: "Do takrat se lahko za manjše nakupe dogovorimo neposredno na telefonski številki ",
+    },
+    {
+      en: "(call or text, whichever you prefer) or by email at ",
+      sl: "(klic ali SMS, kar vam bolj odgovarja) ali po e-pošti na naslovu ",
+    },
+    {
+      en: "We're happy to arrange details on a case-by-case basis.",
+      sl: "Smo majhna kmetija in smo veseli osebnih stikov. Skupaj se dogovorimo za praktične detalje naročila.",
+    },
+  ],
 
   deliveryH2: {
     en: "Delivery",
     sl: "Dostava",
   },
   deliveryP: {
-    en: `We can deliver to Ljubljana and locally to the greater Mislinja region. If you are located elsewhere in Slovenia and are interested in our products, we may be able to arrange delivery for larger orders—contact us for details.`,
-    sl: `Dostavljamo po Ljubljani ter lokalno v širši mislinjski regiji. Pri večjih naročilih se lahko tudi dogovorimo za dostavo kjerkoli v Sloveniji. Kontaktirajte nas, da dorečemo praktične detalje.`,
+    en: "We can deliver to Ljubljana and locally to the greater Mislinja region. If you are located elsewhere in Slovenia and are interested in our products, we may be able to arrange delivery for larger orders—contact us for details.",
+    sl: "Izdelko lahko dostavimo po Ljubljani ter lokalno v širši mislinjski regiji. Pri večjih naročilih se lahko tudi dogovorimo za dostavo drugje v Sloveniji. Kontaktirajte nas, da dorečemo praktične detalje.",
   },
-
 
 }
