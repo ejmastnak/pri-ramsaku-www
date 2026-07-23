@@ -1,10 +1,10 @@
 export default {
   text: {
-    en: "We offer fruit and herb products made from the apples and herbs grown in our orchards and meadows, specializing in heirloom varieties and small-scale production.",
-    sl: "Ponujamo izdelke iz sadja in zelišč iz lastnih Pohorskih sadovnjakov in travnikov, s poudarkom na uporabo starih sort.",
+    en: "We are a small-scale farm in the Pohorje foothills producing traditional fruit products from heirloom varieties of apples, pears, and plums grown in our tall-trunk meadow orchards.",
+    sl: "Predelujemo izdelke iz starih sort jabolk, hrušk, in sliv iz lastnih Pohorskih travniških sadovnjakov.",
   },
   more: {
-    en: "More about us",
+    en: "More about our farm",
     sl: "Več o kmetiji",
   },
 }
