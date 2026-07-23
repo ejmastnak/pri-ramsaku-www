@@ -3,14 +3,14 @@ import { extractLocaleFromRoute, getExplicitRoute } from "@/lib/routes.js";
 
 interface Props {
   routeGroupName: string,
-  classes?: string
+  className?: string
 };
-const { routeGroupName, classes } = Astro.props as Props;
+const { routeGroupName, className } = Astro.props as Props;
 
 const locale = extractLocaleFromRoute(Astro.url.pathname);
 const route = getExplicitRoute(routeGroupName, locale);
 ---
 
-<a href={route} class={classes ?? ""}>
+<a href={route} class={className ?? ""}>
   <slot/>
 </a>

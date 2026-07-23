@@ -5,14 +5,14 @@ interface Props {
   title: string;
   img: {src: string};
   imgAlt: string;
-  classes?: string;
+  className?: string;
 }
-const { title, img, imgAlt, classes } = Astro.props as Props;
+const { title, img, imgAlt, className } = Astro.props as Props;
 ---
 
 
 <div class="relative max-w-md mx-auto">
-  <div class={`relative flex h-full flex-col overflow-hidden rounded-lg ${classes ?? ""}`}>
+  <div class={`relative flex h-full flex-col overflow-hidden rounded-lg ${className ?? ""}`}>
     <Image src={img} alt={imgAlt} width={800} class="shrink-0 w-full mx-auto h-56 xs:h-64 sm:h-72 object-cover rounded-md" />
     <div class="px-4 pb-6 pt-2">
       <p class="mt-2 text-lg font-bold tracking-tight text-gray-950">{title}</p>

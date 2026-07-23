@@ -7,12 +7,12 @@ import translations from '@/i18n/translations/shared/partials.js';
 const locale = extractLocaleFromRoute(Astro.url.pathname);
 
 interface Props {
-  classes: string
+  className?: string;
 }
-const { classes } = Astro.props as Props;
+const { className } = Astro.props as Props;
 ---
 
-<I18nLinkButton routeGroupName="howToBuy" classes={`inline-flex ml-auto items-center gap-x-2 h-fit translate-y-1 ${classes ?? ''}`}>
+<I18nLinkButton routeGroupName="howToBuy" className={`inline-flex ml-auto items-center gap-x-2 h-fit translate-y-1 ${className ?? ''}`}>
   <ShoppingCartIcon class="-ml-1 text-white-600 h-6 w-6" />
   <p>{translations.howToBuyButton[locale]} <span class="hidden sm:inline">{translations.howToBuyButtonSm[locale]}</span></p>
 </I18nLinkButton>

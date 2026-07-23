@@ -10,10 +10,10 @@ const locale = extractLocaleFromRoute(Astro.url.pathname);
 const route = getExplicitRoute(routeGroupName, locale);
 const currentRoute = normalizeRoute(Astro.url.pathname);
 
-let classes = "hover:underline hover:text-blue-600"
-if (route === currentRoute) classes += " font-medium";
+let className = "hover:underline hover:text-blue-600"
+if (route === currentRoute) className += " font-medium";
 ---
 
-<a href={route} class={classes} >
+<a href={route} class={className} >
   <slot/>
 </a>

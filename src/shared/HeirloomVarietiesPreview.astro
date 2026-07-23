@@ -14,15 +14,15 @@ const locale = extractLocaleFromRoute(Astro.url.pathname);
 ---
 
 <div class="max-w-4xl mx-auto text-center">
-  <BentoWrapper classes="gap-x-8 gap-y-12 grid-cols-1 lg:grid-cols-2">
+  <BentoWrapper className="gap-x-8 gap-y-12 grid-cols-1 lg:grid-cols-2">
     <I18nLink routeGroupName="appleVarieties">
-      <BentoCard classes="hover:shadow-md hover:outline hover:outline-1 hover:outline-gray-200" title={translations.applesH2[locale]} img={boskopFruitImg} imgAlt={imgAltTranslations.boskopFruitImg[locale]}>
+      <BentoCard className="hover:shadow-md hover:outline hover:outline-1 hover:outline-gray-200" title={translations.applesH2[locale]} img={boskopFruitImg} imgAlt={imgAltTranslations.boskopFruitImg[locale]}>
         {translations.applesP1[locale]}
       </BentoCard>
     </I18nLink>
 
     <I18nLink routeGroupName="pearVarieties">
-      <BentoCard classes="hover:shadow-md hover:outline hover:outline-1 hover:outline-gray-200" title={translations.pearsH2[locale]} img={hardijevaFruitImg} imgAlt={imgAltTranslations.hardijevaFruitImg[locale]}>
+      <BentoCard className="hover:shadow-md hover:outline hover:outline-1 hover:outline-gray-200" title={translations.pearsH2[locale]} img={hardijevaFruitImg} imgAlt={imgAltTranslations.hardijevaFruitImg[locale]}>
         {translations.pearsP1[locale]}
       </BentoCard>
     </I18nLink>

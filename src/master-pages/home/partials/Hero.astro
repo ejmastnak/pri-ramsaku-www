@@ -22,7 +22,7 @@ const locale = extractLocaleFromRoute(Astro.url.pathname);
         <p class="max-w-xs md:max-w-sm text-gray-50 py-1">
           {translations.text[locale]}
         </p>
-        <I18nLink classes="mt-2 inline-block text-sm italic hover:underline" routeGroupName="about">
+        <I18nLink className="mt-2 inline-block text-sm italic hover:underline" routeGroupName="about">
           {translations.more[locale]}
           <span aria-hidden="true"> &rarr;</span>
         </I18nLink>

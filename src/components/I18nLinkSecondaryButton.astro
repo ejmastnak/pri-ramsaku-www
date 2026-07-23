@@ -3,15 +3,15 @@ import { extractLocaleFromRoute, getExplicitRoute } from "@/lib/routes.js";
 
 interface Props {
   routeGroupName: string,
-  classes?: string
+  className?: string
 };
-const { routeGroupName, classes } = Astro.props as Props;
+const { routeGroupName, className } = Astro.props as Props;
 
 const locale = extractLocaleFromRoute(Astro.url.pathname);
 const route = getExplicitRoute(routeGroupName, locale);
 ---
 
-<a href={route} class={`inline-flex w-fit gap-x-1 items-center border border-gray-300 text-center rounded-md bg-orange-50 px-4 py-2 text-sm font-semibold text-gray-700 shadow-sm hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600 ${classes ?? ""}`}>
+<a href={route} class={`inline-flex w-fit gap-x-1 items-center border border-gray-300 text-center rounded-md bg-orange-50 px-4 py-2 text-sm font-semibold text-gray-700 shadow-sm hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600 ${className ?? ""}`}>
   <slot />
   &rarr;
 </a>

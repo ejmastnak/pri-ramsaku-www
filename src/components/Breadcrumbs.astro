@@ -3,15 +3,15 @@ import I18nLink from '@/components/I18nLink.astro'
 
 interface Props {
   breadcrumbs: Array<{routeGroupName: string, title: string}>,
-  classes?: string,
+  className?: string,
 }
-const { breadcrumbs, classes } = Astro.props as Props;
+const { breadcrumbs, className } = Astro.props as Props;
 ---
 
-<p class={`ml-px mt-2 text-sm text-gray-600 ${classes ?? ""}`}>
+<p class={`ml-px mt-2 text-sm text-gray-600 ${className ?? ""}`}>
   {breadcrumbs.map((route, idx) => (
   <>
-      <I18nLink classes="hover:text-blue-600 hover:underline" routeGroupName={route.routeGroupName}>{route.title}</I18nLink>
+      <I18nLink className="hover:text-blue-600 hover:underline" routeGroupName={route.routeGroupName}>{route.title}</I18nLink>
     { (idx < breadcrumbs.length - 1) && <span> > </span>}
   </>
 ))}
