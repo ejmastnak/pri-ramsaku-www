@@ -14,8 +14,8 @@ export default {
     sl: "Stare sorte sadja",
   },
   varietiesBody: {
-    en: "We grow heirloom varieties of apples, pears, and other fruit not typically found in stores or commercial orchards. Below are galleries, with images and descriptions, of some of the apple and pear varieties on our farm that we have positively identified.",
-    sl: "Na kmetiji gojimo številne tradicionalne stare sorte jabolk, hrušk in drugega sadja, ki se tipično ne najdejo v trgovinah ali v komercialnih sadovnjakih. Na naslednjih povezavah najdete slike in opise nekaterih teh sort.",
+    en: "We grow heirloom varieties of apples, pears, and plums not typically found in stores or commercial orchards. Below are galleries, with images and descriptions, of some of the apple and pear varieties on our farm that we have positively identified.",
+    sl: "Na kmetiji gojimo tradicionalne stare sorte jabolk, hrušk in drugega sadja, ki se tipično ne najdejo v trgovinah ali v komercialnih sadovnjakih. Na naslednjih povezavah najdete slike in opise nekaterih teh sort.",
   },
 
   productsH2: {
@@ -23,8 +23,8 @@ export default {
     sl: "Izdelki",
   },
   productsP: {
-    en: `We sell apple juice, apple cider vinegar, jams, and dried fruits; and can also prepare other products by special arrangement.`,
-    sl: `Ponujamo jabolčni sok, jabolčni kis, in zeliščne izdelke iz zelišč z našega travnika in iz gozda. Po dogovoru lahko pripravimo tudi sorodne izdelke iz naših sadovnjakov in travnikov.`,
+    en: `We sell apple juice, apple cider vinegar, jams, and dried fruits made from heirloom varieties grown in our meadow orchards. One a smaller scale we also produce teas and herbal products from herbs and plants grown in our meadows and forest.`,
+    sl: `Ponujamo jabolčni sok, jabolčni kis, marmelade in suho sadje iz starih sort iz lastnih sadovnjakov. V manjšem obsegu ponujamo tudi čaje, šentjanževo olje in sorodne zeliščne izdelke, ki jih predelamo iz zelišč iz lastnih travnikov.`,
   },
   productsLink: {
     en: "View our products",
@@ -36,14 +36,12 @@ export default {
     sl: "O kmetiji",
   },
   aboutBody1: {
-    en: `We are a family farm specializing in small-scale production of apple juice, cider vinegar, and related fruit products using traditional heirloom apple varieties from Slovenia and the former Austro-Hungarian empire.`,
-    sl: "Smo manjša družinska kmetija na slovenskem Koroškem. Po načelih ekološkega kmetovanja pridelujemo jabolčni sok, jabolčni kis in sorodne sadne izdelke iz starih sort jabolk in hrušk, ki dozorijo v našem visokodebelnem travniškem sadovnjaku, in zeliščne izdelke iz zelišč z našega travnika in iz gozda. Delamo s poudarkom na uporabo starih, nekomercialnih sort ter ročno predelavo na manjši skali, da bi naši izdelki imeli bogat okus in polno hranilno vrednost.",
+    en: `We are a family farm in the foothills of the Pohorje mountains specializing in small-scale production of apple juice, cider vinegar, and related fruit products made from heirloom apple varieties traditionally grown in Slovenia and the former Austro-Hungarian empire.`,
+    sl: "Smo manjša družinska kmetija na slovenskem Koroškem. Po načelih ekološkega kmetovanja predelujemo jabolčni sok, jabolčni kis in sorodne sadne izdelke iz starih sort jabolk in hrušk, ki dozorijo v našem visokodebelnem travniškem sadovnjaku, in zeliščne izdelke iz zelišč iz našega travnika in iz gozda.",
   },
   aboutBody2: {
-    en: `We specialize in the use of heirloom varieties and small-scale production methods; and strive to preserve and cultivate the ecologically-important meadow-orchard habitat typical of the traditional Slovene farming countryside.
-`,
-    sl: `Trudimo se, da bi ohranili uporabo starih sort, tradicionalne načine predelave, ohranili kmetijsko krajino in pomembni ekološki habitat (visokodebelni travniški sadovnjaki) prispevali k ohranitvi in slovenskega podeželja, ipd.
-`,
+    en: `We strive to cultivate heirloom varieties, small-scale production methods, and ecologically-valuable meadow orchard habitat and so contribute to the preservation and continued life of the Slovene farming countryside.`,
+    sl: `Trudimo se, da bi ohranili stare sorte, tradicionalne načine predelave in pomembni ekološki habitat (visokodebelni travniški sadovnjaki) in tako prispevali k ohranitvi slovenske kmetijske krajine.`,
   },
 
   linksH2: {

@@ -5,7 +5,7 @@ export default {
       sl: "Izdelki",
     },
     description: {
-      en: "We sell apple juice, vinegar, dried fruit, jams, teas, and other products made from the heirloom apples and herbs grown in our orchards and meadows. View a product for more information about production and ingredients.",
+      en: "We sell apple juice, apple cider vinegar, jams, and related fruit products made from the heirloom varieties grown in our meadow orchards. On a smaller scale we also sell teas and herbal products from herbs grown in our meadows and forests. View a product for more information about production and ingredients.",
       sl: "Ponujamo sokove, kis, krhlje, marmelade, čaje, in sorodne izdelke iz sadja in zelišč iz naših sadovnjakov in travnikov, s poudarkom na stare sorte jabolk. Več o izdelku si lahko preberete na posamezni strani izdelka.",
     },
   },
@@ -14,8 +14,8 @@ export default {
     sl: "Izdelki",
   },
   p1: {
-    en: "We sell products made from the apples and herbs grown in our orchards and meadows. Click a product for more information about production and ingredients.",
-    sl: "Ponujamo izdelke iz sadja in zelišč iz naših sadovnjakov in travnikov, s poudarkom na stare sorte jabolk. Več o izdelku si lahko preberete na posamezni strani izdelka.",
+    en: "We sell apple juice, apple cider vinegar, jams, and related fruit products made from the heirloom varieties grown in our meadow orchards. On a smaller scale we also sell teas and herbal products from herbs grown in our meadows and forests. View a product for more information about production and ingredients.",
+    sl: "Ponujamo jabolčni sok, jabolčni kis, marmelade, krhlje in sorodne izdelke iz starih sort sadja iz naših travniških sadovnjakov. V manjšem obsegu predelujemo tudi čaje in sorodne zeliščne izdelki iz lastnih travnikov. Več o izdelku si lahko preberete na posamezni strani izdelka.",
   },
   jabsokTitle: {
     en: "Apple juice",
@@ -25,7 +25,7 @@ export default {
     en: `
 Full-bodied, unfiltered apple juice pressed each fall from a selection of heirloom varieties grown in our tall-trunk meadow orchards.
 `,
-    sl: `Jabolčni sok predelujemo iz selekcije starih sort, ki dozorijo vsako jesen v naših travniških sadovnakih. Zaradi minimalne obdelave sok obdrži bogat, poln okus, ki ga dajejo stare sorte jabolk.`,
+    sl: `Jabolčni sok predelujemo iz selekcije starih sort, ki dozorijo vsako jesen v naših travniških sadovnjakih. Zaradi minimalne obdelave sok obdrži bogat, poln okus, ki ga dajejo stare sorte jabolk.`,
   },
   jabkisTitle: {
     en: "Apple Cider Vinegar",
@@ -33,7 +33,7 @@ Full-bodied, unfiltered apple juice pressed each fall from a selection of heirlo
   },
   jabkisDescription: {
     en: "Our vinegar is special in that we use apple pulp left over from the juice-pressing process as a primary raw ingredient, which gives our vinegar  smoothness, gentleness, and complexity not found in conventional vinegar made only from fermented apple juice",
-    sl: "Kis predelujemo iz jabolčnih tropin, ki nastanejo pri stiskanju jabolk za jabolčni sok. Kis je v osnovi podoben konvencionalnemu, le da je manj oster in ima večjo mehkobo, nežnost in kopleksnost zaradi bioaktivnih rastlinskih snovi v jabolčnih tropinah.",
+    sl: "Kis predelujemo iz jabolčnih tropin, ki nastanejo pri stiskanju jabolk za jabolčni sok. Kis je v osnovi podoben konvencionalnemu, le da je manj oster in ima večjo mehkobo, nežnost in kompleksnost zaradi bioaktivnih rastlinskih snovi v jabolčnih tropinah.",
   },
   sntoljTitle: {
     en: "St. John's Wort Oil",

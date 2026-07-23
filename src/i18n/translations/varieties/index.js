@@ -23,7 +23,7 @@ export default {
   },
   applesP1: {
     en: "Bohnapfel (Bobovec), Carjevič, London Pippin (Londonski peping), Štajerski mošancelj, Šentjakobka, and many more...",
-    sl: "Bohnapfel (Bobovec), Carjevič, London Pippin (Londonski peping), Štajerski mošancelj, Šentjakobka in veliko drugih...",
+    sl: "Bobovec, Carjevič, Londonski peping, Štajerski mošancelj, Šentjakobka in veliko drugih...",
   },
   pearsH2: {
     en: "Pears",
@@ -31,6 +31,6 @@ export default {
   },
   pearsP1: {
     en: "Beurre Hardy (Hardijeva), Clapp’s Favourite (Klapova), Poire de Curé (Pastorjevka), Bella di Giugno (Junijska lepotica), and more...",
-    sl: "Beurre Hardy (Hardijeva), Clapp’s Favourite (Klapova), Poire de Curé (Pastorjevka), Bella di Giugno (Junijska lepotica) in tudi druge...",
+    sl: "Hardijeva, Klapova, Pastorjevka, Junijska lepotica in tudi druge...",
   },
 }

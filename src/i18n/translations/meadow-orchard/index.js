@@ -11,7 +11,7 @@ export default {
   },
   h1: {
     en: "What is a meadow orchard?",
-    sl: "Opredelitev travniškega sadovnjaka",
+    sl: "Kaj je to, travniški sadovnjak?",
   },
   dandelionsImgAlt: {
     en: "Image showing a field of dandelions in focus in the foreground with old-growth apple trees in the background.",
@@ -72,7 +72,7 @@ Travniški sadovnjaki so karakterističen sestavni del v mozaiku ekstenzivno obd
     sl: "Primerjava visokodebelnega travniškega sadovnjaka s konvencionalnimi sadovnjaki:",
   },
   comparison: {
-    en: "the tall, old-growth trees, mixed varieties, and scattered distribution of trees in meadow orchards contrasts with conventional fruit orchards, which are characterized by monoculture plantations of short, heavily-pruned trees closely spaced in regular rows—the short trees and regular spacing in conventional orchards allow for efficient chemical treatments and mechanized harvest. Intensive orchards conventionally lack an appreciable meadow undestory and rely heavily on agrochemical application to sustain high yields. ",
+    en: "the tall, old-growth trees, mixed varieties, and scattered distribution of trees in meadow orchards contrasts with conventional fruit orchards, which are characterized by monoculture plantations of short, heavily-pruned trees closely spaced in regular rows—the short trees and regular spacing in conventional orchards allow for efficient chemical treatments and mechanized harvest. Intensive orchards conventionally lack an appreciable meadow understory and rely heavily on agrochemical application to sustain high yields. ",
     sl: `
 Visoka in stara drevesa različnih vrst in sort, ki so razkropljena po travniku, so pravo nasprotje konvencionalnih monokulturnih sadnih nasadov, v katerih so drevesa nizka, sajena tesno skupaj v pravilnih razmakih in ravnih vrstah in močno obrezana, kar vse omogoča učinkovito mehanično obiranje in uporabo kemičnih sredstev. Intenzivni konvencionalni nasadi praviloma nimajo raznolike travne podlage, visoke donose pa zagotavlja uporaba agrokemičnih sredstev.
 `,

@@ -183,7 +183,7 @@ The variety is highly valued for fresh consumption but is not suitable for stora
 `,
       sl: `
 Grafenštajnc izvirza iz Danske, ime je dobila po gradu Gråsten, kjer so gojili sorto že v 17. stoletju.
-Plodovi so veliki, nepravilne obliko in nekoliko splošcati. Zrelo jabolko ima zelenkasto rumeno osnovno barve s karminasto rdečimi prižami.
+Plodovi so veliki, nepravilne obliko in nekoliko ploščati. Zrelo jabolko ima zelenkasto rumeno osnovno barve s karminasto rdečimi prižami.
 Meso je zelo sočno, prijetno in aromatično.
 Je zgodnje jabolko, dozori v začetku septembra.
 Sorta je cenjena za svežo uživanje in ni primerna za skladiščenje, zato se je ne najde v intenzivnem sadjarstvu.
