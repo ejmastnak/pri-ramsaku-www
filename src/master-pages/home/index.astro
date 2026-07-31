@@ -10,6 +10,8 @@ import translations from '@/i18n/translations/home/index.js';
 import imgAltTranslations from '@/i18n/translations/shared/imgAlts.js';
 const locale = extractLocaleFromRoute(Astro.url.pathname);
 
+import SlantedImages3 from '@/components/SlantedImages3.astro'
+
 import winterDomacijaImg from '@/assets/img/winter-domacija.jpg';
 import krivopeceljTreeImg from '@/assets/img/krivopecelj-tree.jpg';
 import applesCrateImg from '@/assets/img/apples-crate.jpg';
@@ -20,43 +22,49 @@ import boskopFruitImage from '@/assets/img/varieties/apple-fruit/boskop.jpg'
 import kanadkaFruitImage from '@/assets/img/varieties/apple-fruit/kanadka.jpg'
 import krivopeceljFruitImage from '@/assets/img/varieties/apple-fruit/krivopecelj.jpg'
 
+const slantedApplesImages = {
+  left: {
+    image: boskopFruitImage,
+    alt: "Boskopski kosmač",
+    width: 1080,
+  },
+  center: {
+    image: kanadkaFruitImage,
+    alt: "Kanadka",
+    width: 1080,
+  },
+  right: {
+    image: krivopeceljFruitImage,
+    alt: "Krivopeclj",
+    width: 1080,
+  },
+}
+
+const slantedAboutImages = {
+  right: {
+    image: winterDomacijaImg,
+    alt: imgAltTranslations.winterDomacijaImg[locale],
+    width: 1080,
+  },
+  left: {
+    image: krivopeceljTreeImg,
+    alt: imgAltTranslations.krivopeceljTreeImg[locale],
+    width: 1080,
+  },
+  center: {
+    image: applesCrateImg,
+    alt: imgAltTranslations.applesCrateImg[locale],
+    width: 1080,
+  },
+}
+
 ---
 
 <div class="mx-auto">
 
   <Hero class="w-screen" />
 
-  <!-- Apples slanted -->
-  <div class="mt-8 sm:mt-16 lg:mt-20 xl:mt-24 max-w-7xl mx-auto">
-    <div class="grid grid-cols-3 xl:rounded-xl overflow-clip">
-      <div class="overflow-hidden" style="margin-right: var(--slant-margin);">
-        <Image
-            src={boskopFruitImage} 
-            alt=""
-            class="object-cover h-48 sm:h-64 md:h-72"
-            style="clip-path: polygon(0 0, 100% 0, calc(100% - var(--slant)) 100%, 0 100%);"
-            />
-      </div>
-
-      <div class="overflow-hidden z-10" style="margin-left: var(--slant-margin); margin-right: var(--slant-margin);">
-        <Image
-            src={kanadkaFruitImage}
-            alt=""
-            class="object-cover h-48 sm:h-64 md:h-72"
-            style="clip-path: polygon(var(--slant) 0, 100% 0, calc(100% - var(--slant)) 100%, 0 100%);"
-            />
-      </div>
-
-      <div class="overflow-hidden" style="margin-left: var(--slant-margin);">
-        <Image
-            src={krivopeceljFruitImage}
-            alt=""
-            class="object-cover h-48 sm:h-64 md:h-72"
-            style="clip-path: polygon(var(--slant) 0, 100% 0, 100% 100%, 0 100%);"
-            />
-      </div>
-    </div>
-  </div>
+  <SlantedImages3 images={slantedApplesImages} className="mt-8 sm:mt-16 lg:mt-20 xl:mt-24 max-w-7xl mx-auto" />
 
   <Wrapper className="sm:mt-8 lg:mt-12 py-6 md:py-8">
 
@@ -88,48 +96,33 @@ import krivopeceljFruitImage from '@/assets/img/varieties/apple-fruit/krivopecel
 
     </section>
 
-    <!-- About farm -->
-    <section class="mt-12 pt-12 border-t border-gray-200 text-center">
+  </Wrapper>
 
-      <h2 class="text-xl font-bold">{translations.aboutHeading[locale]}</h2>
+  <!-- About -->
+  <section class="mt-12 pt-12 border-t border-gray-200 text-center max-w-7xl mx-auto px-5">
 
-      <p class="mt-3 max-w-xl mx-auto">{translations.aboutBody1[locale]}</p>  
+    <h2 class="text-xl font-bold">{translations.aboutHeading[locale]}</h2>
 
-      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
-        <div class="hidden lg:block h-48 sm:h-52 md:h-56 rounded">
-          <Image class="rounded h-full w-full object-cover" src={winterDomacijaImg} alt={imgAltTranslations.winterDomacijaImg[locale]} height={400} />
-        </div>
-        <div class="h-48 sm:h-52 md:h-56 rounded">
-          <Image class="rounded h-full w-full object-cover" src={krivopeceljTreeImg} alt={imgAltTranslations.krivopeceljTreeImg[locale]} height={400} />
-        </div>
-        <div class="hidden sm:block h-48 sm:h-52 md:h-56 rounded">
-          <Image class="rounded h-full w-full object-cover" src={applesCrateImg} alt={imgAltTranslations.applesCrateImg[locale]} height={400} />
-        </div>
-      </div>
+    <p class="mt-3 max-w-xl mx-auto">{translations.aboutBody1[locale]}</p>  
 
-      <p class="my-12 max-w-xl mx-auto text-center">{translations.aboutBody2[locale]}</p>
+    <SlantedImages3 images={slantedAboutImages} className="my-12" responsive={true} />
 
-    </section>
+    <p class="max-w-xl mx-auto text-center">{translations.aboutBody2[locale]}</p>
 
-    <!-- Links -->
+    <I18nLinkButton className="mt-6" routeGroupName="about">{translations.aboutLink[locale]}</I18nLinkButton>
+
+  </section>
+
+  <!-- Links -->
+  <Wrapper className="mb-32">
     <section class="mt-12 pt-12 border-t border-gray-200 max-w-xl mx-auto">
       <h2 class="text-xl text-center font-bold">{translations.linksH2[locale]}</h2>
       <ul class="mt-2 text-left list-disc ml-5 space-y-2">
         <li><I18nLink routeGroupName="varieties" className="text-orange-950 font-medium hover:text-orange-700 underline">{translations.varietiesLink[locale]}</I18nLink></li>
-        <li><I18nLink routeGroupName="meadowOrchard" className="text-orange-950 font-medium hover:text-orange-700 underline">{translations.meadowOrchardLink[locale]}</I18nLink></li>
-        <li><I18nLink routeGroupName="about" className="text-orange-950 font-medium hover:text-orange-700 underline">{translations.aboutLink[locale]}</I18nLink></li>
+          <li><I18nLink routeGroupName="meadowOrchard" className="text-orange-950 font-medium hover:text-orange-700 underline">{translations.meadowOrchardLink[locale]}</I18nLink></li>
+            <li><I18nLink routeGroupName="about" className="text-orange-950 font-medium hover:text-orange-700 underline">{translations.aboutLink2[locale]}</I18nLink></li>
       </ul>
     </section>
-
   </Wrapper>
-</div>
 
-<style>
-  :root {
-    --slant: 32px;
-    --slant-bias: calc(var(--slant) / 2);
-    --gap: 2px;
-    --slant-gap: calc(var(--slant-bias) + var(--gap));
-    --slant-margin: calc(-1*(var(--slant) - var(--slant-gap)));
-  }
-</style>
+</div>

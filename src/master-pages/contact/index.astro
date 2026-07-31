@@ -7,6 +7,7 @@ import imgAltTranslations from '@/i18n/translations/shared/imgAlts.js';
 import sliveBlossomsImg from '@/assets/img/slive-blossoms.jpg'
 
 const locale = extractLocaleFromRoute(Astro.url.pathname);
+
 ---
 
 <PageWrapper>
@@ -16,7 +17,6 @@ const locale = extractLocaleFromRoute(Astro.url.pathname);
     <div class="max-w-md">
 
       <p>{translations.p1[locale]}</p>
-
 
       <ul class="mt-3 flex flex-col gap-y-2 ml-5 list-disc">
         <li>
@@ -35,6 +35,5 @@ const locale = extractLocaleFromRoute(Astro.url.pathname);
     <Image src={sliveBlossomsImg} alt={imgAltTranslations.sliveBlossomsImg[locale]} class="rounded w-full max-w-lg mx-auto object-cover" width={600} />
 
   </div>
-
 
 </PageWrapper>

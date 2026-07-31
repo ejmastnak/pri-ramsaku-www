@@ -8,9 +8,10 @@ import PrimaryLink from '@/components/PrimaryLink.astro'
 import translations from '@/i18n/translations/how-to-buy/index.js';
 import imgAltTranslations from '@/i18n/translations/shared/imgAlts.js';
 
+const locale = extractLocaleFromRoute(Astro.url.pathname);
+
 import orehTreeImg from '@/assets/img/oreh-tree.jpg'
 
-const locale = extractLocaleFromRoute(Astro.url.pathname);
 ---
 
 <PageWrapper>

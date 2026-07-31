@@ -40,8 +40,12 @@ export default {
     sl: "Smo manjša družinska kmetija na slovenskem Koroškem. Po načelih ekološkega kmetovanja predelujemo jabolčni sok, jabolčni kis in sorodne sadne izdelke iz starih sort jabolk in hrušk, ki dozorijo v našem visokodebelnem travniškem sadovnjaku, in zeliščne izdelke iz zelišč iz našega travnika in iz gozda.",
   },
   aboutBody2: {
-    en: `We strive to cultivate heirloom varieties, small-scale production methods, and ecologically-valuable meadow orchard habitat and so contribute to the preservation and continued life of the Slovene farming countryside.`,
+    en: `We cultivate heirloom varieties, use small-scale production methods, and strive to preserve the slowly-disappearing meadow orchard habitat characteristic of rural Slovenia, with the larger vision of contributing our part to the preservation and continued life of the agricultural Slovenian countryside.`,
     sl: `Trudimo se, da bi ohranili stare sorte, tradicionalne načine predelave in pomembni ekološki habitat (visokodebelni travniški sadovnjaki) in tako prispevali k ohranitvi slovenske kmetijske krajine.`,
+  },
+  aboutLink: {
+    en: "More about the farm",
+    sl: "Več o kmetiji",
   },
 
   linksH2: {
@@ -56,7 +60,7 @@ export default {
     en: "What is a tall-trunk meadow-orchard?",
     sl: "Kaj je to, visokodebelni travniški sadovnjak?",
   },
-  aboutLink: {
+  aboutLink2: {
     en: "About our farm: history and current operations",
     sl: "O kmetiji: zgodovina in trenutna usmeritev",
   },

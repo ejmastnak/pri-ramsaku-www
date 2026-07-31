@@ -4,23 +4,64 @@ import HeirloomVarietiesPreview from '@/shared/HeirloomVarietiesPreview.astro'
 import MeadowOrchardPreview from '@/shared/MeadowOrchardPreview.astro'
 import I18nLink from '@/components/I18nLink.astro'
 import I18nLinkSecondaryButton from '@/components/I18nLinkSecondaryButton.astro'
-import PageWrapper from '@/shared/PageWrapper.astro'
-import { extractLocaleFromRoute  } from '@/lib/routes.js';
+import Wrapper from '@/shared/PageWrapper.astro'
+import SlantedImages3 from '@/components/SlantedImages3.astro'
 import translations from '@/i18n/translations/about/index.js';
 import imgAltTranslations from '@/i18n/translations/shared/imgAlts.js';
+
+import { extractLocaleFromRoute  } from '@/lib/routes.js';
 
 const locale = extractLocaleFromRoute(Astro.url.pathname);
 
 import carjevicImg from '@/assets/img/carjevic.jpg';
-import winterDomacijaImg from '@/assets/img/winter-domacija.jpg';
-import krivopeceljTreeImg from '@/assets/img/krivopecelj-tree.jpg';
-import applesCrateImg from '@/assets/img/apples-crate.jpg';
-import kanadkaFruitImg from '@/assets/img/varieties/apple-fruit/kanadka.jpg';
-import boskopFruitImg from '@/assets/img/varieties/apple-fruit/boskop.jpg';
+
+import bobovecFruitImage from '@/assets/img/varieties/apple-fruit/bobovec.jpg'
+import jonatanFruitImage from '@/assets/img/varieties/apple-fruit/jonatan.jpg'
+import londonskiPepingFruitImage from '@/assets/img/varieties/apple-fruit/londonski-peping.jpg'
+
+import drobnicaFruitImage from '@/assets/img/varieties/pear-fruit/drobnica.jpg'
+import hardijevaFruitImage from '@/assets/img/varieties/pear-fruit/hardijeva.jpg'
+import pastorjevkaFruitImage from '@/assets/img/varieties/pear-fruit/pastorjevka.jpg'
+
+const slantedApplesImages = {
+  right: {
+    image: bobovecFruitImage,
+    alt: "Bobovec",
+    width: 1080,
+  },
+  left: {
+    image: jonatanFruitImage,
+    alt: "Jonatan",
+    width: 1080,
+  },
+  center: {
+    image: londonskiPepingFruitImage,
+    alt: "Londonski peping",
+    width: 1080,
+  },
+}
+
+const slantedPearImages = {
+  center: {
+    image: drobnicaFruitImage,
+    alt: "Drobnica",
+    width: 1080,
+  },
+  left: {
+    image: hardijevaFruitImage,
+    alt: "Hardijeva",
+    width: 1080,
+  },
+  right: {
+    image: pastorjevkaFruitImage,
+    alt: "Pastorjevka",
+    width: 1080,
+  },
+}
 
 ---
 
-<PageWrapper>
+<Wrapper>
 
   <h1 class="h1 text-center">{translations.h1[locale]}</h1>
 
@@ -30,74 +71,58 @@ import boskopFruitImg from '@/assets/img/varieties/apple-fruit/boskop.jpg';
     <Image src={carjevicImg} alt={imgAltTranslations.carjevicImg[locale]} class="rounded-lg h-96 mx-auto object-center object-cover" width={900} />
   </div>
 
-  <div class="my-10 mx-auto">
-
-    <!-- Pri Ramšaku name -->
-    <div>
-      <h2 class="text-xl text-center font-bold">{translations.priRamsakuHeading[locale]}</h2>
-      <p set:html={translations.priRamsakuBodyHtml[locale]} class="mt-4 max-w-xl mx-auto text-center" />
-    </div>
-
-    <!-- Image grid -->
-    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
-      <div class="hidden lg:block h-48 sm:h-52 md:h-56 rounded">
-        <Image class="rounded h-full w-full object-cover" src={winterDomacijaImg} alt={imgAltTranslations.winterDomacijaImg[locale]} height={400} />
-      </div>
-      <div class="h-48 sm:h-52 md:h-56 rounded">
-        <Image class="rounded h-full w-full object-cover" src={krivopeceljTreeImg} alt={imgAltTranslations.krivopeceljTreeImg[locale]} height={400} />
-      </div>
-      <div class="hidden sm:block h-48 sm:h-52 md:h-56 rounded">
-        <Image class="rounded h-full w-full object-cover" src={applesCrateImg} alt={imgAltTranslations.applesCrateImg[locale]} height={400} />
-      </div>
-    </div>
-
-    <!-- History -->
-    <div class="mt-8">
-      <h2 class="text-xl text-center font-bold">{translations.historyHeading[locale]}</h2>
-      <div class="mt-3 flex flex-col gap-y-2 max-w-xl mx-auto">
-        <p set:html={translations.historyP1Html[locale]} />
-        <p>{translations.historyP2[locale]}</p>
-        <p>{translations.historyP3[locale]}</p>
-      </div>
-    </div>
-
-    <div class="mt-8 grid sm:grid-cols-2 gap-4 place-items-center">
-      <div class="h-48 sm:h-52 md:h-56 rounded">
-        <Image class="rounded h-full w-full object-cover" src={boskopFruitImg} alt={imgAltTranslations.boskopFruitImg[locale]} height={400} />
-      </div>
-      <div class="h-48 sm:h-52 md:h-56 rounded">
-        <Image class="rounded h-full w-full object-cover" src={kanadkaFruitImg} alt={imgAltTranslations.kanadkaFruitImg[locale]} height={400} />
-      </div>
-    </div>
-
-    <!-- Focus on traditional heirloom varieties -->
-    <section class="mt-8">
-      <h2 class="text-xl text-center font-bold">{translations.varietiesHeading[locale]}</h2>
-      <div class="mt-3 space-y-2 max-w-xl mx-auto">
-        <p>{translations.varietiesP1[locale]}</p>
-        <p>{translations.varietiesP2[locale]}</p>
-      </div>
-    </section>
-
-    <!-- Heirloom varieties -->
-    <section class="mt-8">
-      <h2 class="text-xl text-center font-bold">{translations.picturesHeading[locale]}</h2>
-      <div class="mt-3">
-        <p class="max-w-xl mx-auto" set:html={translations.picturesParagraph[locale]}/>
-        <div class="mt-5">
-          <HeirloomVarietiesPreview />
-        </div>
-      </div>
-    </section>
-
-    <!-- Heirloom varieties -->
-    <section class="mt-8">
-      <h2 class="text-xl text-center font-bold">{translations.meadowOrchardHeading[locale]}</h2>
-      <p class="mt-3 space-y-2 max-w-xl mx-auto">{translations.meadowOrchardParagraph[locale]}</p>
-      <MeadowOrchardPreview />
-    </section>
-
+  <!-- Pri Ramšaku name -->
+  <div class="mt-10">
+    <h2 class="text-xl text-center font-bold">{translations.priRamsakuHeading[locale]}</h2>
+    <p set:html={translations.priRamsakuBodyHtml[locale]} class="mt-4 max-w-xl mx-auto text-center" />
   </div>
 
-</PageWrapper>
+</Wrapper>
 
+<SlantedImages3 images={slantedApplesImages} className="max-w-7xl mx-auto my-8" responsive={true} />
+
+<Wrapper>
+
+  <!-- History -->
+  <div>
+    <h2 class="text-xl text-center font-bold">{translations.historyHeading[locale]}</h2>
+    <div class="mt-3 flex flex-col gap-y-2 max-w-xl mx-auto">
+      <p set:html={translations.historyP1Html[locale]} />
+      <p>{translations.historyP2[locale]}</p>
+      <p>{translations.historyP3[locale]}</p>
+    </div>
+  </div>
+</Wrapper>
+
+<SlantedImages3 images={slantedPearImages} className="max-w-7xl mx-auto my-8" responsive={true} />
+
+<Wrapper>
+
+  <!-- Focus on traditional heirloom varieties -->
+  <section class="mt-8">
+    <h2 class="text-xl text-center font-bold">{translations.varietiesHeading[locale]}</h2>
+    <div class="mt-3 space-y-2 max-w-xl mx-auto">
+      <p>{translations.varietiesP1[locale]}</p>
+      <p>{translations.varietiesP2[locale]}</p>
+    </div>
+  </section>
+
+  <!-- Heirloom varieties -->
+  <section class="mt-8">
+    <h2 class="text-xl text-center font-bold">{translations.picturesHeading[locale]}</h2>
+    <div class="mt-3">
+      <p class="max-w-xl mx-auto" set:html={translations.picturesParagraph[locale]}/>
+      <div class="mt-5">
+        <HeirloomVarietiesPreview />
+      </div>
+    </div>
+  </section>
+
+  <!-- Heirloom varieties -->
+  <section class="mt-8">
+    <h2 class="text-xl text-center font-bold">{translations.meadowOrchardHeading[locale]}</h2>
+    <p class="mt-3 space-y-2 max-w-xl mx-auto">{translations.meadowOrchardParagraph[locale]}</p>
+    <MeadowOrchardPreview />
+  </section>
+
+</Wrapper>
