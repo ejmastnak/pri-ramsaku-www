@@ -1,0 +1,73 @@
+---
+import type { ImageMetadata } from "astro";
+import { Image } from 'astro:assets';
+
+interface Props {
+  images: {
+    left: {image: ImageMetadata, alt: string, width: number, },
+    center: {image: ImageMetadata, alt: string, width: number, },
+    right: {image: ImageMetadata, alt: string, width: number, },
+  };
+  className?: string;
+  responsive?: boolean;
+}
+
+const { images, className, responsive = false } = Astro.props as Props;
+---
+
+<div class={className ?? ""} data-responsive={responsive}>
+  <div class={`grid rounded xl:rounded-xl overflow-clip ${responsive ? 'sm:grid-cols-3 gap-y-2 mx-2' : 'grid-cols-3' }`}>
+    <div class="overflow-hidden" style="margin-right: var(--slant-margin);">
+      <Image
+        src={images.left.image} 
+        alt={images.left.alt}
+        class={`object-cover h-48 sm:h-64 md:h-72 ${responsive ? 'rounded-lg sm:rounded-none mx-auto max-w-s h-64' : ''}`}
+        style="clip-path: polygon(0 0, 100% 0, calc(100% - var(--slant)) 100%, 0 100%);"
+      />
+    </div>
+
+    <div class="overflow-hidden z-10" style="margin-left: var(--slant-margin); margin-right: var(--slant-margin);">
+      <Image
+        src={images.center.image} 
+        alt={images.center.alt}
+        class={`object-cover h-48 sm:h-64 md:h-72 ${responsive ? 'rounded-lg sm:rounded-none mx-auto max-w-s h-64' : ''}`}
+        style="clip-path: polygon(var(--slant) 0, 100% 0, calc(100% - var(--slant)) 100%, 0 100%);"
+      />
+    </div>
+
+    <div class="overflow-hidden" style="margin-left: var(--slant-margin);">
+      <Image
+        src={images.right.image}
+        alt={images.right.alt}
+        class={`object-cover h-48 sm:h-64 md:h-72 ${responsive ? 'rounded-lg sm:rounded-none mx-auto max-w-s h-64' : ''}`}
+        style="clip-path: polygon(var(--slant) 0, 100% 0, 100% 100%, 0 100%);"
+      />
+    </div>
+  </div>
+</div>
+
+<style>
+  :root {
+    --gap: 2px;
+  }
+
+  [data-responsive] {
+    --slant: 32px;
+    --slant-bias: calc(var(--slant) / 2);
+    --slant-gap: calc(var(--slant-bias) + var(--gap));
+    --slant-margin: calc(-1 * (var(--slant) - var(--slant-gap)));
+  }
+
+  /* Turns off slant for responsive single-column layout */
+  [data-responsive="true"] {
+    --slant: 0px;
+  }
+
+  /* Turns on slant when switching to multi-column layout */
+  @media (min-width: 640px) {
+    [data-responsive="true"] {
+      --slant: 32px;
+    }
+  }
+
+</style>
