@@ -30,7 +30,7 @@ export default {
     sl: "Zgodovina kmetije",
   },
   historyP1Html: {
-    en: "Our farm was founded in the 1800s by the Ramšak family, who gave the farm its name—<i>Pri Ramšaku</i>. Throughout the 1800s and 1900s, the Ramšak family maintained a thriving homestead, raising livestock, growing grains and produce, and operating a grain mill and sawmill on the forested, mountainous terrain.",
+    en: "Our farm was founded in the 1800s by the Ramšak family, who gave the farm its name—<i>Pri Ramšaku</i>. Throughout the 1800s and 1900s, the Ramšak family maintained a thriving homestead, raising livestock, growing grains and produce, as well as operating a grain mill and sawmill on the forested, mountainous terrain.",
     sl: "Našo kmetijo je v 19. stoletju ustanovila stara družina Ramšak, ki je okrog leta 1800 postavila kmečko hišo, ki še vedno stoji, obdelovala polja na strmih prisojnih bregovih, gojila živino in delala v gozdu. Še pred dobrega pol stoletja je bila kmetija samooskrbna, imela žago, mlin in kovačijo, trla lan in kuhala oglje. Oče zadnjega lastnika pred nami je lovil korak z modernizacijo kmetijstva in bil med prvimi v teh krajih, ki so pridelovali mleko za oddajo.",
   },
   historyP2: {
