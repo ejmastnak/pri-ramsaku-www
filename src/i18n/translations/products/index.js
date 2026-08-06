@@ -51,7 +51,7 @@ Saint John's Wort oil is herbal product made by infusing the flowers of the Sain
   },
   otherDescription: {
     en: `
-In addition to our apple juice and apple cider vinegar, produce a number of  products on a small scale, including dried fruits, jams and fruit butters, and herbal teas.
+In addition to our apple juice and apple cider vinegar, we produce a number of other products on a small scale, including dried fruits, jams and fruit butters, and herbal teas.
 `,
     sl: `
 Poleg jabolčnega soka in kis predelujemo tudi sorodne sadne in zeliščne izdelke, kot so na na primer suho sadje, marmelade in sadni namazi, in zeliščne čaje iz naših travnikov.
