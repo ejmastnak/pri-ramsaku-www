@@ -15,14 +15,14 @@ export default {
   },
 
   p1: {
-    en: "We are currently developing our product line and don't have an established sales program in stores or otherwise. We plan to begin with regular sales in late fall 2026 after the apple harvest season.",
-    sl: "Trenutno še razvijamo izdelke in nimamo utečenega prodajnega programa. Redno prodajo izdelkov bomo začeli predvidoma oktobra in novembra 2026 po zaključeni sezoni obiranja jabolk.",
+    en: "We have currently sold out the majority of our products from the 2025-26 season, and will resume with regular sales in late fall 2026 after the apple harvest season.",
+    sl: "Zalogo iz sezone 2025-2026 so v veliki meri že razprodali. Redna prodaja izdelkov bo spet začela predvidoma novembra 2026 po zaključeni sezoni obiranja jabolk.",
   },
 
   p2: [
     {
-      en: "Until then we will happily sell our products in person by personal arrangement. You can reach us by phone or WhatsApp at",
-      sl: "Do takrat se lahko za manjše nakupe dogovorimo neposredno na telefonski številki ",
+      en: "Until then, we still have small quantities of apple juice, jams, dried fruit, and other specialty items left in stock, and we are happy to sell these by personal arrangement. You can reach us by phone or WhatsApp at",
+      sl: "Do takrat se lahko za manjše nakupe (manjše količine jabolčnega soka, marmelad, krhljev in sorodnih dobrot vendarle še imamo na zalogi) dogovorimo neposredno na telefonski številki ",
     },
     {
       en: "(call or text, whichever you prefer) or by email at ",
