@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@tailwindplus/elements": "^1.0.14",
-    "astro": "^5.13.8"
+    "astro": "^7.4.2"
   },
   "devDependencies": {
     "astro-heroicons": "^2.1.5-1",
