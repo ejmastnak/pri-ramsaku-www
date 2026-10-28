@@ -24,6 +24,16 @@ Na tej strani najdete slike in opise nekaterih teh sort.
 `,
   },
 
+  galleryHeading: {
+    en: "Gallery",
+    sl: "Dodatne slike",
+  },
+
+  galleryDescription: {
+    en: "Below is a gallery of additional varieties we have not yet documented.",
+    sl: "Sledijo slike nekaj dodatnih sort, ki jih še nismo opisali.",
+  },
+
   bobovec: {
     name: {
       en: "Bohnapfel (Bobovec)",
