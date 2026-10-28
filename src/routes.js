@@ -13,23 +13,23 @@ const routeGroups = {
     "/sl/o-nas": { type: 'explicit', },
   },
 
-  varieties: {
-    "/about/varieties": { type: "implicit", canonical: "/en/about/varieties" },
-    "/en/about/varieties": { type: "explicit", },
+  cultivars: {
+    "/about/cultivars": { type: "implicit", canonical: "/en/about/cultivars" },
+    "/en/about/cultivars": { type: "explicit", },
     "/o-nas/stare-sorte": { type: "implicit", canonical: "/sl/o-nas/stare-sorte" },
     "/sl/o-nas/stare-sorte": { type: "explicit", },
   },
 
-  appleVarieties: {
-    "/about/apple-varieties": { type: "implicit", canonical: "/en/about/apple-varieties" },
-    "/en/about/apple-varieties": { type: "explicit", },
+  appleCultivars: {
+    "/about/apple-cultivars": { type: "implicit", canonical: "/en/about/apple-cultivars" },
+    "/en/about/apple-cultivars": { type: "explicit", },
     "/o-nas/sorte-jabolk": { type: "implicit", canonical: "/sl/o-nas/sorte-jabolk" },
     "/sl/o-nas/sorte-jabolk": { type: "explicit", },
   },
 
-  pearVarieties: {
-    "/about/pear-varieties": { type: "implicit", canonical: "/en/about/pear-varieties" },
-    "/en/about/pear-varieties": { type: "explicit", },
+  pearCultivars: {
+    "/about/pear-cultivars": { type: "implicit", canonical: "/en/about/pear-cultivars" },
+    "/en/about/pear-cultivars": { type: "explicit", },
     "/o-nas/sorte-hrusk": { type: "implicit", canonical: "/sl/o-nas/sorte-hrusk" },
     "/sl/o-nas/sorte-hrusk": { type: "explicit", },
   },

@@ -1,22 +1,22 @@
 export default {
   head: {
     title: {
-      en: "Heirloom apple varieties",
+      en: "Heirloom apple cultivars",
       sl: "Stare sorte jabolk",
     },
     description: {
-      en: "Photographs and descriptions of traditional heirloom apples from Slovenia and Central Europe grown in our meadow orchards, including Bobovec, Carjevič, Boskopski kosmač, and more. Learn about each variety's history, characteristics, and uses.",
+      en: "Photographs and descriptions of traditional heirloom apples from Slovenia and Central Europe grown in our meadow orchards, including Bobovec, Carjevič, Boskopski kosmač, and more. Learn about each cultivar's history, characteristics, and uses.",
       sl: "Fotografije in opisi tradicionalnih starih sort jabolk iz Slovenije in Srednje Evrope, ki rastejo v naših travniških sadovnjakih, med njimi Bobovec, Carjevič, Boskopski kosmač in druge. Spoznajte zgodovino, značilnosti in uporabo posameznih sort.",
     },
   },
   h1: {
-    en: "Heirloom apple varieties on the farm",
+    en: "Heirloom apple cultivars on the farm",
     sl: "Opisi starih sort jabolk na kmetiji",
   },
   intro: {
     en: `
-We are proud to grow a number of heirloom varieties not typically found in stores or commercial orchards.
-Here is a gallery, with images and descriptions, of the varieties on our farm that we have positively identified.
+We are proud to grow a number of heirloom cultivars not typically found in stores or commercial orchards.
+Here is a gallery, with images and descriptions, of the cultivars on our farm that we have positively identified.
 `,
     sl: `
 Na kmetiji gojimo številne tradicionalne stare sorte, ki se tipično ne najdejo v trgovinah ali v komercialnih sadovnjakih.
@@ -30,7 +30,7 @@ Na tej strani najdete slike in opise nekaterih teh sort.
   },
 
   galleryDescription: {
-    en: "Below is a gallery of additional varieties we have not yet documented.",
+    en: "Below is a gallery of additional cultivars we have not yet documented.",
     sl: "Sledijo slike nekaj dodatnih sort, ki jih še nismo opisali.",
   },
 
@@ -58,7 +58,7 @@ Na tej strani najdete slike in opise nekaterih teh sort.
     description: {
       en: `
 Bobovec is of uncertain origin, though horticultural experts believe it most likely comes from the Rhineland in Germany in the 18th century.
-In Slovenia, it has long been naturalized and is considered one of the most characteristic apple varieties in meadow orchards.
+In Slovenia, it has long been naturalized and is considered one of the most characteristic apple cultivars in meadow orchards.
 It is a medium-sized apple, although the fruits vary somewhat in size.
 The base color is greenish-yellow, with about half the fruit covered in red patches.
 It ripens in the second half of October.
@@ -141,7 +141,7 @@ Zelo dobro je sveže, cenjeno je pa tudi za predelavo.
     },
     description: {
       en: `
-Carjevič is an old indigenous variety from Slovenian Styria, thriving in cold climates and at higher elevations.
+Carjevič is an old indigenous cultivar from Slovenian Styria, thriving in cold climates and at higher elevations.
 It is a smaller apple, with fruits that are round and slightly flattened, sometimes narrowing a bit toward the calyx.
 The skin is smooth.
 The base color is yellow-green, with the side exposed to the sun developing a characteristic red blush.
@@ -184,12 +184,12 @@ Najboljše je za svežo porabo, primerno shranjen počaka do začetka pomladi.
     },
     description: {
       en: `
-Gravenstein (Grafenštajnc) originates from Denmark and was named after Gråsten Castle, where the variety was cultivated as early as the 17th century.
+Gravenstein (Grafenštajnc) originates from Denmark and was named after Gråsten Castle, where it was cultivated as early as the 17th century.
 The fruits are large, irregularly shaped, and somewhat flattened.
 The ripe apple has a greenish-yellow base color with crimson red streaks.
 The flesh is very juicy, pleasant, and aromatic.
 It is an early apple, ripening at the beginning of September.
-The variety is highly valued for fresh consumption but is not suitable for storage, so it is not found in commercial orchards.
+The cultivar is highly valued for fresh consumption but is not suitable for storage, so it is not found in commercial orchards.
 `,
       sl: `
 Grafenštajnc izvirza iz Danske, ime je dobil po gradu Gråsten, kjer so gojili sorto že v 17. stoletju.
@@ -224,7 +224,7 @@ Sorta je cenjena za svežo uživanje in ni primerna za skladiščenje, zato se j
     },
     description: {
       en: `
-Jagodovka is a local apple variety of unknown origin. Its name derives from its faint strawberry-like aroma. The fruits are medium-sized and occasionally slighly conical. Unripe apples are green, turning warm red when fully ripe. The stem cavity is moderately deep, as is the calyx cavity. The stem is medium-length and thin.
+Jagodovka is a local apple cultivar of unknown origin. Its name derives from its faint strawberry-like aroma. The fruits are medium-sized and occasionally slighly conical. Unripe apples are green, turning warm red when fully ripe. The stem cavity is moderately deep, as is the calyx cavity. The stem is medium-length and thin.
 The flesh is yellowish-white, sweet, and moderately juicy, with a pleasant aroma that subtly resembles strawberries. The apples are suitable both for fresh consumption and for processing into fruit beverages.
 Jagodovka is an early autumn apple, ripening from late September to early October. The tree is highly productive. When properly stored, the apples keep for several months.
 `,
@@ -415,7 +415,7 @@ Jabolko je odlično tako za sveže uživanje kot za predelavo.
     },
     description: {
       en: `
-Reinette de Mâcon is an old apple variety discovered as a chance seedling in Mâcon, France, and first described in 1628. It is known by several other names, including Damasonski kosmač and Karpentinarca. The local name, Ledrovka, derives from the German word *Leder*, meaning leather, and refers to the variety's characteristically thick, dry, leathery skin.
+Reinette de Mâcon is an old apple cultivar discovered as a chance seedling in Mâcon, France, and first described in 1628. It is known by several other names, including Damasonski kosmač and Karpentinarca. The local name, Ledrovka, derives from the German word *Leder*, meaning leather, and refers to the variety's characteristically thick, dry, leathery skin.
 The fruits are medium-sized and flattened-round in shape. The base color is green, turning greenish-yellow with russet tones as the apples ripen. The stem cavity is moderately deep, with broad edges, and the stem is short and woody.
 Beneath its distinctive leathery skin lies excellent flesh that is juicy, sweet, fine-textured, and aromatic, with spice notes. Despite its tough skin, it is an excellent dessert apple. It is also well suited to making juice and cider.
 The apples are harvested in October. Thanks to their tough skin, they store exceptionally well and can keep until the end of spring.
@@ -449,7 +449,7 @@ Sorta je bila odkrita kot naključni sejanec v kraju Mâcon v Franciji in je prv
     },
     description: {
       en: `
-London Pippin (Londonski peping) is an old variety of English origin, first described in 1580.
+London Pippin (Londonski peping) is an old cultivar of English origin, first described in 1580.
 It is a medium to large apple with a yellow color, and part of the fruit often takes on a reddish tone on the side exposed to the sun.
 It ripens at the beginning of October.
 The flesh is first firm and greenish, but turns yellow as the apple ripens, becoming soft and flavorful.
@@ -491,7 +491,7 @@ Primerno skladiščen počaka do aprila.
     },
     description: {
       en: `
-Štajerski mošancelj is an indigenous variety that originates from Styria.
+Štajerski mošancelj is an indigenous cultivar that originates from Styria.
 It is a small apple, initially greenish-yellow, which turns golden yellow when fully ripe.
 It ripens in October.
 The flesh is firm, juicy, aromatic, and has a sweet-tart flavor.
@@ -532,7 +532,7 @@ Uporablja se tako za sveže uživanje kot za predelavo, cenjen je Mošanceljov m
     },
     description: {
       en: `
-Calville Rouge d'Automne is a French apple variety documented as early as the 17th century. The fruits are medium-sized to large and vary in shape, ranging from round to somewhat flattened. They may also have ribbed contours. The skin is characteristically deep red with a slight waxy sheen.
+Calville Rouge d'Automne is a French apple cultivar documented as early as the 17th century. The fruits are medium-sized to large and vary in shape, ranging from round to somewhat flattened. They may also have ribbed contours. The skin is characteristically deep red with a slight waxy sheen.
 The stem cavity is moderately deep, and the stem is woody. The flesh is generally whitish, with a distinctive red coloration just beneath the dark red skin. It has a pleasant sweet-and-sour taste and an aroma reminiscent of raspberries.
 Calville Rouge d'Automne is excellent for fresh consumption and is also suitable for juice production. The fruits ripen in September and can be stored until early December.
 `,
@@ -610,7 +610,7 @@ V skladišču počaka do maja.
     },
     description: {
       en: `
-Šentjakobka is (to the best of our knowledge) a regional variety of unknown origin supposedly belonging to the rennet family.
+Šentjakobka is (to the best of our knowledge) a regional cultivar of unknown origin supposedly belonging to the rennet family.
 It is poorly described — it is familiar to locals in the Mislinja valley but hardly known even in wider Slovenia.
 It is an early apple with small fruits that ripen in late summer and early fall.
 The apple's base color is yellow-green, with pinkish-red streaks appearing as the fruit ripens.

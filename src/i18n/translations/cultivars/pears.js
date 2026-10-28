@@ -1,22 +1,22 @@
 export default {
   head: {
     title: {
-      en: "Heirloom pear varieties",
+      en: "Heirloom pear cultivars",
       sl: "Stare sorte hrušk",
     },
     description: {
-      en: "Photographs and descriptions of traditional heirloom pears from Slovenia and Central Europe grown in our meadow orchards, including Pastorjevka, Hardijeva, Junijska lepotica, and more. Learn about each variety's history, characteristics, and uses.",
+      en: "Photographs and descriptions of traditional heirloom pears from Slovenia and Central Europe grown in our meadow orchards, including Pastorjevka, Hardijeva, Junijska lepotica, and more. Learn about each cultivar's history, characteristics, and uses.",
       sl: "Fotografije in opisi tradicionalnih starih sort hrušk iz Slovenije in Srednje Evrope, ki rastejo v naših travniških sadovnjakih, med njimi Pastorjevka, Hardijeva, Junijska lepotica in druge. Spoznajte zgodovino, značilnosti in uporabo posameznih sort.",
     },
   },
   h1: {
-    en: "Heirloom pear varieties on the farm",
+    en: "Heirloom pear cultivars on the farm",
     sl: "Opisi starih sort hrušk na kmetiji",
   },
   intro: {
     en: `
-We are proud to grow a heirloom varieties not typically found in stores or commercial orchards.
-Here is a gallery, with images and descriptions, of the varieties on our farm that we have positively identified.
+We are proud to grow a heirloom cultivars not typically found in stores or commercial orchards.
+Here is a gallery, with images and descriptions, of the cultivars on our farm that we have positively identified.
 `,
     sl: `
 Na kmetiji gojimo številne tradicionalne stare sorte, ki se tipično ne najdejo v trgovinah ali v komercialnih sadovnjakih.
@@ -49,7 +49,7 @@ Na tej strani najdete slike in opise nekaterih teh sort.
       en: `
 Poire de Curé (Pastorjevka) was discovered in the wild in 1760 near the French town of Clion by a pastor named Leroy. Its parentage is unknown. The fruits are elongated, medium to large in size, and often display a characteristic rust-colored streak that runs along the length of the fruit from stem to calyx. The base color is gray-green, turning yellow when ripe, with a faint reddish hue on the sun-exposed side.
 The flesh is yellowish-white, firm, and somewhat coarse in texture, with a mild and modest flavor. It is highly tolerant of diverse growing conditions, productive, and reliable. The tree grows vigorously and forms a pyramidal crown densely covered with short fruiting spurs.
-The fruits are picked in October and can be eaten through December. It is suitable both as a table pear and for kitchen use. The variety is also valued in nurseries for its excellent compatibility with quince rootstock, and is often used as an intermediate grafting variety.
+The fruits are picked in October and can be eaten through December. It is suitable both as a table pear and for kitchen use. The cultivar is also valued in nurseries for its excellent compatibility with quince rootstock, and is often used as an intermediate grafting variety.
 `,
       sl: `
 Sorto pastorjevka je leta 1760 v bližini francoskega mesta Clion odkril pastor g. Leroy, po katerem je tudi dobila ime. Starši sorte niso znani. Pri nas jo poznamo tudi pod imeni pastorovka in pastorčica. Plodovi so srednje veliki do veliki, podolgovati, pogosto z značilno rjasto progo, ki poteka po dolžini plodu od peclja do muhe. Osnovna barva je sivo zelena, v polni zrelosti rumena, na sončni strani rahlo oranžno obarvana.
@@ -82,7 +82,7 @@ Plodove obiramo oktobra, za uživanje so primerni do decembra. Uporablja se kot 
     },
     description: {
       en: `
-Clapp’s Favourite (Klapova) is an American variety raised in 1860 by Thaddeus Clapp in Massachusetts. It is believed to be a seedling of the Flemish Beauty pear.
+Clapp’s Favourite (Klapova) is an American cultivar raised in 1860 by Thaddeus Clapp in Massachusetts. It is believed to be a seedling of the Flemish Beauty pear.
 The fruits are medium to large and sometimes slightly elongated in cooler climates. The skin is smooth and dry, light green when picked, turning yellow-green with a dull red blush on the sunny side as it ripens. Small pale lenticels are scattered across the surface. The flesh is yellowish-white, fine-textured, melting, and very juicy, with a sweet-tart, aromatic flavor typical of high-quality summer pears.
 The tree grows moderately vigorously, with upright scaffold branches that bend under fruit weight. It enters bearing moderately late, producing regular, medium yields. The crown is moderately sparse. The fruits are picked in September and can be eaten through November. 
 `,
@@ -118,7 +118,7 @@ Plodove obiramo septembra, ob primernem skladiščenju so primerni za uživanje 
     },
     description: {
       en: `
-Beurre Hardy (Hardijeva) is an old French pear variety, likely named after Julien-Alexandre Hardy, chief gardener and Director of Arboriculture at the Luxembourg Gardens in Paris in the 19th century.
+Beurre Hardy (Hardijeva) is an old French pear cultivar, likely named after Julien-Alexandre Hardy, chief gardener and Director of Arboriculture at the Luxembourg Gardens in Paris in the 19th century.
 
 The fruits are medium to large, round to slightly elongated. The base color is green with a russet-brown overlay and a warm ochre tint on the sunny side. The flesh is creamy, yellowish-white, very juicy, sweet, and aromatic, with a refreshing, slightly tangy flavor that makes it one of the most flavorful pears. The skin is somewhat firm, so peeling is recommended before eating or processing. It is a fine table pear, also suitable for compotes and marmalades. Fruits must fully ripen on the tree to avoid residual astringency.
 
@@ -156,7 +156,7 @@ Plodove obiramo septembra, v skladišču počakajo le nekaj tednov.
     },
     description: {
       en: `
-Bella di Giugno (Junijska lepotica) is an old Italian pear variety of unknown parentage. It is an early summer variety, highly productive and also a good pollinator. It flowers early and is sensitive to frost during bloom.
+Bella di Giugno (Junijska lepotica) is an old Italian pear cultivar of unknown parentage. It is an early summer variety, highly productive and also a good pollinator. It flowers early and is sensitive to frost during bloom.
 Fruits are small to medium-sized, with an elongated pear shape and a short to medium stem. The skin is smooth and light green, often covered with a dark red blush on the sunny side; the green base color turns yellow as it ripens. Tiny russet lenticels are densely scattered across the surface. The flesh is yellowish-white, moderately firm and juicy, sweet, and pleasantly flavored with a subtle acidity. It ripens from late June to early July. It is excellent for fresh eating, fruit salads, or juice, but does not store well.
 `,
       sl: `

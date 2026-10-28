@@ -8,7 +8,7 @@ export default {
     sl: "Laški češpelj v zgodnjem spomladanskem cvetu.",
   },
   applesCrateImg: {
-    en: "A traditional wooden crate holding apples of different sizes, varieties, and colors.",
+    en: "A traditional wooden crate holding apples of different sizes, cultivars, and colors.",
     sl: "Lesena gajbica polna jabolk različnih sort, barv in velikosti.",
   },
   krivopeceljTreeImg: {
@@ -24,15 +24,15 @@ export default {
     sl: "Jablana sorte Carjevič v polnem spomladanskem cvetu",
   },
   kanadkaFruitImg: {
-    en: "In-focus picture of apples of the variety Kanadka",
+    en: "In-focus picture of apples of the cultivar Kanadka",
     sl: "Slika jabolk sorte Kanadka",
   },
   boskopFruitImg: {
-    en: "In-focus picture of apples of the variety Boskopski kosmač",
+    en: "In-focus picture of apples of the cultivar Boskopski kosmač",
     sl: "Slika jabolk sorte Boskopski kosmač",
   },
   hardijevaFruitImg: {
-    en: "In-focus picture of pears of the variety Beurre Hardy",
+    en: "In-focus picture of pears of the cultivar Beurre Hardy",
     sl: "Slika hruške sorte Hardijeva",
   },
   dandelionsImg: {

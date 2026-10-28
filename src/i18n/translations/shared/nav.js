@@ -7,6 +7,10 @@ export default {
     en: "About us",
     sl: "O kmetiji",
   },
+  cultivars: {
+    en: "Cultivars",
+    sl: "Sorte",
+  },
   products: {
     en: "Products",
     sl: "Izdelki",

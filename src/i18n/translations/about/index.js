@@ -14,7 +14,7 @@ export default {
     sl: "O kmetiji",
   },
   intro: {
-    en: "We are a small family farm in the foothills of the Pohorje mountains in Mislinja, Slovenia. We specialize in juice, apple cider vinegar, jams, and related fruit products made from heirloom varieties grown in our meadow orchards.",
+    en: "We are a small family farm in the foothills of the Pohorje mountains in Mislinja, Slovenia. We specialize in juice, apple cider vinegar, jams, and related fruit products made from heirloom cultivars grown in our meadow orchards.",
     sl: "Smo manjša družinska kmetija na Tolstem Vrhu pri Mislinji, na obronkih Pohorja. Ukvarjamo se s predelavo jabolčnega soka, jabolčnega kisa, sadnih marmelad in sorodnih sadnih izdelkov iz starih sort sadja, ki raste v naših travniških sadovnjakih.",
   },
   priRamsakuHeading: {
@@ -42,21 +42,21 @@ export default {
     sl: "Danes smo majhna družinska kmetija in nikakor ne poklicni oziroma polno zaposleni kmetje, vendar se po svojih najboljših močeh trudimo, da zemlja ostaja obdelana in da se ohranjata dolgoletna tradicija in zgodovina kmetije. Trenutno posvečamo veliko pozornosti pomlajanju starega drevja in zasajanju nove generacije sadnega drevja, zlasti starih sort jablan in hrušk, ki uspevajo v Mislinjski dolini in na Koroškem. Pri vseh opravilih so nam s svojim znanjem in izkušnjami (in tudi s kmetijskimi stroji) v oporo in pomoč sosedje, ki so nas lepo sprejeli v svojo okolje."
   },
 
-  varietiesHeading: {
-    en: "Current focus on traditional heirloom varieties",
+  cultivarsHeading: {
+    en: "Current focus on traditional heirloom cultivars",
     sl: "Pridelava starih, nekomercialnih sort",
   },
-  varietiesP1: {
-    en: "Since taking over the farm, we have emphasized using heirloom apple varieties grown in our tall-trunk meadow orchards. Heirloom apples grow less abundantly and more erratically than the modern varieties grown on large-scale commercial farms, but they also tend to be more flavorful, aromatic, and visually interesting than conventional apples.",
+  cultivarsP1: {
+    en: "Since taking over the farm, we have emphasized using the heirloom apple cultivars grown in our tall-trunk meadow orchards. Heirloom apples grow less abundantly and more erratically than the modern cultivars grown on large-scale commercial farms, but they also tend to be more flavorful, aromatic, and visually interesting than conventional apples.",
     sl: "Od kar smo prevzeli kmetijo poudarjamo uporabo starih, tradicionalnih sort jabolk, ki že dolga leta rastejo v naših visokodebelnih travniških sadovnjakih. Te stare sorte rodijo manj obilno in zanesljivo kot moderne komercialne sorte, ki jih pridelujejo na večjih sadjarskih kmetijah. Zato te stare sorte redkokdaj zasledimo v konvencionalnih živilskih trgovinah. A so hkrati bolje okusne, aromatične in vizualno zanimive, kot konvencionalne komercialne sorte.",
   },
-  varietiesP2: {
-    en: "We grow these varieties both for their beauty, diversity, and distinctive characteristics; and also motivated by the practical reality that we are a small-scale, family operation and not full-time farmers with the manpower and equipment needed to maintain a conventional commercial orchard. Because our production is limited, we prefer to offer interesting, unconventional products than try to compete on a basis of scale or price with high-volume commercial farms.",
+  cultivarsP2: {
+    en: "We grow these cultivars both for their beauty, diversity, and distinctive characteristics; and also motivated by the practical reality that we are a small-scale, family operation and not full-time farmers with the manpower and equipment needed to maintain a conventional commercial orchard. Because our production is limited, we prefer to offer interesting, unconventional products than try to compete on a basis of scale or price with high-volume commercial farms.",
     sl: "Te sorte gojimo zaradi njihove lepote, raznolikosti in posebnih značilnosti, pa tudi zato, ker smo majhna družinska kmetija in ne poklicni sadjarji z mehanizacijo ter delovno silo, ki sta potrebni za vzdrževanje sodobnega intenzivnega sadovnjaka. Ker je naša pridelava omejena, raje ponujamo zanimive in nekoliko drugačne izdelke, namesto da bi skušali po količini ali ceni tekmovati z velikimi komercialnimi sadjarskimi kmetijami.",
   },
 
   picturesHeading: {
-    en: "Pictures of heirloom varieties",
+    en: "Pictures of heirloom cultivars",
     sl: "Slike starih sort",
   },
   picturesParagraph: {

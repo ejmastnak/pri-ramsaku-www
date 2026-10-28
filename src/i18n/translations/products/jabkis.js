@@ -14,7 +14,7 @@ export default {
     sl: "Jabolčni tropinski kis",
   },
   p1: {
-    en: `Our production of apple cider vinegar goes hand in hand with the pressing of apple juice each fall—we make our vinegar from the pulp and residual juice left over from the pressing process. Our vinegar is special in that we use apple pulp as a primary raw ingredient (conventional vinegar is made with pure juice). Together with the heirloom varieties' vibrant flavor and a slow fermentation all winter long, this gives our vinegar a smoothness, gentleness, and complexity not found in conventional vinegar made only from fermented apple juice.
+    en: `Our production of apple cider vinegar goes hand in hand with the pressing of apple juice each fall—we make our vinegar from the pulp and residual juice left over from the pressing process. Our vinegar is special in that we use apple pulp as a primary raw ingredient (conventional vinegar is made with pure juice). Together with the heirloom cultivars' vibrant flavor and a slow fermentation all winter long, this gives our vinegar a smoothness, gentleness, and complexity not found in conventional vinegar made only from fermented apple juice.
 `,
     sl: "Kis predelujemo iz jabolčnih tropin, ki nastanejo pri stiskanju jabolk za jabolčni sok. (Konvencionalni jabolčni kis se dela iz čistega jabolčnega sok.) Na ta način so pri nas že dolga leta poskrbeli, da so se tudi jabolčne tropine uporabili za koristen namen.",
   },
@@ -27,7 +27,7 @@ K okusu kisa prispevajo tudi bogata mešanica starih jabolčnih sort, čista vod
   },
 
   p2html: {
-    en: "Apples used to make our juice include <b>Jonatan, Carjevič, Krivopecelj, Ovčji nos, Šampanjska reneta, Kanadka, Mošancelj, Zlata parmena, Grafenštajnc, Londonski peping, Bobovec</b>, and other traditional varieties growing on our farm whose formal names we do not even know!",
+    en: "Apples used to make our juice include <b>Jonatan, Carjevič, Krivopecelj, Ovčji nos, Šampanjska reneta, Kanadka, Mošancelj, Zlata parmena, Grafenštajnc, Londonski peping, Bobovec</b>, and other traditional cultivars growing on our farm whose formal names we do not even know!",
     sl: "Jabolčne sorte, ki jih gojimo in stiskamo, so <b>jonatan, carjevič, krivopecelj, ovčji nos, šampanjska reneta, kanadka, mošancelj, zlata parmena, grafenštajnc, londonski peping in seveda bobovec,</b> posadili pa smo še nekaj starih sort, ki uspevajo v Mislinjski dolini in na Koroškem. Dveh ali treh jablan tudi s pomočjo izvedencev še nismo uspeli identificirati.",
   },
   p3: {

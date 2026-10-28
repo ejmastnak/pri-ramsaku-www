@@ -5,7 +5,7 @@ export default {
       sl: "Travniški sadovnjak",
     },
     description: {
-      en: "What is a meadow orchards? Tall fruit trees, mixed varieties, grazing land, and rich biodiversity make these orchards a unique form of cultural landscape in Slovenia and Central Europe. Explore their history, biodiversity, fruit trees, and contrast with modern intensive orchards.",
+      en: "What is a meadow orchards? Tall fruit trees, mixed cultivars, grazing land, and rich biodiversity make these orchards a unique form of cultural landscape in Slovenia and Central Europe. Explore their history, biodiversity, fruit trees, and contrast with modern intensive orchards.",
       sl: "Kaj je to, travniški sadovnjak? Visoka sadna drevesa, raznolike sorte, pašne površine in bogata biodiverziteta ustvarjajo značilno kulturno krajino Slovenskega in Evropskega podeželja. Spoznajte njihovo zgodovino, ekološki pomen, sadno drevje in razliko med travniškimi in sodobnimi intenzivnimi sadovnjaki.",
     },
   },
@@ -72,7 +72,7 @@ Travniški sadovnjaki so karakterističen sestavni del v mozaiku ekstenzivno obd
     sl: "Primerjava visokodebelnega travniškega sadovnjaka s konvencionalnimi sadovnjaki:",
   },
   comparison: {
-    en: "the tall, old-growth trees, mixed varieties, and scattered distribution of trees in meadow orchards contrasts with conventional fruit orchards, which are characterized by monoculture plantations of short, heavily-pruned trees closely spaced in regular rows—the short trees and regular spacing in conventional orchards allow for efficient chemical treatments and mechanized harvest. Intensive orchards conventionally lack an appreciable meadow understory and rely heavily on agrochemical application to sustain high yields. ",
+    en: "the tall, old-growth trees, mixed cultivars, and scattered distribution of trees in meadow orchards contrasts with conventional fruit orchards, which are characterized by monoculture plantations of short, heavily-pruned trees closely spaced in regular rows—the short trees and regular spacing in conventional orchards allow for efficient chemical treatments and mechanized harvest. Intensive orchards conventionally lack an appreciable meadow understory and rely heavily on agrochemical application to sustain high yields. ",
     sl: `
 Visoka in stara drevesa različnih vrst in sort, ki so razkropljena po travniku, so pravo nasprotje konvencionalnih monokulturnih sadnih nasadov, v katerih so drevesa nizka, sajena tesno skupaj v pravilnih razmakih in ravnih vrstah in močno obrezana, kar vse omogoča učinkovito mehanično obiranje in uporabo kemičnih sredstev. Intenzivni konvencionalni nasadi praviloma nimajo raznolike travne podlage, visoke donose pa zagotavlja uporaba agrokemičnih sredstev.
 `,
@@ -84,7 +84,7 @@ Visoka in stara drevesa različnih vrst in sort, ki so razkropljena po travniku,
   notes: {
     species: {
       intro: {
-        en: "Fruit and nut trees commonly found in meadow orchards in our native Koroška region include many varieties of",
+        en: "Fruit and nut trees commonly found in meadow orchards in our native Koroška region include many cultivars of",
         sl: "Sadno drevje, ki uspeva v naši koroški regiji, vključuje številne sorte",
       },
       apple: {

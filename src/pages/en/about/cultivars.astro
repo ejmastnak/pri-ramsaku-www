@@ -1,0 +1,9 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Cultivars from '@/master-pages/about/cultivars.astro';
+import translations from '@/i18n/translations/cultivars/index.js';
+---
+
+<BaseLayout locale="en" head={translations.head} >
+  <Cultivars />
+</BaseLayout>

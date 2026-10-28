@@ -5,7 +5,7 @@ export default {
       sl: "Jabolčni sok",
     },
     description: {
-      en: "Our apple juice is made each autumn from a diverse selection of heirloom apples, including Šampanjska reneta, Mošancelj, Krivopecelj, and Grafenštajnc. Pressed in small batches and minimally processed, it reflects the depth, freshness, and complexity of historic apple varieties.",
+      en: "Our apple juice is made each autumn from a diverse selection of heirloom apples, including Šampanjska reneta, Mošancelj, Krivopecelj, and Grafenštajnc. Pressed in small batches and minimally processed, it reflects the depth, freshness, and complexity of historic apple cultivars.",
       sl: "Jabolčni sok stiskamo vsako jesen, ko obrodijo jablane v našem visokodebelnem travniškem sadovnjaku. Jabolka stiskamo v stari preši, ne filtriramo in minimalno procesiramo, da sok obdrži bogat, poln okus, ki ga dajejo stare sorte jabolk.",
     },
   },
@@ -25,13 +25,13 @@ export default {
   ],
   p1: {
     en: `
-We press our apple juice in small batches each fall from a diverse selection of heirloom varieties grown in our tall-trunk meadow orchards.
+We press our apple juice in small batches each fall from a diverse selection of heirloom cultivars grown in our tall-trunk meadow orchards.
 The juice is minimally processed to preserve its flavor and nutritional content, which, together with the richness and character of the heirloom apples, gives our juice a depth of flavor and body not found in commercial products.
 `,
     sl: "Jabolčni sok stiskamo vsako jesen, ko obrodijo jablane v našem visokodebelnem travniškem sadovnjaku. Jabolka stiskamo v stari preši, ne filtriramo in minimalno procesiramo, da sok obdrži bogat, poln okus, ki ga dajejo stare sorte jabolk.",
   },
   p2html: {
-    en: "Apples used to make our juice include <b>Jonatan, Carjevič, Krivopecelj, Ovčji nos, Šampanjska reneta, Kanadka, Mošancelj, Zlata parmena, Grafenštajnc, Londonski peping, Bobovec</b>, and other traditional varieties growing on our farm whose formal names we do not even know!",
+    en: "Apples used to make our juice include <b>Jonatan, Carjevič, Krivopecelj, Ovčji nos, Šampanjska reneta, Kanadka, Mošancelj, Zlata parmena, Grafenštajnc, Londonski peping, Bobovec</b>, and other traditional cultivars growing on our farm whose formal names we do not even know!",
     sl: "Jabolčne sorte, ki jih gojimo in stiskamo, so <b>jonatan, carjevič, krivopecelj, ovčji nos, šampanjska reneta, kanadka, mošancelj, zlata parmena, grafenštajnc, londonski peping in seveda bobovec,</b> posadili pa smo še nekaj starih sort, ki uspevajo v Mislinjski dolini in na Koroškem. Dveh ali treh jablan tudi s pomočjo izvedencev še nismo uspeli identificirati.",
   },
   p3: {
