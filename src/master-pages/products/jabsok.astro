@@ -9,8 +9,15 @@ import translations from '@/i18n/translations/products/jabsok.js';
 import productsTranslations from '@/i18n/translations/products/index.js';
 import imgAltTranslations from '@/i18n/translations/shared/imgAlts.js';
 
+
 import jabsokImg from '@/assets/img/jabsok.jpg'
 import applesCrateImg from '@/assets/img/apples-crate.jpg'
+
+import mosanceljImage from '@/assets/img/varieties/apple-fruit/mosancelj.jpg'
+import boskop2Image from '@/assets/img/varieties/apple-fruit/boskop-2.jpg'
+import bobovecImage from '@/assets/img/varieties/apple-fruit/bobovec.jpg'
+import priIzviruImage from '@/assets/img/varieties/apple-fruit/pri-izviru.jpg'
+
 
 const locale = extractLocaleFromRoute(Astro.url.pathname);
 
@@ -22,44 +29,51 @@ const breadcrumbs = [
 ---
 
 <PageWrapper>
-  <div class="max-w-4xl mx-auto">
 
-    <div class="w-full flex items-start pr-2">
-      <h1 class="h1">{translations.h1[locale]}</h1>
-      <HowToBuyButton className="hidden sm:inline-flex" />  
-    </div>
-    <Breadcrumbs className="mt-1" breadcrumbs={breadcrumbs} />
+  <div class="w-full flex items-start pr-2">
+    <h1 class="h1">{translations.h1[locale]}</h1>
+    <HowToBuyButton className="hidden sm:inline-flex" />  
+  </div>
+  <Breadcrumbs className="mt-1" breadcrumbs={breadcrumbs} />
 
 
-    <!-- Panel 1 -->
-    <div class="mt-10 md:flex md:flex-row-reverse gap-x-8">
-      <Image
+  <!-- Panel 1 -->
+  <div class="mt-10 md:flex md:flex-row-reverse gap-x-8">
+    <Image
         src={jabsokImg}
         alt={imgAltTranslations.jabsokImg[locale]}
         class="shrink-0 w-full mx-auto max-w-sm md:max-w-80 lg:max-w-96 max-h-72 object-cover rounded-md"
-      />
-      <div class="mt-5 md:mt-2 text-gray-800">
-        <p>{translations.p1[locale]}</p>
-      </div>
-    </div>
+        />
+        <div class="mt-5 md:mt-2 text-gray-800">
+          <p>{translations.p1[locale]}</p>
+        </div>
+  </div>
 
-    <Bio className="my-5 md:my-12 max-w-xl" />
+  <Bio className="my-5 md:my-12 max-w-xl" />
 
-    <!-- Panel 2 -->
-    <div class="md:flex gap-x-8">
-      <Image
+  <!-- Panel 2 -->
+  <div class="md:flex gap-x-8">
+    <Image
         src={applesCrateImg}
         alt={imgAltTranslations.applesCrateImg[locale]}
         class="shrink-0 w-full mx-auto max-w-sm md:max-w-80 lg:max-w-96 max-h-72 object-cover rounded-md"
-      />
-      <div class="mt-5 md:mt-2 text-gray-800">
-        <p set:html={translations.p2html[locale]}></p>
-      </div>
-    </div>
-
-    <div class="my-5 md:my-10 max-w-xl">
-      {translations.p3[locale]}
-    </div>
-
+        />
+        <div class="mt-5 md:mt-2 text-gray-800">
+          <p set:html={translations.p2html[locale]}></p>
+        </div>
   </div>
+
+  <div class="my-5 md:my-10 max-w-xl">
+    {translations.p3[locale]}
+  </div>
+
+  <div class="mt-10 pt-10 border-t">
+    <div class="mt-2 grid sm:grid-cols-12 sm:rounded-3xl gap-2 overflow-clip max-w-4xl">
+      <Image src={mosanceljImage} alt="Mošancelj" class="sm:col-span-7 rounded-lg object-cover h-72" />
+      <Image src={boskop2Image} alt="Boskop" class="sm:col-span-5 rounded-lg object-cover h-72" />
+      <Image src={bobovecImage} alt="Bobovec" class="sm:col-span-5 rounded-lg object-cover h-72" />
+      <Image src={priIzviruImage} alt="Čebulinka" class="sm:col-span-7 rounded-lg object-cover h-72" />
+    </div>
+  </div>
+
 </PageWrapper>

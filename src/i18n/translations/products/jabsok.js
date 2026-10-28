@@ -38,7 +38,7 @@ The juice is minimally processed to preserve its flavor and nutritional content,
     en: `We hand-pick our apples in October and November, carefully wash them, then grind, crush, and press them to extract the juice, working in small batches using traditional wood-barrel presses. Next, the pressed juice is aged overnight at low temperature to mellow and develop flavor, then low-temperature pasteurized in a coil-and-tube heat exchanger and immediately bottled and hermetically sealed, ready for consumption.
 `,
     sl: `Jabolka so ročno obrana, ko dozorijo, in skrbno oprana. Sledi mletje in stiskanje.
-Iztisnjeni sok počiva čez noč pri nizki jesenski temperaturi, da se omehča in razvije okus, nakar ga pasteriziramo pri 70-80º C, takoj ustekleničimo in hermetično zapremo. Sok je tako pripravljen za uživanje.
+Iztisnjeni sok počiva čez noč pri nizki jesenski temperaturi, da se omehča in razvije okus, nakar ga pasteriziramo pri 78-80º C, takoj ustekleničimo in hermetično zapremo. Sok je tako pripravljen za uživanje.
 `,
   },
 }
