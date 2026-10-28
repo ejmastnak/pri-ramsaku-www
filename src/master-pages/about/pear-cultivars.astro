@@ -21,7 +21,8 @@ const locale = extractLocaleFromRoute(Astro.url.pathname);
 
 const breadcrumbs = [
   { routeGroupName: "about", title: aboutTranslations.h1[locale], },
-  { routeGroupName: "pearCultivars", title: translations.h1[locale], },
+  { routeGroupName: "cultivars", title: locale == 'en' ? "Heirloom cultivars" : "Opisi starih sort" },
+  { routeGroupName: "pearCultivars", title: locale == 'en' ? "Pears" : "Hruške" },
 ]
 
 const pears = {
