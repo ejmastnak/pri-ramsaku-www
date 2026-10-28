@@ -141,7 +141,7 @@ It is best enjoyed fresh, but when properly stored, it can keep until the beginn
 `,
       sl: `
 Carjevič je stara avtohtona sorte iz slovenske Štajerske, ki uspeva v mrzlem podnebju in višjih legah.
-Je majnše jabolko, plodovi so okrogli in rahlo ploščati, proti muhi pa lahko nekoliko zoženi.
+Je manjše jabolko, plodovi so okrogli in rahlo ploščati, proti muhi pa so lahko nekoliko zoženi.
 Koža je gladka.
 Osnovna barje je rumenozelena, na sončni strani pridobi značilno rdečo barvo.
 Zori konec septembra in začetku oktobra.
@@ -182,11 +182,44 @@ It is an early apple, ripening at the beginning of September.
 The variety is highly valued for fresh consumption but is not suitable for storage, so it is not found in commercial orchards.
 `,
       sl: `
-Grafenštajnc izvirza iz Danske, ime je dobila po gradu Gråsten, kjer so gojili sorto že v 17. stoletju.
-Plodovi so veliki, nepravilne obliko in nekoliko ploščati. Zrelo jabolko ima zelenkasto rumeno osnovno barve s karminasto rdečimi prižami.
+Grafenštajnc izvirza iz Danske, ime je dobil po gradu Gråsten, kjer so gojili sorto že v 17. stoletju.
+Plodovi so veliki, nepravilne oblike in nekoliko ploščati. Zrelo jabolko ima zelenkasto rumeno osnovno barvo s karminasto rdečimi prižami.
 Meso je zelo sočno, prijetno in aromatično.
 Je zgodnje jabolko, dozori v začetku septembra.
 Sorta je cenjena za svežo uživanje in ni primerna za skladiščenje, zato se je ne najde v intenzivnem sadjarstvu.
+`,
+    },
+  },
+
+  jagodovka: {
+    name: {
+      en: "Jagodovka",
+      sl: "Jagodovka",
+    },
+    fruitImgAlt: {
+      en: "Jagodovka fruit",
+      sl: "Jagodovka — slika jabolka",
+    },
+    treeImgAlt: {
+      en: "Jagodovka tree",
+      sl: "Jagodovka — slika jablane",
+    },
+    fruitCaption: {
+      en: "Fruit",
+      sl: "Jabolko",
+    },
+    treeCaption: {
+      en: "Tree",
+      sl: "Jablana",
+    },
+    description: {
+      en: `
+Jagodovka is a local apple variety of unknown origin. Its name derives from its faint strawberry-like aroma. The fruits are medium-sized and occasionally slighly conical. Unripe apples are green, turning warm red when fully ripe. The stem cavity is moderately deep, as is the calyx cavity. The stem is medium-length and thin.
+The flesh is yellowish-white, sweet, and moderately juicy, with a pleasant aroma that subtly resembles strawberries. The apples are suitable both for fresh consumption and for processing into fruit beverages.
+Jagodovka is an early autumn apple, ripening from late September to early October. The tree is highly productive. When properly stored, the apples keep for several months.
+`,
+      sl: `
+Jagodovka je lokalna sorta neznanega izvora. Ime dobi po rahlem vonju po jagodah. Plodovi so srednje veliki in so lahko rahlo kopaste oblike. Nezrelo jabolko je zelene barve, ki se spremeni v lepo rdečo barvo, ko jabolko dozori. Pecljeva jamica je srednje globoka. Pecelj je srednje dolg in tanek, čašna jamica je srednje globoka. Meso je belo rumeno, sladko in srednje sočno, s prijetno aromo, ki rahlo spominja na jagode. Primerno je tako za sveže uživanje kot za predelavo v sadne pijače. Je zgodnje jesensko jabolko, ki obrodi konec septembra in začetku oktobra. Drevo obrodi obilno. Primerno skladiščeno jabolko počaka nekaj mesecev.
 `,
     },
   },
@@ -223,10 +256,10 @@ It ripens from mid- to late September, and can last until sprint when properly s
 `,
       sl: `
 Jonatan izvira iz Amerike, kjer so ga vzgojili v New Yorku začetka 19. stoletja.
-Pri nas je že dolgo priljubljena sorta jablane, ki se pogosto najde v travniških sadovnjakih.
-Plodovi so srednje veliki, dokaj pravilne okrogli oblike in po večini prekriti z živo rdečo barvo.
+Pri nas je že dolgo priljubljena sorta, ki se pogosto najde v travniških sadovnjakih.
+Plodovi so srednje veliki, dokaj pravilne okrogle oblike in po večini prekriti z živo rdečo barvo.
 Meso je sočno, belkasto, čvrsto, aromatično in prijetnega sladko kiselkastega okusa.
-Najboljša je za svežo porabo, lahko ga predelamo v sok ali sušijo.
+Najboljše je za svežo porabo, lahko ga predelamo v sok ali sušimo.
 Zori sredi do konca septembra, skladiščeno počaka do spomladi.
 `,
     },
@@ -301,7 +334,7 @@ Skladiščeno počaka do spomladi.
 Cox’s Orange Pippin originates from England, where it was first grown by Richard Cox in Buckinghamshire around 1825. It is one of the most renowned English dessert apples. The fruits are medium-sized and round, often slightly flattened. The base color is yellow or greenish-yellow, overlaid with orange-red and crimson striping, giving the apple a characteristic warm hue. It ripens from late September to early October. The flesh is fine-textured, creamy-yellow, crisp, and very juicy. The flavor is rich, aromatic, and complex — balancing sweetness and acidity with notes of pear, melon, and spice. It is best enjoyed fresh, though it can also be used for juice and desserts. It typically keeps until December under proper conditions, but does not store well for longer periods.
 `,
       sl: `
-Koksova oranžna reneta izvira iz Anglije, kjer jo je okoli leta 1825 vzgojil Richard Cox v grofiji Buckinghamshire. Spada med najbolj znane angleške namizne sorte. Plodovi so srednje veliki, okrogli in rahlo sploščeni. Osnovna barva je rumena ali rumenkasto zelena, večji del plodu pa prekrivajo oranžno-rdeče in škrlatne priže. Dozori konec septembra oziroma v začetku oktobra. Meso je drobnozrnato, kremasto rumene barve, hrustljavo in sočno. Okus je bogat in aromatičen, uravnotežen med sladkostjo in kislostjo. Najbolj cenjena je za svežo porabo, primerna pa je tudi za sokove in sladice. Ob ustreznih pogojih jo lahko hranimo do decembra; za daljše skladiščenje ni obstojna.
+Koksova oranžna reneta izvira iz Anglije, kjer jo je okoli leta 1825 vzgojil Richard Cox v grofiji Buckinghamshire. Spada med najbolj znane angleške namizne sorte. Plodovi so srednje veliki, okrogli in rahlo sploščeni. Osnovna barva je rumena ali rumenkasto zelena, večji del plodu pa prekrivajo oranžno-rdeče in škrlatne priže. Dozori konec septembra oziroma v začetku oktobra. Meso je drobnozrnato, kremasto rumene barve, hrustljavo in sočno. Okus je bogat in aromatičen, uravnotežen med sladkostjo in kislostjo. Najbolj cenjena je za svežo porabo, primerna pa je tudi za sokove in sladice. Ob ustreznih pogojih jo lahko hranimo do januarja.
 `,
     },
   },
@@ -343,8 +376,42 @@ Plodovi so veliki in srednje debeli do debeli, po obliki so nekoliko valjasti te
 Večina plodov ima pecelj postrani, od tod tudi ime.
 Dozori oktobra.
 Meso je belo, čvrsto, sočno, osvežujočega okusa.
-Dobro se skladišče — do pomladi.
-Jabolki je odlično tako za sveže uživanje kot za predelavo.
+Dobro se skladišči — do pomladi.
+Jabolko je odlično tako za sveže uživanje kot za predelavo.
+`,
+    },
+  },
+
+  ledrovka: {
+    name: {
+      en: "Reinette de Mâcon (Ledrovka)",
+      sl: "Ledrovka",
+    },
+    fruitImgAlt: {
+      en: "Reinette de Mâcon fruit",
+      sl: "Ledrovka — slika jabolka",
+    },
+    treeImgAlt: {
+      en: "Reinette de Mâcon tree",
+      sl: "Ledrovka — slika jablane",
+    },
+    fruitCaption: {
+      en: "Fruit",
+      sl: "Jabolko",
+    },
+    treeCaption: {
+      en: "Tree",
+      sl: "Jablana",
+    },
+    description: {
+      en: `
+Reinette de Mâcon is an old apple variety discovered as a chance seedling in Mâcon, France, and first described in 1628. It is known by several other names, including Damasonski kosmač and Karpentinarca. The local name, Ledrovka, derives from the German word *Leder*, meaning leather, and refers to the variety's characteristically thick, dry, leathery skin.
+The fruits are medium-sized and flattened-round in shape. The base color is green, turning greenish-yellow with russet tones as the apples ripen. The stem cavity is moderately deep, with broad edges, and the stem is short and woody.
+Beneath its distinctive leathery skin lies excellent flesh that is juicy, sweet, fine-textured, and aromatic, with spice notes. Despite its tough skin, it is an excellent dessert apple. It is also well suited to making juice and cider.
+The apples are harvested in October. Thanks to their tough skin, they store exceptionally well and can keep until the end of spring.
+`,
+      sl: `
+Sorta je bila odkrita kot naključni sejanec v kraju Mâcon v Franciji in je prvič opisana v letu 1628. Ima veliko drugih imen, med njimi Damasonski kosmač in  Karpentinarca. Ime Ledrovka pride iz nemške besede za usnje, "Leder", in se nanaša na značilno suh, debel, "usnjen" olupek te sorte. Sadež je ploščato okrogle oblike in srednje velikosti. Osnovna barva je zelena. Zrel sadež je zelenorumen z rjastimi toni. Pecljeva jamica je srednje globoka, s širokimi robovi, pecelj je kratek in lesen. Pod značilno usnjenim olupkom je odlično meso — sočno, sladko, s fino strukturo in aromo po začimbah. Če nas ne moti trdi olupek je odlično namizno jabolko, sicer pa zelo dobra osnova za sok in mošt. Obiramo v oktobru. Zaradi trdega olupka se odlično skladišči, vse do konca spomladi.
 `,
     },
   },
@@ -381,7 +448,7 @@ It is particularly valued for fresh consumption as a dessert apple, but can last
 `,
       sl: `
 Londonski peping je stara sorta angleška izvora, ki je bila opisana že leta 1580.
-Je srednje veliko do večje jabolko rumene barve, del plodu večkrat pordeči na sončni strani.
+Je srednje veliko do večje jabolko rumene barve, del ploda večkrat pordeči na sončni strani.
 Zori začetka oktobra.
 Meso je spočetka trdo in zelenkasto, pozneje porumeni in postane mehko in okusno.
 Plodovi so sočni in sladko kiselkasti.
@@ -428,6 +495,39 @@ Zori oktobra.
 Meso je čvrsto, sočno, aromatično, sladko kislega okusa.
 V preteklosti je bila cenjena sorta zlasti zaradi čvrstih plodov, ki so odporni na otiske in zato primerni za transport. Pred vojno naj bi ga celo izvažali v Indijo.
 Uporablja se tako za sveže uživanje kot za predelavo, cenjen je Mošanceljov mošt in sok.
+`,
+    },
+  },
+
+  rdeciKalvil: {
+    name: {
+      en: "Calville Rouge d'Automne (Rdeči jesenski kalvil)",
+      sl: "Rdeči jesenski kalvil",
+    },
+    fruitImgAlt: {
+      en: "Calville Rouge d'Automne fruit",
+      sl: "Rdeči jesenski kalvil — slika jabolka",
+    },
+    treeImgAlt: {
+      en: "Calville Rouge d'Automne tree",
+      sl: "Rdeči jesenski kalvil — jablane jabolka",
+    },
+    fruitCaption: {
+      en: "Fruit",
+      sl: "Jabolko",
+    },
+    treeCaption: {
+      en: "Tree",
+      sl: "Jablana",
+    },
+    description: {
+      en: `
+Calville Rouge d'Automne is a French apple variety documented as early as the 17th century. The fruits are medium-sized to large and vary in shape, ranging from round to somewhat flattened. They may also have ribbed contours. The skin is characteristically deep red with a slight waxy sheen.
+The stem cavity is moderately deep, and the stem is woody. The flesh is generally whitish, with a distinctive red coloration just beneath the dark red skin. It has a pleasant sweet-and-sour taste and an aroma reminiscent of raspberries.
+Calville Rouge d'Automne is excellent for fresh consumption and is also suitable for juice production. The fruits ripen in September and can be stored until early December.
+`,
+      sl: `
+Sorta izvira iz Francije, opisana je že v 17. stoletju. Plodovi so srednje veliki do veliki in neenakih oblik, od okrogle do delno ploščate, in so lahko narebrani. Značilna je globoko rdeča, rahlo voščena koža. Pecljeva jamica je srednje globoka, pecelj je lesen. Meso je v osnovi belkasto, tik pod temno rdečo kožico pa značilno rdeče obarvano. Meso ima prijeten, sladkokiselkast okus, z aromo, ki spominja na maline. Odlično je sveže, primerno tudi za predelavo v sokove. Plodovi dozorijo v septembru in se lahko skladiščijo do začetka decembra.
 `,
     },
   },
