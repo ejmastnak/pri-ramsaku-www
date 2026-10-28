@@ -25,9 +25,9 @@ const locale = extractLocaleFromRoute(Astro.url.pathname);
 
   <div class="mt-1.5 max-w-2xl overflow-auto">
     <div class="grid grid-cols-12">
-      <p class="col-span-3 sm:col-span-2 px-3 py-2 bg-orange-100"></p>
-      <p class="col-span-5 px-3 py-2 bg-orange-200">{translations.product[locale]}</p>
-      <p class="col-span-4 sm:col-span-5 px-3 py-2 bg-orange-100">{translations.price[locale]}</p>
+      <p class="col-span-3 sm:col-span-2 px-3 py-2 bg-red-100"></p>
+      <p class="col-span-5 px-3 py-2 bg-red-200">{translations.product[locale]}</p>
+      <p class="col-span-4 sm:col-span-5 px-3 py-2 bg-red-100">{translations.price[locale]}</p>
     </div>
     <div class="grid grid-cols-12 py-1 !text-left" >
       {products.map((product) => (
