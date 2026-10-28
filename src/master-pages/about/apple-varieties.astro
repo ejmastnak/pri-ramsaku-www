@@ -2,6 +2,7 @@
 import PageWrapper from '@/shared/PageWrapper.astro'
 import Breadcrumbs from '@/components/Breadcrumbs.astro'
 import FruitPanel from './partials/FruitPanel.astro'
+import { Image } from 'astro:assets';
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
 import translations from '@/i18n/translations/varieties/apples.js';
 import aboutTranslations from '@/i18n/translations/about/index.js';
@@ -36,6 +37,13 @@ import sentjakobkaFruitImage from '@/assets/img/varieties/apple-fruit/sentjakobk
 import sentjakobkaTreeImage from '@/assets/img/varieties/apple-trees/sentjakobka.jpg'
 import zlataParmenaFruitImage from '@/assets/img/varieties/apple-fruit/zlata-parmena.jpg'
 import zlataParmenaTreeImage from '@/assets/img/varieties/apple-trees/zlata-parmena.jpg'
+
+import boskop2FruitImage from '@/assets/img/varieties/apple-fruit/boskop-2.jpg'
+import bunkopeceljFruitImage from '@/assets/img/varieties/apple-fruit/bunkopecelj.jpg'
+import goriskaSevkaFruitImage from '@/assets/img/varieties/apple-fruit/goriska-sevka.jpg'
+import lesnikaFruitImage from '@/assets/img/varieties/apple-fruit/lesnika.jpg'
+import nagelcekFruitImage from '@/assets/img/varieties/apple-fruit/nagelcek.jpg'
+import priIzviruFruitImage from '@/assets/img/varieties/apple-fruit/pri-izviru.jpg'
 
 const locale = extractLocaleFromRoute(Astro.url.pathname);
 
@@ -134,5 +142,25 @@ const apples = {
     </li>
     ))}
   </ul>
+
+boskop2FruitImage
+bunkopeceljFruitImage
+goriskaSevkaFruitImage
+lesnikaFruitImage
+nagelcekFruitImage
+priIzviruFruitImage
+
+  <div class="mt-10 pt-10 border-t">
+    <div class="mt-2 grid sm:grid-cols-12 sm:rounded-3xl gap-2 overflow-clip max-w-4xl">
+      <Image src={boskop2FruitImage} alt="Boskop" class="sm:col-span-7 rounded-lg object-cover h-72" />
+      <Image src={bunkopeceljFruitImage} alt="Bunkopecelj" class="sm:col-span-5 rounded-lg object-cover h-72" />
+      <Image src={priIzviruFruitImage} alt="Čebulinka" class="sm:col-span-5 rounded-lg object-cover h-72" />
+      <Image src={lesnikaFruitImage} alt="Lesnika" class="sm:col-span-7 rounded-lg object-cover h-72" />
+      <Image src={nagelcekFruitImage} alt="Nagelček" class="sm:col-span-7 rounded-lg object-cover h-72" />
+      <Image src={goriskaSevkaFruitImage} alt="Goriška sevka" class="sm:col-span-5 rounded-lg object-cover h-72" />
+    </div>
+  </div>
+
+
 
 </PageWrapper>
