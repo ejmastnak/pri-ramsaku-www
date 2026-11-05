@@ -4,11 +4,11 @@ import PageWrapper from '@/shared/PageWrapper.astro'
 import Breadcrumbs from '@/components/Breadcrumbs.astro'
 import HowToBuyButton from '@/components/HowToBuyButton.astro'
 import Bio from '@/shared/Bio.astro'
+import I18nLinkButton from '@/components/I18nLinkButton.astro'
 import { extractLocaleFromRoute, } from '@/lib/routes.js';
 import translations from '@/i18n/translations/products/jabsok.js';
 import productsTranslations from '@/i18n/translations/products/index.js';
 import imgAltTranslations from '@/i18n/translations/shared/imgAlts.js';
-
 
 import jabsokImg from '@/assets/img/jabsok.jpg'
 import applesCrateImg from '@/assets/img/apples-crate.jpg'
@@ -17,6 +17,11 @@ import mosanceljImage from '@/assets/img/cultivars/apple-fruit/mosancelj.jpg'
 import boskop2Image from '@/assets/img/cultivars/apple-fruit/boskop-2.jpg'
 import bobovecImage from '@/assets/img/cultivars/apple-fruit/bobovec.jpg'
 import priIzviruImage from '@/assets/img/cultivars/apple-fruit/pri-izviru.jpg'
+
+import bentoKalvilImage from '@/assets/img/products/jabsok-by-sorta/bento-kalvil.jpg'
+import bentoKanadkaImage from '@/assets/img/products/jabsok-by-sorta/bento-kanadka.jpg'
+import manyDiagonalImage from '@/assets/img/products/jabsok-by-sorta/many-diagonal.jpg'
+import manyImage from '@/assets/img/products/jabsok-by-sorta/many.jpg'
 
 
 const locale = extractLocaleFromRoute(Astro.url.pathname);
@@ -36,7 +41,6 @@ const breadcrumbs = [
   </div>
   <Breadcrumbs className="mt-1" breadcrumbs={breadcrumbs} />
 
-
   <!-- Panel 1 -->
   <div class="mt-10 md:flex md:flex-row-reverse gap-x-8">
     <Image
@@ -49,10 +53,26 @@ const breadcrumbs = [
         </div>
   </div>
 
+  <!-- JabSok by Sorta -->
+  <section class="mt-10 pt-10 border-t">
+    <p class="font-semibold text-2xl">{translations.jabsokBySortaHeading[locale]}</p>
+    <p class="mt-3 max-w-2xl" set:html={translations.jabsokBySortaBodyHtml[locale]}></p>
+    <I18nLinkButton className="mt-5" routeGroupName="appleCultivars">{translations.jabsokBySortaLinkButton[locale]}</I18nLinkButton>
+
+    <div class="mt-5 grid sm:grid-cols-12 sm:rounded-3xl gap-2 overflow-clip max-w-4xl">
+      <Image src={manyImage} alt={imgAltTranslations.manyImage[locale]} class="sm:col-span-7 rounded-lg object-cover h-72" />
+      <Image src={bentoKalvilImage} alt={imgAltTranslations.bentoKalvilImage[locale]} class="sm:col-span-5 rounded-lg object-cover h-72" />
+      <Image src={bentoKanadkaImage} alt={imgAltTranslations.bentoKanadkaImage[locale]} class="sm:col-span-5 rounded-lg object-cover h-72" />
+      <Image src={manyDiagonalImage} alt={imgAltTranslations.manyDiagonalImage[locale]} class="hidden sm:block sm:col-span-7 rounded-lg object-cover h-72" />
+    </div>
+
+  </section>
+
   <Bio className="my-5 md:my-12 max-w-xl" />
 
+
   <!-- Panel 2 -->
-  <div class="md:flex gap-x-8">
+  <div class="mt-10 pt-10 border-t md:flex  gap-x-8">
     <Image
         src={applesCrateImg}
         alt={imgAltTranslations.applesCrateImg[locale]}

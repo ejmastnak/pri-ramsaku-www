@@ -6,6 +6,12 @@ html {
   font-size: 20px;
 }
 
+@layer base {
+  b, strong {
+    @apply font-semibold;
+  }
+}
+
 @layer components {
   .h1 {
     @apply text-4xl;

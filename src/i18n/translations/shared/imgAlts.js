@@ -71,4 +71,22 @@ export default {
     en: "Tanks of maturing apple cider vinegar in our fermentation room.",
     sl: "Cisterne jabolčnega kisa v naši kisarni.",
   },
+
+  manyImage: {
+    en: "Bottles of apple juice from three different varieties, each a slightly different shade, with fresh apples from each variety in the foreground",
+    sl: "Steklenice soka iz treh različnih sort, vsak rahlo različne barve, skupaj s pripadajočimi svežimi jabolki.",
+  },
+  bentoKalvilImage: {
+    en: "A bottle of apple juice made from kanadka in the background, with fresh apples in focus in the foreground.",
+    sl: "Slika jabolk sorte rdeči jesenski kalvil, s steklenicami soka v ozadju.",
+  },
+  bentoKanadkaImage: {
+    en: "A bottle of apple juice made from rdeči kalvil in the background, with fresh apples in focus in the foreground.",
+    sl: "Slika jabolk sorte kanadka, s steklenicami soka v ozadju.",
+  },
+  manyDiagonalImage: {
+    en: "Bottles of apple juice from three different varieties, each a slightly different shade, with fresh apples from each variety in the foreground",
+    sl: "Steklenice soka iz treh različnih sort, vsak rahlo različne barve, skupaj s pripadajočimi svežimi jabolki.",
+  }
+
 }

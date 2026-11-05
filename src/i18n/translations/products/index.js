@@ -14,8 +14,8 @@ export default {
     sl: "Izdelki",
   },
   p1: {
-    en: "We sell apple juice, apple cider vinegar, jams, and related fruit products made from the heirloom cultivars grown in our meadow orchards. On a smaller scale we also sell teas and herbal products from herbs grown in our meadows and forests. View a product for more information about production and ingredients.",
-    sl: "Ponujamo jabolčni sok, jabolčni kis, marmelade, krhlje in sorodne izdelke iz starih sort sadja iz naših travniških sadovnjakov. V manjšem obsegu predelujemo tudi čaje in sorodne zeliščne izdelki iz lastnih travnikov. Več o izdelku si lahko preberete na posamezni strani izdelka.",
+    en: "We sell apple juice, apple cider vinegar, jams, and related fruit products made from the heirloom cultivars grown in our meadow orchards. Our specialty is a selection of <b>apple juices pressed from individual cultivars</b>. On a smaller scale we also sell teas and herbal products from herbs grown in our meadows and forests. View a product for more information about production and ingredients.",
+    sl: "Ponujamo jabolčni sok, jabolčni kis, marmelade, krhlje in sorodne izdelke iz starih sort sadja iz naših travniških sadovnjakov. Kot posebnost ponujamo <b>jabolčni sok iz posameznih starih sort</b>. V manjšem obsegu predelujemo tudi čaje in sorodne zeliščne izdelki iz lastnih travnikov. Več o izdelku si lahko preberete na posamezni strani izdelka.",
   },
   jabsokTitle: {
     en: "Apple juice",

@@ -18,6 +18,19 @@ export default {
     sl: "Na kmetiji gojimo tradicionalne stare sorte jabolk, hrušk in drugega sadja, ki se tipično ne najdejo v trgovinah ali v komercialnih sadovnjakih. Na naslednjih povezavah najdete slike in opise nekaterih teh sort.",
   },
 
+  jabsokBySortaH2: {
+    en: "Apple juice from individual cultivars",
+    sl: "Jabolčni sok iz posameznih sort",
+  },
+  jabsokBySortaBody: {
+    en: "In 2026 we tried something new: pressing juice from individual cultivars. This preserves the colors, tastes, and aromas of each variety, which are lost in a tradional blended juice made with all varieties mixed together. We currently offer juices from four individual varieties, as well as our classic juice made from a mixture of all of the varieties on our farm.",
+    sl: "V letu 2026 smo začeli proizvajati jabolčni sok iz posameznih sort, da bi lahko značilnosti vsake sorte prišle do izraza. Na voljo imamo sokove iz <b>ledrovke</b>, <b>kanadke</b>, <b>rdečega kalvila</b> in <b>jagodovke</b>, seveda poleg tradicionalnega soka iz mešanih sort.",
+  },
+  jabsokBySortaLinkButton: {
+    en: "Our juices",
+    sl: "Več o jabolčnem soku",
+  },
+
   productsH2: {
     en: "Products",
     sl: "Izdelki",
