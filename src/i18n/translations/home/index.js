@@ -15,7 +15,7 @@ export default {
   },
   cultivarsBody: {
     en: "We grow heirloom varieites of apples, pears, and plums not typically found in stores or commercial orchards. Below are galleries, with images and descriptions, of some of the apple and pear cultivars on our farm that we have positively identified.",
-    sl: "Na kmetiji gojimo tradicionalne stare sorte jabolk, hrušk in drugega sadja, ki se tipično ne najdejo v trgovinah ali v komercialnih sadovnjakih. Na naslednjih povezavah najdete slike in opise nekaterih teh sort.",
+    sl: "Na kmetiji imamo tradicionalne stare sorte jabolk, hrušk in drugega sadja, ki se tipično ne najdejo v trgovinah ali v komercialnih sadovnjakih. Na naslednjih povezavah najdete slike in opise nekaterih teh sort.",
   },
 
   jabsokBySortaH2: {

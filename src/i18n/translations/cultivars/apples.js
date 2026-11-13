@@ -19,7 +19,7 @@ We are proud to grow a number of heirloom cultivars not typically found in store
 Here is a gallery, with images and descriptions, of the cultivars on our farm that we have positively identified.
 `,
     sl: `
-Na kmetiji gojimo številne tradicionalne stare sorte, ki se tipično ne najdejo v trgovinah ali v komercialnih sadovnjakih.
+Na kmetiji imamo številne tradicionalne stare sorte, ki se tipično ne najdejo v trgovinah ali v komercialnih sadovnjakih.
 Na tej strani najdete slike in opise nekaterih teh sort.
 `,
   },
