@@ -20,6 +20,8 @@ const { locale, head, ambiguousLocale = false } = Astro.props as Props;
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={head.description[locale]} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
     <title>{head.title[locale]} | Pri Ramšaku</title>
 
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
