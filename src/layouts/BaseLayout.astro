@@ -47,7 +47,24 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     </style>
     )}
 
+  <script>
+    const mirrorHost = "priramsaku.live";
+    const canonicalHost = "priramsaku" + ".si";
+    const test = "priramsaku.si";
+
+    if (window.location.hostname === mirrorHost) {
+      window.location.replace(
+        "https://" + canonicalHost +
+        window.location.pathname +
+        window.location.search +
+        window.location.hash
+      );
+    }
+  </script>
+
+
   </head>
+
 
   <body class="bg-red-50">
     { !ambiguousLocale && <Nav />}
