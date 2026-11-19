@@ -12,6 +12,8 @@ interface Props {
   ambiguousLocale?: boolean
 }
 const { locale, head, ambiguousLocale = false } = Astro.props as Props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 <html lang={locale} class="no-js">
   <head>
@@ -20,7 +22,9 @@ const { locale, head, ambiguousLocale = false } = Astro.props as Props;
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={head.description[locale]} />
-    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="sitemap" href="/sitemap.xml" />
+
+    {Astro.url.pathname != '/' && <link rel="canonical" href={canonicalURL.href} />}
 
     <title>{head.title[locale]} | Pri Ramšaku</title>
 
