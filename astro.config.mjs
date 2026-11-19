@@ -2,8 +2,6 @@
 import { defineConfig } from 'astro/config';
 import { LOCALES, DEFAULT_LOCALE, SITEMAP_LOCALE_NAMES } from '/src/i18n/config';
 
-import sitemap from '@astrojs/sitemap';
-
 export default defineConfig({
   i18n: {
     locales: LOCALES,
@@ -21,6 +19,5 @@ export default defineConfig({
 
   site: "https://priramsaku.si",
   integrations: [
-    sitemap()
   ],
 });
