@@ -3,6 +3,11 @@ import { fileURLToPath } from "node:url";
 
 import { routeGroups } from "../routes.js";
 
+function normalizePathname(pathname) {
+  if (pathname === "/") return "/";
+  return pathname.endsWith("/") ? pathname : `${pathname}/`;
+}
+
 function generateRedirects(routeGroups) {
   const redirects = [];
 
@@ -11,7 +16,7 @@ function generateRedirects(routeGroups) {
       if (meta.type !== "implicit") continue;
 
       redirects.push(
-        `${pathname} ${meta.canonical} 301`
+        `${pathname} ${normalizePathname(meta.canonical)} 301`
       );
     }
   }

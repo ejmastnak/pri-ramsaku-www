@@ -14,8 +14,13 @@ function escapeXml(value) {
   })[char]);
 }
 
+function normalizePathname(pathname) {
+  if (pathname === "/") return "/";
+  return pathname.endsWith("/") ? pathname : `${pathname}/`;
+}
+
 function absoluteUrl(site, pathname) {
-  return new URL(pathname, site).href;
+  return new URL(normalizePathname(pathname), site).href;
 }
 
 /**
