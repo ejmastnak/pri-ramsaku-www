@@ -17,7 +17,7 @@ export const onRequest = defineMiddleware((ctx, next) => {
       return next(); 
     }
     else if (route.type == 'implicit') {
-      return ctx.redirect(route.canonical, 302);
+      return ctx.redirect(route.canonical, 301);
     } else if (route.type == 'ambiguous') {
       return next();  // client handles redirect
     } 
