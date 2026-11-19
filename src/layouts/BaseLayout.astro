@@ -47,20 +47,21 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     </style>
     )}
 
-  <script>
-    const mirrorHost = "priramsaku.live";
-    const canonicalHost = "priramsaku" + ".si";
-    const test = "priramsaku.si";
+  <script is:inline>
+  (() => {
+    const currentHost = window.location.hostname;
 
-    if (window.location.hostname === mirrorHost) {
+    const mirrorHost = ["priramsaku", "live"].join(".");
+    const canonicalHost = ["priramsaku", "si"].join(".");
+
+    if (currentHost === mirrorHost) {
       window.location.replace(
-        "https://" + canonicalHost +
-        window.location.pathname +
-        window.location.search +
-        window.location.hash
+        "https://" + canonicalHost + window.location.pathname +
+        window.location.search + window.location.hash
       );
     }
-  </script>
+  })();
+</script>
 
 
   </head>
