@@ -16,7 +16,9 @@ function generateRedirects(routeGroups) {
       if (meta.type !== "implicit") continue;
 
       redirects.push(
-        `${normalizePathname(pathname)} ${normalizePathname(meta.canonical)} 301`
+        // Once with trailing slash source, once without
+        `${normalizePathname(pathname)} ${normalizePathname(meta.canonical)} 301`,
+        `${pathname} ${normalizePathname(meta.canonical)} 301`,
       );
     }
   }
