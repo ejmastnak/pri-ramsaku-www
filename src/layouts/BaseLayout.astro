@@ -18,6 +18,20 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 <html lang={locale} class="no-js">
   <head>
 
+  <script is:inline>
+    (() => {
+      const currentHost = window.location.hostname;
+      const mirrorHost = ["priramsaku", "live"].join(".");
+      const canonicalHost = ["priramsaku", "si"].join(".");
+      if (currentHost === mirrorHost) {
+        window.location.replace(
+          "https://" + canonicalHost + window.location.pathname +
+          window.location.search + window.location.hash
+        );
+      }
+    })();
+  </script>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content={Astro.generator} />
@@ -46,23 +60,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     .no-js .js-only { display: none; }
     </style>
     )}
-
-  <script is:inline>
-  (() => {
-    const currentHost = window.location.hostname;
-
-    const mirrorHost = ["priramsaku", "live"].join(".");
-    const canonicalHost = ["priramsaku", "si"].join(".");
-
-    if (currentHost === mirrorHost) {
-      window.location.replace(
-        "https://" + canonicalHost + window.location.pathname +
-        window.location.search + window.location.hash
-      );
-    }
-  })();
-</script>
-
 
   </head>
 
