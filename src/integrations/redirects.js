@@ -16,7 +16,7 @@ function generateRedirects(routeGroups) {
       if (meta.type !== "implicit") continue;
 
       redirects.push(
-        `${pathname} ${normalizePathname(meta.canonical)} 301`
+        `${normalizePathname(pathname)} ${normalizePathname(meta.canonical)} 301`
       );
     }
   }
