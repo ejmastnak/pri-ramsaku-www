@@ -6,7 +6,7 @@ import sitemap from "/src/integrations/sitemap.js";
 import redirects from "/src/integrations/redirects.js";
 
 export default defineConfig({
-  trailingSlash: 'always',
+  trailingSlash: 'ignore',
   build: {
     format: 'directory'
   },
